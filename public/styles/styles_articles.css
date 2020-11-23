@@ -1,0 +1,96 @@
+/* All devices */
+
+.div-wrapper {
+    width: 100%;
+    height: 1200px;
+}
+.div-header {
+    width: 100%;
+    height: 400px;
+}
+.div-body {
+    width: 100%;
+    height: 400px;
+}
+.div-footer {
+    width: 100%;
+    height: 400px;
+}
+.div-navsection {
+    width: 100%;
+    height: 400px;
+    background-color: #212121;
+
+    display: grid;
+    grid-template-rows: 1fr 3px;
+    grid-template-columns: 1fr;
+}
+.ul-navbar {
+    grid-row: 1;
+    grid-column: 1;
+
+    justify-self: center;
+    align-self: end;
+
+    padding: 0px;
+    margin: 0px;
+}
+.ul-navbar li {
+    float: left;
+
+    list-style-type: none;
+
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.ul-navbar li a {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Dosis';
+    text-decoration: none;
+}
+.div-underline {
+    width: 240px;
+    height: 3px;
+
+    grid-row: 2;
+    grid-column: 1;
+
+    justify-self: center;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+.div-underline-move {
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+
+    justify-self: start;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
