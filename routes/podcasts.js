@@ -1,11 +1,12 @@
 const router = require('express').Router()
+const path = require('path')
 const fs = require('fs')
 
 router.route('/').get((req, res)=>{
     var content = fs.readFileSync('./database/collection0.json')
     var jsonContent = JSON.parse(content)
 
-    res.render('/var/app/current/views/podcasts.ejs')
+    res.render(path.join('/var/app/current/views/podcasts.ejs'))
 })
 
 // router.route('/delete/:id').get((req, res)=>{
