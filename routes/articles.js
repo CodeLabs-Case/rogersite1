@@ -7,11 +7,9 @@ router.route('/').get((req, res, err)=>{
         throw err
     }
 
-    var content = fs.readFileSync('./database/collection0.json')
-    var jsonContent = JSON.parse(content)
+    // var content = fs.readFileSync('./database/collection0.json')
+    // var jsonContent = JSON.parse(content)
 
-
-    
     res.render(path.join('/var/app/current/views/articles.ejs'))
 })
 
