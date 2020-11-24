@@ -1,4 +1,13 @@
 /* All devices */
+.div-underline-move {
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+
+    justify-self: end;
+}
+
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
