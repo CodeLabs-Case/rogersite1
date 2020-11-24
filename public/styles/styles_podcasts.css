@@ -7,6 +7,10 @@
 .div-header {
     width: 100%;
     height: 400px;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
 .div-body {
     width: 100%;
@@ -16,10 +20,22 @@
     width: 100%;
     height: 400px;
 }
+
+.div-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+    grid-row: 1;
+    grid-column: 1;
+}
 .div-navsection {
     width: 100%;
     height: 400px;
     background-color: #212121;
+
+    grid-row: 1;
+    grid-column: 1;
 
     display: grid;
     grid-template-rows: 1fr 3px;
