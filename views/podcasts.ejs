@@ -27,7 +27,11 @@
 
 
             <div class="div-header">
-                <img src="/static/images/header_background_medium_long.jpg" alt="Image Unavailable">
+                <img
+                srcset="/static/images/header_background_medium_long.jpg 1000w, /static/images/header_background_small_short.jpg 300w"
+                sizes="(min-width: 600px), (max-width: 600px) 300px"
+                src="/static/images/header_background_medium_long.jpg"
+                alt="Image Unavailable">
 
                 <div class='div-navsection'>
                     <ul class='ul-navbar'>
