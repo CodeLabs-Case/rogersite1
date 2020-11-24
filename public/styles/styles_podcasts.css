@@ -28,6 +28,8 @@
 
     grid-row: 1;
     grid-column: 1;
+
+    z-index: 0;
 }
 .div-navsection {
     width: 100%;
@@ -36,6 +38,8 @@
 
     grid-row: 1;
     grid-column: 1;
+
+    z-index: 1;
 
     display: grid;
     grid-template-rows: 1fr 3px;
