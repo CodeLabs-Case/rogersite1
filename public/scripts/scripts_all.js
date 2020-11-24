@@ -1,4 +1,4 @@
 $(document).ready(()=>{
-    var windowHeight = $(window).height()
-    $('.div-body').css('height', windowHeight)
+    // var windowHeight = $(window).height()
+    // $('.div-body').css('height', windowHeight)
 })
