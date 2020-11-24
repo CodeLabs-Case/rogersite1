@@ -1,20 +1,20 @@
 {   
-    "podcasts": [
+    "articles": [
         {
             "title": "sometitle1",
-            "link": "https://www1"
+            "body": "body1"
         },
         {
             "title": "sometitle2",
-            "link": "https://www2"
+            "body": "body2"
         },
         {
             "title": "sometitle3",
-            "link": "https://www3"
+            "body": "body3"
         },
         {
             "title": "sometitle4",
-            "link": "https://www4"
+            "body": "body4"
         }
     ]
 }
