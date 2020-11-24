@@ -8,7 +8,8 @@ const app = express()
 
 app.set('viewengine', 'ejs')
 
-app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use('/static', express.static('public'));
 
@@ -23,5 +24,5 @@ app.listen(port, (err)=>{
         console.log(err)
     }
 
-    console.log("Server is live.")
+    console.log("Server is live")
 })
