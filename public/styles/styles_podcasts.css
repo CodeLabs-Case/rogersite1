@@ -1,11 +1,21 @@
 /* All devices */
-.div-underline-move {
-    width: 100px;
-    height: 3px;
-    background-color: #fff;
-
-    justify-self: end;
+/* Variables */
+body {
+    --bg-lite: "303030;"
+    --bg-dark: "1c1c1c";
 }
+
+
+
+/* Header */
+
+
+
+/* Body */
+
+
+
+/* Footer */
 
 
 

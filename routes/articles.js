@@ -10,7 +10,11 @@ router.route('/').get((req, res, err)=>{
     // var content = fs.readFileSync('./database/collection0.json')
     // var jsonContent = JSON.parse(content)
 
+    // Production
     res.render(path.join('/var/app/current/views/articles.ejs'))
+    // Development
+    // res.render(path.join('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/routes/articles.js'))
+    
 })
 
 module.exports = router
