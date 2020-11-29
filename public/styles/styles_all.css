@@ -106,7 +106,7 @@ body {
 }
 .div-body-center {
     /* background-color: var(--bg-dark); */
-    background-color: #040404;
+    background-color: #1c1c1c;
   
     grid-column: 2;
     grid-row: 1;
@@ -141,7 +141,7 @@ body {
     height: 50px;
 
     /* background-color: var(--bg-dark); */
-    background-color: #1c1c1c;
+    background-color: #040404;
 }
 
 
