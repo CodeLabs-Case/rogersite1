@@ -1,5 +1,6 @@
 /* All devices */
 /* Variables */
+/* These aren't wanting to work in this porject */
 :root {
     --bg-lite: #303030;
     --bg-dark: #1c1c1c;
@@ -141,7 +142,7 @@ body {
     height: 50px;
 
     /* background-color: var(--bg-dark); */
-    background-color: #303030;
+    background-color: #1c1c1c;
 }
 
 
