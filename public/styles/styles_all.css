@@ -138,8 +138,6 @@ body {
     margin-right: 5px;
     margin-top: 5px;
 
-    justify-self: center;
-
     /* This lovely property here makes the element's width span the entire container */
     display: block;
 }
