@@ -29,7 +29,7 @@
 }
 .div-title {
     font-size: 14px;
-    
+
     grid-row: 1;
     grid-column: 2;
 
@@ -79,7 +79,10 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    
+    /* Body */
+    .div-text {
+        padding: 20px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
