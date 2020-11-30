@@ -80,14 +80,6 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
 }
-.div-underline-move {
-    background-color: #ffffff;
-    width: 100px;
-    height: 3px;
-
-    grid-row: 1;
-    grid-column: 1;
-}
 
 
 
