@@ -133,7 +133,7 @@ body {
     grid-row: 1;
 }
 .div-box {
-    width: 400px;
+    /* width: 400px; */
     height: 200px;
     margin: auto;
 
@@ -144,6 +144,8 @@ body {
     margin-right: 5px;
 
     justify-self: center;
+
+    display: block;
 }
 
 
@@ -159,9 +161,9 @@ body {
         display: none;
     }
 
-    .div-box {
+    /* .div-box {
         width: 100px;
-    }
+    } */
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
