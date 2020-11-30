@@ -115,6 +115,8 @@ body {
     justify-content: center;
   
     overflow-y: scroll;
+
+    display: grid;
 }
   /* Hide scrollbar for Chrome, Safari and Opera */
 .div-body-center::-webkit-scrollbar {
