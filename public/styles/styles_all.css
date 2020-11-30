@@ -80,9 +80,9 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
 }
-.div-separater {
+.div-separator {
     height: 50px;
-    
+
     display: block;
 
     background-color: #131313;
