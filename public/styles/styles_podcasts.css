@@ -22,21 +22,37 @@
 .div-img {
     grid-row: 1;
     grid-column: 1;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
 .div-text {
     font-size: 12px;
     grid-row: 1;
     grid-column: 2;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
 .div-link {
     font-size: 12px;
     grid-row: 2;
     grid-column: 2;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
 .div-date {
     font-size: 12px;
     grid-row: 3;
     grid-column: 2;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
 /* For some reason padding is being added automatically, remove it */
 [class^='div-'] p {
@@ -44,6 +60,9 @@
     text-align: center;
     align-self: center;
     margin: 0px;
+
+    grid-row: 1;
+    grid-column: 1;
 }
 [class^='div-'] p a{
     text-decoration: none;
