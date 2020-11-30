@@ -25,7 +25,7 @@ router.route('/signin').get((req, res, err) => {
 
 
     // Compare the data
-    if(jsonContent.credentials.email == email && jsonContent.credentials.password == password){
+    if(jsonContent.email == email && jsonContent.password == password){
         // Send the page
         res.render(path.join('/var/app/current/views/cp.ejs'))
     } else {
