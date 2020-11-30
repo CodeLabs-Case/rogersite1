@@ -28,6 +28,8 @@
     grid-template-columns: 1fr;
 }
 .div-title {
+    font-size: 14px;
+    
     grid-row: 1;
     grid-column: 2;
 
@@ -36,14 +38,20 @@
     grid-template-columns: 1fr;
 }
 .div-text {
+    font-size: 14px;
+
     grid-row: 2;
     grid-column: 2;
 
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+
+    padding: 40px;
 }
 .div-date {
+    font-size: 14px;
+
     grid-row: 3;
     grid-column: 2;
 
