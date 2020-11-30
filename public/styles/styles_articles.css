@@ -22,6 +22,38 @@
 
     background-color: #1c1c1c;
 }
+.div-img {
+    grid-row: 1;
+    grid-column: 1;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+.div-title {
+    grid-row: 1;
+    grid-column: 2;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+.div-body {
+    grid-row: 2;
+    grid-column: 2;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+.div-date {
+    grid-row: 3;
+    grid-column: 2;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
 
 
 
