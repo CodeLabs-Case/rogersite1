@@ -40,7 +40,7 @@ body {
     z-index: 1;
 
     display: grid;
-    grid-template-rows: 1fr 3px;
+    grid-template-rows: 1fr 3px 50px;
     grid-template-columns: 1fr;
 }
 .ul-navbar {
@@ -84,6 +84,9 @@ body {
     height: 50px;
 
     display: block;
+
+    grid-row: 3;
+    grid-column: 1;
 
     background-color: #131313;
 }
