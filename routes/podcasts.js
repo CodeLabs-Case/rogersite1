@@ -13,7 +13,7 @@ router.route('/').get((req, res, err)=>{
     var jsonContent = JSON.parse(content)
 
     // Production
-    res.render(path.join('/var/app/current/views/podcasts.ejs'), {podcasts: jsonContent})
+    res.render(path.join('/var/app/current/views/podcasts.ejs'), {data: jsonContent})
     // Development
     // res.render(path.join('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/routes/podcasts.js'))
 })

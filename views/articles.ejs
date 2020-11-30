@@ -51,14 +51,25 @@
             <div class="div-body">
                 <div class='div-body-left'></div>
                 <div class='div-body-center'>
-                    <div class='div-box'></div>
-                    <div class='div-box'></div>
-                    <div class='div-box'></div>
-                    <div class='div-box'></div>
-                    <div class='div-box'></div>
-                    <div class='div-box'></div>
-                    <div class='div-box'></div>
-                    <div class='div-box'></div>
+                    <% data.articless.forEach(function(article){ %>
+                    <div class='div-box'>
+                        <div class='div-box-inner-wrapper'>
+                            <div class='div-img'>
+                                <img src="" alt="">
+                            </div>
+                            <div class='div-title'>
+                                <%= article.title %>
+                            </div>
+                            <div class='div-body'>
+                                <%= article.body %>
+                            </div>
+                            <div class='div-date'>
+                                <%= article.date %>
+                            </div>
+                        </div>
+                    </div>
+
+                    <% }) %>
                 </div>
                 <div class='div-body-right'></div>
             </div>
@@ -68,7 +79,7 @@
 
 
             <div class='div-footer'>
-                
+
             </div>
 
 
