@@ -6,7 +6,7 @@ const path = require('path')
 
 router.route('/').get((req, res, err) => {
     if(err) {
-        throw err
+        console.log(err)
     }
     res.render(path.join('/var/app/current/views/admin.ejs'))
 })
