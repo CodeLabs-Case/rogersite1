@@ -107,6 +107,9 @@ body {
 .div-body-center {
     /* background-color: var(--bg-dark); */
     background-color: #303030;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
   
     grid-column: 2;
     grid-row: 1;
@@ -140,11 +143,11 @@ body {
     background-color: #1c1c1c;
 
     margin-left: 5px;
-    margin-top: 5px;
     margin-right: 5px;
 
     justify-self: center;
 
+    /* This lovely property here makes the element's width span the entire container */
     display: block;
 }
 
@@ -160,10 +163,6 @@ body {
     .div-header .img-large {
         display: none;
     }
-
-    /* .div-box {
-        width: 100px;
-    } */
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
