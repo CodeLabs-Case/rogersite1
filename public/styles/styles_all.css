@@ -115,8 +115,6 @@ body {
     justify-content: center;
   
     overflow-y: scroll;
-
-    display: grid;
 }
   /* Hide scrollbar for Chrome, Safari and Opera */
 .div-body-center::-webkit-scrollbar {
@@ -159,6 +157,10 @@ body {
     }
     .div-header .img-large {
         display: none;
+    }
+
+    .div-box {
+        width: 100px;
     }
 }
 
