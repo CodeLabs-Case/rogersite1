@@ -116,7 +116,7 @@ body {
   
     overflow-y: scroll;
 
-    /* display: grid; */
+    display: inline;
 }
   /* Hide scrollbar for Chrome, Safari and Opera */
 .div-body-center::-webkit-scrollbar {
