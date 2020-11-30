@@ -35,6 +35,8 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+
+    padding: 20px;
 }
 .div-link {
     font-size: 12px;
