@@ -157,6 +157,9 @@ body {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     /* Header */
+    .div-header {
+        height: 250px;
+    }
     .div-header .img-small {
         display: auto;
     }
