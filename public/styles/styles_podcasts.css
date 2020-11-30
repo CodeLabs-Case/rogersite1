@@ -24,14 +24,17 @@
     grid-column: 1;
 }
 .div-text {
+    font-size: 12px;
     grid-row: 1;
     grid-column: 2;
 }
 .div-link {
+    font-size: 12px;
     grid-row: 2;
     grid-column: 2;
 }
 .div-date {
+    font-size: 12px;
     grid-row: 3;
     grid-column: 2;
 }
