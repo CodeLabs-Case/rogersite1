@@ -42,7 +42,7 @@
 }
 /* For some reason padding is being added automatically, remove it */
 [class^='div-'] p {
-    padding: 0px;
+    margin: 0px;
 }
 
 
