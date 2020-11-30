@@ -54,7 +54,19 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
 }
+/* For some reason padding is being added automatically, remove it */
+[class^='div-'] p {
+    color: #aaaaaa;
+    text-align: center;
+    align-self: center;
+    margin: 0px;
 
+    grid-row: 1;
+    grid-column: 1;
+}
+[class^='div-'] p a{
+    text-decoration: none;
+}
 
 
 /* Footer */
