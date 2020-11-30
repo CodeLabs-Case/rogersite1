@@ -5,7 +5,7 @@ const fs = require('fs')
 
 
 router.route('/').get((req, res, err)=>{
-    if(err){
+    if(err) {
         console.log(err)
     }
 
