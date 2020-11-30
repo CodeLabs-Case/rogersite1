@@ -51,6 +51,7 @@
             <div class="div-body">
                 <div class='div-body-left'></div>
                 <div class='div-body-center'>
+                    <% podcasts.foreach(function(podcast){ ) =>
                     <div class='div-box'>
                         <div class='div-box-inner-wrapper'>
                             <div class='div-img'>
@@ -58,41 +59,20 @@
                             </div>
                             <div class='div-text'>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.
-
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.
-
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.
-
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.
+                                    <%= podcast.text %>
                                 </p>
                             </div>
                             <div class='div-link'>
                                 <p>
-                                    <a class='a-podcastlink' href="FILL IN THIS VALUE WITH THE URL SOMEHOW">PODCAST</a>
+                                    <a class='a-podcastlink' href="<%= podcast.link %>">PODCAST</a>
                                 </p>
                             </div>
                             <div class='div-date'>
-                                <p>November 30th, 2020</p>
+                                <p><%= podcast.date %>/p>
                             </div>
                         </div>
                     </div>
+                    <% }) %>
                 </div>
                 <div class='div-body-right'></div>
             </div>

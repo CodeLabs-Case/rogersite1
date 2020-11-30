@@ -1,20 +1,24 @@
 {   
     "podcasts": [
         {
-            "title": "sometitle1",
-            "link": "https://www1"
+            "text": "sometext1",
+            "link": "https://www1",
+            "date": "date1"
         },
         {
-            "title": "sometitle2",
-            "link": "https://www2"
+            "text": "sometext2",
+            "link": "https://www2",
+            "date": "date2"
         },
         {
-            "title": "sometitle3",
-            "link": "https://www3"
+            "text": "sometext3",
+            "link": "https://www3",
+            "date": "date3"
         },
         {
-            "title": "sometitle4",
-            "link": "https://www4"
+            "text": "sometext4",
+            "link": "https://www4",
+            "date": "date4"
         }
     ]
 }
