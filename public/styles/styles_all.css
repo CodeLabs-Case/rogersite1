@@ -135,7 +135,7 @@ body {
     grid-row: 1;
 }
 .div-box {
-    width: 100%;
+    width: 400px;
     height: 200px;
 
     background-color: #1c1c1c;
