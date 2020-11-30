@@ -12,6 +12,9 @@
 
 
 /* Body */
+.div-box {
+    height: 100px;
+}
 .div-box-inner-wrapper {
     display: grid;
     grid-template-rows: 40px auto 20px;
