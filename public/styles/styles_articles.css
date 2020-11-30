@@ -1,4 +1,6 @@
 /* All devices */
+/* Variables */
+/* Header */
 .div-underline-move {
     width: 100px;
     height: 3px;
@@ -7,6 +9,20 @@
     justify-self: start;
 }
 
+
+
+/* Body */
+.div-box-inner-wrapper {
+    display: grid;
+    grid-template-rows: 180px 20px;
+    grid-template-columns: 1fr 10fr 1fr;
+
+    background-color: #1c1c1c;
+}
+
+
+
+/* Footer */
 
 
 /* Extra small devices (phones, 600px and down) */
