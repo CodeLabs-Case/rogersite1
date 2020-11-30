@@ -20,7 +20,7 @@ router.route('/signin').get((req, res, err) => {
     var password = req.body.password
 
     // Read in the database file
-    var content = fs.readFileSync('./database/signin.json')
+    var content = fs.readFileSync('/var/app/current/database/signin.json')
     var jsonContent = JSON.parse(content)
 
     // Compare the data
