@@ -51,13 +51,27 @@
             <div class="div-body">
                 <div class='div-body-left'></div>
                 <div class='div-body-center'>
-                    <% data.articles.forEach(function(podcast){ %>
+                    <% data.articles.forEach(function(article){ %>
                     <div class='div-box'>
                         <div class='div-inner-wrapper'>
-                            <div class='div-img'></div>
-                            <div class='div-title'></div>
-                            <div class='div-body'></div>
-                            <div class='div-date'></div>
+                            <div class='div-img'>
+                                <img src="" alt="">
+                            </div>
+                            <div class='div-title'>
+                                <p>
+                                    <%= article.title %>
+                                </p>
+                            </div>
+                            <div class='div-body'>
+                                <p>
+                                    <%= article.body %>
+                                </p>
+                            </div>
+                            <div class='div-date'>
+                                <p>
+                                    <%= article.date %>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <% }) %>
