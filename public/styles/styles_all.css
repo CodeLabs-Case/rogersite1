@@ -148,6 +148,15 @@ body {
 
 
 
+/* Footer */
+.div-footer {
+    height: 0px;
+}
+
+
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     /* Header */
@@ -208,7 +217,14 @@ body {
 
 
 
+
     /* Footer */
+    .div-footer {
+        height: 30px;
+        display: block;
+
+        background-color: #131313;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
