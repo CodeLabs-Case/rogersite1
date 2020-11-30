@@ -14,7 +14,7 @@
 /* Body */
 .div-box-inner-wrapper {
     display: grid;
-    grid-template-rows: 160px 20px 20px;
+    grid-template-rows: auto 20px 20px;
     grid-template-columns: 1fr 10fr 1fr;
 
     background-color: #1c1c1c;
@@ -36,7 +36,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
 
-    padding: 20px;
+    padding: 40px;
 }
 .div-link {
     font-size: 12px;

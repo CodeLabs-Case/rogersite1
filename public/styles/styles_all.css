@@ -129,7 +129,7 @@ body {
     grid-row: 1;
 }
 .div-box {
-    height: 200px;
+    height: auto;
     margin: auto;
 
     background-color: #1c1c1c;
