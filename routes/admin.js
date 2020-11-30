@@ -14,7 +14,7 @@ router.route('/').get((req, res, err) => {
 router.route('/signin').get((req, res, err) => {
     // Pull the data from the forms
     // Try two ways to get the data from the forms for testing purposes
-    const { data } = req.body
+    // const { email, password } = req.body
 
     var email = req.body.email
     var password = req.body.password
