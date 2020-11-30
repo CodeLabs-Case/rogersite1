@@ -143,6 +143,13 @@ body {
     /* This lovely property here makes the element's width span the entire container */
     display: block;
 }
+.div-box-inner-wrapper {
+    display: grid;
+    grid-template-rows: 125px 50px 25px;
+    grid-template-columns: 1fr 10fr 1fr;
+
+    background-color: #1c1c1c;
+}
 
 
 
