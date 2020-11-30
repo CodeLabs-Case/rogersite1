@@ -23,13 +23,14 @@ router.route('/signin').get((req, res, err) => {
     var content = fs.readFileSync('/var/app/current/database/signin.json')
     var jsonContent = JSON.parse(content)
 
-    res.render(path.join('/var/app/current/views/cp.ejs'))
 
-    // // Compare the data
-    // if(jsonContent.credentials.email == email && jsonContent.credentials.password == password){
-    //     // Send the page
-    //     res.render(path.join('/var/app/current/views/cp.ejs'))
-    // }
+    // Compare the data
+    if(jsonContent.credentials.email == email && jsonContent.credentials.password == password){
+        // Send the page
+        res.render(path.join('/var/app/current/views/cp.ejs'))
+    } else {
+        res.render(path.join('/var/app/current/views/admin.ejs'))
+    }
 })
 
 
