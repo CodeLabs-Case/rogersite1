@@ -434,6 +434,18 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .div-header {
+        height: 250px;
+    }
+    .div-header .img-small {
+        display: auto;
+    }
+    .div-header .img-large {
+        display: none;
+    }
+    .div-navsection {
+        height: 250px;
+    }
 }
 
 
@@ -467,6 +479,12 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    .div-header .img-small {
+        display: none;
+    }
+    .div-header .img-large {
+        display: auto;
+    }
 }
 
 
