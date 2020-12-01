@@ -458,19 +458,19 @@ body {
 
 
     /* Body */
-    .div-box-inner-wrapper-p {
+    .div-body-p {
+        width: 100%;
+        
         display: grid;
-        grid-template-rows: auto 20px 20px;
-        grid-template-columns: 10fr;
-    
-        background-color: #1c1c1c;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
     }
-    .div-box-inner-wrapper-a {
+    .div-body-a {
+        width: 100%;
+        
         display: grid;
-        grid-template-rows: auto 20px 20px;
-        grid-template-columns: 10fr;
-    
-        background-color: #1c1c1c;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
