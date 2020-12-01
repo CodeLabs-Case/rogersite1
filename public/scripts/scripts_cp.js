@@ -1,10 +1,10 @@
 $(document).ready(()=>{
-    $('.testp').on('click', ()=>{
+    $('.testp').click(()=>{
         $('.testp').css('zIndex', 1)
         $('.testa').css('zIndex', 0)
     })
 
-    $('.testa').on('click', ()=>{
+    $('.testa').click(()=>{
         $('.testp').css('zIndex', 0)
         $('.testa').css('zIndex', 1)
     })
