@@ -39,6 +39,24 @@ router.route('/').get((req, res, err) => {
 
     }    
 })
+router.route('/deletePodcast/:id').get((req, res)=>{
+    var param = req.query.id
+    var paramInt = parseInt(param)
+
+    var content = fs.readFileSync('./collection0.json')
+    var jsonContent = JSON.parse(content)
+
+    jsonContent.podcasts.splice(paramInt, 1)
+
+    // The null, 2 in the parameter list of stringify makes the JSON more readable by adding indents and 2 spaces
+    var jsonString = JSON.stringify(jsonContent, null, 2)
+    fs.writeFileSync('./collection0.json', jsonString)
+
+    var content = fs.readFileSync('./collection0.json')
+    var jsonContent = JSON.parse(content)
+
+    res.render('./home.ejs', { output: jsonContent })
+})
 
 
 
