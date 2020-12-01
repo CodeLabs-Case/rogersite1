@@ -94,6 +94,13 @@ body {
 .p-articles:hover {
     cursor: default;
 }
+.div-underline-move {
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+
+    justify-self: start;
+}
 
 
 
