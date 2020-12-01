@@ -441,6 +441,7 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    /* Header */
     .div-header {
         height: 250px;
     }
@@ -452,6 +453,24 @@ body {
     }
     .div-navsection {
         height: 250px;
+    }
+
+
+
+    /* Body */
+    .div-box-inner-wrapper-p {
+        display: grid;
+        grid-template-rows: auto 20px 20px;
+        grid-template-columns: 10fr;
+    
+        background-color: #1c1c1c;
+    }
+    .div-box-inner-wrapper-a {
+        display: grid;
+        grid-template-rows: auto 20px 20px;
+        grid-template-columns: 10fr;
+    
+        background-color: #1c1c1c;
     }
 }
 
