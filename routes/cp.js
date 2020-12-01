@@ -8,12 +8,12 @@ router.route('/').get((req, res, err) => {
         console.log(err)
     }
 
-    var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
-    var jsonPodcasts = JSON.parse(podcasts)
+    var podcast = fs.readFileSync('/var/app/current/database/collection0.json')
+    var jsonPodcasts = JSON.parse(podcast)
 
 
-    var articles = fs.readFileSync('/var/app/current/database/collection1.json')
-    var jsonArticles = JSON.parse(articles)
+    var article = fs.readFileSync('/var/app/current/database/collection1.json')
+    var jsonArticles = JSON.parse(article)
 
 
 
