@@ -506,6 +506,13 @@ body {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     /* Header */
+    /* Make the height of the header smaller here */
+    .div-header {
+        height: 250px;
+    }
+    .div-navsection {
+        height: 250px;
+    }
     .div-header .img-small {
         display: none;
     }
