@@ -470,12 +470,18 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
+    .div-text-p {
+        padding: 10px;
+    }
     .div-body-a {
         width: 100%;
         
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
+    }
+    .div-text-a {
+        padding: 10px;
     }
 }
 
@@ -529,12 +535,18 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
+    .div-text-p {
+        padding: 40px;
+    }
     .div-body-a {
         width: 100%;
         
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
+    }
+    .div-text-a {
+        padding: 40px;
     }
 }
 
