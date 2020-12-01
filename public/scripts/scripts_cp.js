@@ -5,7 +5,7 @@ $(document).ready(()=>{
         $('.div-wrapper-p').css('z-index', "1")
         $('.div-wrapper-a').css('z-index', "0")
 
-        $('.div-underline-move').animate({"justify-self": "start"}, 500)
+        $('.div-underline-move').animate({"justify-self": "140px"}, 500)
         // $('.div-underline-move').css("margin-left", "0px")
     })
 
@@ -13,7 +13,7 @@ $(document).ready(()=>{
         $('.div-wrapper-p').css('z-index', "0")
         $('.div-wrapper-a').css('z-index', "1")
 
-        $('.div-underline-move').animate({"justify-self": "end"}, 500)
+        $('.div-underline-move').animate({"margin-left": "140px"}, 500)
         // $('.div-underline-move').css("margin-right", "0px")
     })
 
