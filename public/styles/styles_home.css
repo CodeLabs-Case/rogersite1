@@ -505,11 +505,30 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    /* Header */
     .div-header .img-small {
         display: none;
     }
     .div-header .img-large {
         display: auto;
+    }
+
+
+
+    /* Body */
+    .div-body-p {
+        width: 100%;
+        
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .div-body-a {
+        width: 100%;
+        
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -542,7 +561,25 @@ body {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    /* Header */
 
+
+
+    /* Body */
+    .div-body-p {
+        width: 100%;
+        
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+    .div-body-a {
+        width: 100%;
+        
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
 }
 
 
