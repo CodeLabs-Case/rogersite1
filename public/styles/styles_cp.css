@@ -16,6 +16,13 @@ body {
 
 
 /* Header */
+.div-underline-move {
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+
+    justify-self: start;
+}
 .div-wrapper {
     width: 100%;
 }
