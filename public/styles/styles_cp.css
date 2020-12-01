@@ -16,13 +16,6 @@ body {
 
 
 /* Header */
-.div-underline-move {
-    width: 100px;
-    height: 3px;
-    background-color: #fff;
-
-    justify-self: start;
-}
 .div-wrapper {
     width: 100%;
 }
@@ -320,6 +313,13 @@ body {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     /* Header */
+    .div-underline-move {
+        width: 100px;
+        height: 3px;
+        background-color: #fff;
+    
+        justify-self: start;
+    }
     /* Body */
     .div-outter-wrapper {
         display: grid;
