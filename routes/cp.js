@@ -8,8 +8,8 @@ router.route('/').get((req, res, err) => {
         console.log(err)
     }
 
-    var podcast = fs.readFileSync('/var/app/current/database/collection0.json')
-    var jsonPodcasts = JSON.parse(podcast)
+    var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
+    var jsonPodcasts = JSON.parse(podcasts)
 
 
     // var article = fs.readFileSync('/var/app/current/database/collection1.json')
@@ -19,7 +19,7 @@ router.route('/').get((req, res, err) => {
 
 
     res.render(path.join('/var/app/current/views/cp.ejs'), { 
-        podcasts: jsonPodcasts
+        data: jsonPodcasts
     })
 })
 
