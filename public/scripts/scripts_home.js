@@ -1,6 +1,7 @@
 $(document).ready(()=>{
     var windowHeight = $(window).height()
-    $('.div-body').css('height', windowHeight)
+    $('.div-body-p').css('height', windowHeight)
+    $('.div-body-a').css('height', windowHeight)
 
     // Check on rotation
     $(window).on( "orientationchange", (event)=>{
@@ -12,7 +13,7 @@ $(document).ready(()=>{
             location.reload();
         }
     })
-    
+
     $('.p-podcasts').on("click", ()=>{
         $('.div-wrapper-p').css('z-index', "1")
         $('.div-wrapper-a').css('z-index', "0")
