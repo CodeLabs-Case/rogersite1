@@ -14,7 +14,7 @@ $(document).ready(()=>{
         $('.div-wrapper-a').css('z-index', "1")
         
         $('.div-underline-move').animate({"margin-left": "140px"}, 500)
-        $('.div-underline-move').animate({"margin-right": "0px"}, 500)
+        $('.div-underline-move').animate({"margin-right": "0px"}, 0)
     })
 
 
