@@ -27,16 +27,16 @@ router.route('/').get((req, res, err) => {
         var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
         var jsonPodcasts = JSON.parse(podcasts)
 
-        // var article = fs.readFileSync('/var/app/current/database/collection1.json')
-        // var jsonArticles = JSON.parse(article)
+        var articles = fs.readFileSync('/var/app/current/database/collection1.json')
+        var jsonArticles = JSON.parse(articles)
 
         // Send the page
-        res.render(path.join('/var/app/current/views/cp.ejs'), {data: jsonPodcasts})
+        res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
 
     } else {
 
         res.render(path.join('/var/app/current/views/admin.ejs'))
-        
+
     }    
 })
 

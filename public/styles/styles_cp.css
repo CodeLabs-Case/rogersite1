@@ -13,6 +13,8 @@ body {
 
 
 
+
+
 /* Header */
 .div-wrapper {
     width: 100%;
@@ -35,6 +37,10 @@ body {
 
     z-index: 0;
 }
+
+
+
+
 
 
 
@@ -191,6 +197,33 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.div-outter-wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.div-wrapper-p {
+    grid-row: 1;
+    grid-column: 1;
+}
+.div-wrapper-a {
+    grid-row: 1;
+    grid-column: 2;
+}
 
 
 
