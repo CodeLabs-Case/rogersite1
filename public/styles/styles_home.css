@@ -59,6 +59,7 @@ body {
     margin-left: 40px;
     margin-right: 40px;
 
+    /* Prevent text selection highlighting */
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
@@ -71,6 +72,9 @@ body {
     font-size: 20px;
     font-family: 'Dosis';
     text-decoration: none;
+}
+.ul-navbar li p:hover {
+    cursor: pointer;
 }
 .div-underline {
     width: 240px;
