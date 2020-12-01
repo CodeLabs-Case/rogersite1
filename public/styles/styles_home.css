@@ -569,6 +569,12 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     /* Header */
+    .div-header {
+        height: 500px;
+    }
+    .div-navsection {
+        height: 500px;
+    }
 
 
 
