@@ -13,6 +13,38 @@ body {
 
 
 
+.div-underline {
+    width: 240px;
+    height: 3px;
+
+    grid-row: 2;
+    grid-column: 1;
+
+    justify-self: center;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+.div-separator {
+    height: 6px;
+
+    display: block;
+
+    grid-row: 3;
+    grid-column: 1;
+
+    background-color: #131313;
+}
+
+
+
+
+
+
+
+
+
 
 /* Header */
 .div-wrapper {
