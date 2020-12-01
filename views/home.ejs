@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <div class='div-root'>
+
+
+
+            <div class="div-header">
+                <img class='img-large' src="/static/images/header_background_medium.jpg" alt="Image Unavailable">
+                <img class='img-small' src="/static/images/header_background_small_short.jpg" alt="Image Unavailable">
+
+                <div class='div-navsection'>
+                    <ul class='ul-navbar'>
+                        <li>
+                            <p class='p-podcasts'>Podcasts</p>
+                        </li>
+                        <li>
+                            <p class='p-articles'>Articles</a>
+                        </li>
+                    </ul>
+                    <div class='div-underline'>
+                        <div class='div-underline-move'></div>
+                    </div>
+                    <div class='div-separator'></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class='div-outter-wrapper'>
+
+
+
+                
+
+
+                <div class="div-wrapper-p">
+                    <div class="div-body-p">
+                        <div class='div-body-left-p'></div>
+                        <div class='div-body-center-p'>
+                            <% p.podcasts.forEach(function(podcast){ %>
+                            <div class='div-box-p'>
+                                <div class='div-box-inner-wrapper-p'>
+                                    <div class='div-img-p'>
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class='div-text-p'>
+                                        <p>
+                                            <%= podcast.text %>
+                                        </p>
+                                    </div>
+                                    <div class='div-link-p'>
+                                        <p>
+                                            <a class='a-podcastlink-p' href="<%= podcast.link %>">PODCAST</a>
+                                        </p>
+                                    </div>
+                                    <div class='div-date-p'>
+                                        <p>
+                                            <%= podcast.date %>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <% }) %>
+                        </div>
+                        <div class='div-body-right-p'></div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                <div class="div-wrapper-a">
+                    <div class="div-body-a">
+                        <div class='div-body-left-a'></div>
+                        <div class='div-body-center-a'>
+                            <% a.articles.forEach(function(article){ %>
+                            <div class='div-box'>
+                                <div class='div-box-inner-wrapper-a'>
+                                    <div class='div-img-a'>
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class='div-title-a'>
+                                        <p>
+                                            <%= article.title %>
+                                        </p>
+                                    </div>
+                                    <div class='div-text-a'>
+                                        <p>
+                                            <%= article.body %>
+                                        </p>
+                                    </div>
+                                    <div class='div-date-a'>
+                                        <p>
+                                            <%= article.date %>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <% }) %>
+                        </div>
+                        <div class='div-body-right-a'></div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <div class='div-footer'>
+        
+            </div>
+
+
+
+
+
+        </div>
+    </body>
+</html>

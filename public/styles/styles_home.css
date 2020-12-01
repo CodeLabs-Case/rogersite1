@@ -1,17 +1,10 @@
 /* Variables */
-
 /* Any sized devices */
+
 body {
+    /* background-color: #303030; */
     margin: 0px;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -111,10 +104,68 @@ body {
 
 
 
-
-
-/* Podcasts */
 /* Body */
+/* Podcasts */
+.div-body-p {
+    width: 100%;
+    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+.div-body-left-p {
+    /* background-color: var(--bg-lite); */
+    background-color: #1c1c1c;
+    
+    grid-column: 1;
+    grid-row: 1;
+}
+.div-body-center-p {
+    /* background-color: var(--bg-dark); */
+    background-color: #303030;
+
+    padding-bottom: 5px;
+  
+    grid-column: 2;
+    grid-row: 1;
+  
+    align-content: center;
+    justify-content: center;
+  
+    overflow-y: scroll;
+}
+  /* Hide scrollbar for Chrome, Safari and Opera */
+.div-body-center-p::-webkit-scrollbar {
+    display: none;
+}
+  /* Hide scrollbar for IE, Edge and Firefox */
+.div-body-center-p {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.div-body-right-p {
+    /* background-color: var(--bg-lite); */
+    background-color: #1c1c1c;
+  
+    grid-column: 3;
+    grid-row: 1;
+}
+.div-box-p {
+    height: auto;
+    margin: auto;
+
+    background-color: #1c1c1c;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+
+    /* This lovely property here makes the element's width span the entire container */
+    display: block;
+}
+
+
+
 .div-box-inner-wrapper-p {
     display: grid;
     grid-template-rows: auto 20px 20px;
@@ -182,21 +233,68 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Articles */
-/* Body */
+.div-body-a {
+    width: 100%;
+    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+.div-body-left-a {
+    /* background-color: var(--bg-lite); */
+    background-color: #1c1c1c;
+    
+    grid-column: 1;
+    grid-row: 1;
+}
+.div-body-center-a {
+    /* background-color: var(--bg-dark); */
+    background-color: #303030;
+
+    padding-bottom: 5px;
+  
+    grid-column: 2;
+    grid-row: 1;
+  
+    align-content: center;
+    justify-content: center;
+  
+    overflow-y: scroll;
+}
+  /* Hide scrollbar for Chrome, Safari and Opera */
+.div-body-center-a::-webkit-scrollbar {
+    display: none;
+}
+  /* Hide scrollbar for IE, Edge and Firefox */
+.div-body-center-a {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.div-body-right-a {
+    /* background-color: var(--bg-lite); */
+    background-color: #1c1c1c;
+  
+    grid-column: 3;
+    grid-row: 1;
+}
+.div-box-a {
+    height: auto;
+    margin: auto;
+
+    background-color: #1c1c1c;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+
+    /* This lovely property here makes the element's width span the entire container */
+    display: block;
+}
+
+
+
+
 .div-box-inner-wrapper-a {
     display: grid;
     grid-template-rows: 40px auto 20px;
@@ -267,29 +365,56 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 .div-outter-wrapper {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 
     background-color: #1c1c1c;
 }
 .div-wrapper-p {
     grid-row: 1;
     grid-column: 1;
+
+    z-index: 1;
 }
 .div-wrapper-a {
     grid-row: 1;
-    grid-column: 2;
+    grid-column: 1;
+
+    z-index: 0;
 }
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.div-footer {
+    height: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -310,60 +435,196 @@ body {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     /* Header */
-    .div-underline-move {
-        width: 100px;
-        height: 3px;
-        background-color: #fff;
-    
-        justify-self: start;
+    .div-header {
+        height: 250px;
     }
+    .div-header .img-small {
+        display: auto;
+    }
+    .div-header .img-large {
+        display: none;
+    }
+    .div-navsection {
+        height: 250px;
+    }
+
+
+
     /* Body */
-    .div-outter-wrapper {
+    .div-body {
+        width: 100%;
+        height: 850px;
+        
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
+    }
+    .div-body-left {
+        display: none;
+    }
+    .div-body-center {
+        /* background-color: var(--bg-dark); */
+        background-color: #303030;
     
-        background-color: #1c1c1c;
-    }
-    .div-wrapper-p {
-        grid-row: 1;
+        padding-bottom: 5px;
+      
         grid-column: 1;
-
-        z-index: 1;
-    }
-    .div-wrapper-a {
         grid-row: 1;
-        grid-column: 1;
-
-        z-index: 0;
+      
+        align-content: center;
+        justify-content: center;
+      
+        overflow-y: scroll;
     }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .div-body-center::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .div-body-center {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .div-body-right {
+        display: none;
+    }
+    
+
+
+
+
     /* Footer */
+    .div-footer {
+        height: 30px;
+        display: block;
+
+        background-color: #131313;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    /* Header */
-    /* Body */
-    /* Footer */
+    .div-header .img-small {
+        display: none;
+    }
+    .div-header .img-large {
+        display: auto;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    /* Header */
-    /* Body */
-    /* Footer */
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    /* Header */
-    /* Body */
-    /* Footer */
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    /* Header */
-    /* Body */
-    /* Footer */
+
 }
