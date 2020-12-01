@@ -2,7 +2,6 @@
 
 /* Any sized devices */
 body {
-    /* background-color: #303030; */
     margin: 0px;
 }
 
@@ -215,6 +214,8 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+
+    background-color: #1c1c1c;
 }
 .div-wrapper-p {
     grid-row: 1;
