@@ -445,12 +445,6 @@ body {
     .div-header {
         height: 250px;
     }
-    .div-header .img-small {
-        display: auto;
-    }
-    .div-header .img-large {
-        display: none;
-    }
     .div-navsection {
         height: 250px;
     }
@@ -512,12 +506,6 @@ body {
     }
     .div-navsection {
         height: 250px;
-    }
-    .div-header .img-small {
-        display: none;
-    }
-    .div-header .img-large {
-        display: auto;
     }
 
 
