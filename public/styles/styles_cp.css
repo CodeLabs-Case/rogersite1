@@ -1,0 +1,234 @@
+/* Variables */
+
+/* Any sized devices */
+body {
+    /* background-color: #303030; */
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+/* Header */
+.div-wrapper {
+    width: 100%;
+}
+.div-header {
+    width: 100%;
+    height: 500px;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+
+
+
+
+
+
+
+/* Podcasts */
+/* Body */
+.div-box-inner-wrapper-p {
+    display: grid;
+    grid-template-rows: auto 20px 20px;
+    grid-template-columns: 1fr 10fr 1fr;
+
+    background-color: #1c1c1c;
+}
+.div-img-p {
+    grid-row: 1;
+    grid-column: 1;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+.div-text-p {
+    font-size: 14px;
+    grid-row: 1;
+    grid-column: 2;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+
+    padding: 40px;
+}
+.div-link-p {
+    font-size: 14px;
+    grid-row: 2;
+    grid-column: 2;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+.div-date-p {
+    font-size: 14px;
+    grid-row: 3;
+    grid-column: 2;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+/* For some reason padding is being added automatically, remove it */
+[class^='div-'] p {
+    color: #aaaaaa;
+    text-align: center;
+    align-self: center;
+    margin: 0px;
+
+    grid-row: 1;
+    grid-column: 1;
+}
+[class^='div-'] p a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Articles */
+/* Body */
+.div-box-inner-wrapper-a {
+    display: grid;
+    grid-template-rows: 40px auto 20px;
+    grid-template-columns: 1fr 10fr 1fr;
+
+    background-color: #1c1c1c;
+}
+.div-img-a {
+    grid-row: 1;
+    grid-column: 1;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+.div-title-a {
+    font-size: 14px;
+
+    grid-row: 1;
+    grid-column: 2;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+.div-text-a {
+    font-size: 14px;
+
+    grid-row: 2;
+    grid-column: 2;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+
+    padding: 40px;
+}
+.div-date-a {
+    font-size: 14px;
+
+    grid-row: 3;
+    grid-column: 2;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+/* For some reason padding is being added automatically, remove it */
+[class^='div-'] p {
+    color: #aaaaaa;
+    text-align: center;
+    align-self: center;
+    margin: 0px;
+
+    grid-row: 1;
+    grid-column: 1;
+}
+[class^='div-'] p a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Header */
+    /* Body */
+    /* Footer */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* Header */
+    /* Body */
+    /* Footer */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Header */
+    /* Body */
+    /* Footer */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Header */
+    /* Body */
+    /* Footer */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Header */
+    /* Body */
+    /* Footer */
+}

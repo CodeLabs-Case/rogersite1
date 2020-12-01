@@ -3,9 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- JQuery library via a Content Delivery Network (CDN) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Site CSS -->
+    
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="/static/styles/styles_cp.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+
+    <!-- Site JQuery -->
+
+    <!-- Page  JQuery -->
+    <script type="text/javascript" src="/static/scripts/scripts_cp.js" defer></script>
+
+    <title>Control Panel</title>
 </head>
     <body>
-        CP
+        <div class='div-root'>
+
+
+
+
+
+                <div class="div-header">
+                    <img class='img-large' src="/static/images/header_background_medium.jpg" alt="Image Unavailable">
+                    <img class='img-small' src="/static/images/header_background_small_short.jpg" alt="Image Unavailable">
+
+                    <div class='div-navsection'>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class='div-outter-wrapper'>
+
+
+
+
+
+
+
+
+
+
+                
+
+
+                <div class="div-wrapper-p">
+
+                    <div class="div-body-p">
+                        <div class='div-body-center-p'>
+                            <% data.podcasts.forEach(function(podcast){ %>
+                            <div class='div-box-p'>
+                                <div class='div-box-inner-wrapper-p'>
+                                    <div class='div-img-p'>
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class='div-text-p'>
+                                        <p>
+                                            <%= podcast.text %>
+                                        </p>
+                                    </div>
+                                    <div class='div-link-p'>
+                                        <p>
+                                            <a class='a-podcastlink-p' href="<%= podcast.link %>">PODCAST</a>
+                                        </p>
+                                    </div>
+                                    <div class='div-date-p'>
+                                        <p>
+                                            <%= podcast.date %>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <% }) %>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="div-wrapper-a">
+
+                    <div class="div-body-a">
+                        <div class='div-body-center-a'>
+                            <% data.articles.forEach(function(article){ %>
+                            <div class='div-box'>
+                                <div class='div-box-inner-wrapper-a'>
+                                    <div class='div-img-a'>
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class='div-title-a'>
+                                        <p>
+                                            <%= article.title %>
+                                        </p>
+                                    </div>
+                                    <div class='div-text-a'>
+                                        <p>
+                                            <%= article.body %>
+                                        </p>
+                                    </div>
+                                    <div class='div-date-a'>
+                                        <p>
+                                            <%= article.date %>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <% }) %>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
     </body>
 </html>
