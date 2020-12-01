@@ -11,27 +11,6 @@ router.route('/').get((req, res, err) => {
     }
     res.render(path.join('/var/app/current/views/admin.ejs'))
 })
-// router.route('/signin').get((req, res, err) => {
-//     // Pull the data from the forms
-//     // Try two ways to get the data from the forms for testing purposes
-//     // const { email, password } = req.body
-
-//     var email = req.body.email
-//     var password = req.body.password
-
-//     // Read in the database file
-//     var content = fs.readFileSync('/var/app/current/database/signin.json')
-//     var jsonContent = JSON.parse(content)
-
-
-//     // Compare the data
-//     if(jsonContent.email == email && jsonContent.password == password){
-//         // Send the page
-//         res.render(path.join('/var/app/current/views/cp.ejs'))
-//     } else {
-//         res.render(path.join('/var/app/current/views/admin.ejs'))
-//     }
-// })
 
 
 
