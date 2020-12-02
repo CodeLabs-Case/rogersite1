@@ -75,10 +75,10 @@ router.route('/addPodcast').get((req, res) => {
 
     // Get the data for the page
     var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
-    var jsonPodcasts = JSON.parse(podcasts)
+    jsonPodcasts = JSON.parse(podcasts)
 
     var articles = fs.readFileSync('/var/app/current/database/collection1.json')
-    var jsonArticles = JSON.parse(articles)
+    jsonArticles = JSON.parse(articles)
 
     // Send the page
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
@@ -115,12 +115,14 @@ router.route('/addArticles').get((req, res) => {
     var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
     var jsonPodcasts = JSON.parse(podcasts)
 
-    var articles = fs.readFileSync('/var/app/current/database/collection1.json')
-    var jsonArticles = JSON.parse(articles)
+    articles = fs.readFileSync('/var/app/current/database/collection1.json')
+    jsonArticles = JSON.parse(articles)
 
     // Send the page
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
 })
+
+
 
 // DELETE
 router.route('/deletePodcast/:id').get((req, res)=>{
