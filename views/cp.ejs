@@ -141,6 +141,7 @@
 
                     <div class="div-body-a">
                         <div class='div-body-center-a'>
+                            <% var j = 0 %>
                             <% a.articles.forEach(function(article){ %>
                             <div class='div-box'>
                                 <div class='div-box-inner-wrapper-a'>
@@ -162,8 +163,14 @@
                                             <%= article.date %>
                                         </p>
                                     </div>
+                                    <div class='div-a-form'>
+                                        <form action="/controlpanel/deleteArticle/<%=i%>">
+                                            <input type="submit" value='Delete'>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
+                            <% j = j + 1 %>
                             <% }) %>
                         </div>
                     </div>
