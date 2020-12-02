@@ -52,10 +52,15 @@ router.route('/deletePodcast/:id').get((req, res)=>{
     var jsonString = JSON.stringify(jsonContent, null, 2)
     fs.writeFileSync('/var/app/current/database/collection0.json', jsonString)
 
-    var content = fs.readFileSync('/var/app/current/database/collection0.json')
-    var jsonContent = JSON.parse(content)
+    // Get the data for the page
+    var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
+    var jsonPodcasts = JSON.parse(podcasts)
 
-    res.render('./cp.ejs', { output: jsonContent })
+    var articles = fs.readFileSync('/var/app/current/database/collection1.json')
+    var jsonArticles = JSON.parse(articles)
+
+    // Send the page
+    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
 })
 
 
