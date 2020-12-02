@@ -63,8 +63,8 @@ router.route('/addPodcast').get((req, res) => {
     jsonPodcasts.podcasts.unshift(temp)
 
 
-    var jsonStringPodcast = JSON.stringify(jsonPodcast, null, 2)
-    fs.writeFileSync('/var/app/current/database/collection0.json', jsonStringPodcast)
+    var jsonStringPodcasts = JSON.stringify(jsonPodcasts, null, 2)
+    fs.writeFileSync('/var/app/current/database/collection0.json', jsonStringPodcasts)
 
 
 
@@ -101,7 +101,7 @@ router.route('/addArticles').get((req, res) => {
     jsonArticles.articles.unshift(temp)
 
 
-    var jsonStringArticles = JSON.stringify(jsonPodcast, null, 2)
+    var jsonStringArticles = JSON.stringify(jsonArticles, null, 2)
     fs.writeFileSync('/var/app/current/database/collection1.json', jsonStringArticles)
 
 
