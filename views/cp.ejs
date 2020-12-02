@@ -81,7 +81,7 @@
                         <div class='div-body-center-p'>
                             <% var i = 0 %>
                             <% p.podcasts.forEach(function(podcast){ %>
-                            <div class='p-<%=i%>'>
+                            <div class='<%=i%>'>
                                 <div class='div-box-p'>
                                     <div class='div-box-inner-wrapper-p'>
                                         <div class='div-img-p'>
@@ -101,6 +101,11 @@
                                             <p>
                                                 <%= podcast.date %>
                                             </p>
+                                        </div>
+                                        <div class='div-p-form'>
+                                            <form action="/deletePodcast/<%i%>">
+                                                <input type="submit" value='Delete'>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>

@@ -55,7 +55,7 @@ router.route('/deletePodcast/:id').get((req, res)=>{
     var content = fs.readFileSync('./collection0.json')
     var jsonContent = JSON.parse(content)
 
-    res.render('./home.ejs', { output: jsonContent })
+    res.render('./cp.ejs', { output: jsonContent })
 })
 
 
