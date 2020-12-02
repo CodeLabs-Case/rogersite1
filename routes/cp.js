@@ -44,6 +44,84 @@ router.route('/').get((req, res, err) => {
 
 
 
+// ADD
+router.route('/addPodcast').get((req, res) => {
+
+    var text = req.body.text
+    var link = req.body.link
+
+    // Get the data
+    var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
+    var jsonPodcasts = JSON.parse(podcasts)
+
+    var temp = {
+        "text": text,
+        "link": link,
+        "date": "null"
+    }
+
+    jsonPodcasts.podcasts.unshift(temp)
+
+
+    var jsonStringPodcast = JSON.stringify(jsonPodcast, null, 2)
+    fs.writeFileSync('/var/app/current/database/collection0.json', jsonStringPodcast)
+
+
+
+
+
+
+
+
+    // Get the data for the page
+    var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
+    var jsonPodcasts = JSON.parse(podcasts)
+
+    var articles = fs.readFileSync('/var/app/current/database/collection1.json')
+    var jsonArticles = JSON.parse(articles)
+
+    // Send the page
+    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+
+})
+router.route('/addArticles').get((req, res) => {
+    var title = req.body.title
+    var body = req.body.body
+
+    // Get the data
+    var articles = fs.readFileSync('/var/app/current/database/collection1.json')
+    var jsonArticles = JSON.parse(articles)
+
+    var temp = {
+        "title": title,
+        "body": body,
+        "date": "null"
+    }
+
+    jsonArticles.articles.unshift(temp)
+
+
+    var jsonStringArticles = JSON.stringify(jsonPodcast, null, 2)
+    fs.writeFileSync('/var/app/current/database/collection1.json', jsonStringArticles)
+
+
+
+
+
+
+
+
+    // Get the data for the page
+    var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
+    var jsonPodcasts = JSON.parse(podcasts)
+
+    var articles = fs.readFileSync('/var/app/current/database/collection1.json')
+    var jsonArticles = JSON.parse(articles)
+
+    // Send the page
+    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+})
+
 // DELETE
 router.route('/deletePodcast/:id').get((req, res)=>{
     var param = req.query.id
