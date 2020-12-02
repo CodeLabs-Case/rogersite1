@@ -117,7 +117,7 @@ body {
 /* Body */
 .div-box-inner-wrapper-p {
     display: grid;
-    grid-template-rows: auto 20px 20px;
+    grid-template-rows: auto 20px 20px 20px;
     grid-template-columns: 1fr 10fr 1fr;
 
     background-color: #1c1c1c;
@@ -159,6 +159,11 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
 }
+.div-form-p {
+    font-size: 14px;
+    grid-row: 4;
+    grid-column: 2;
+}
 /* For some reason padding is being added automatically, remove it */
 [class^='div-'] p {
     color: #aaaaaa;
@@ -199,7 +204,7 @@ body {
 /* Body */
 .div-box-inner-wrapper-a {
     display: grid;
-    grid-template-rows: 40px auto 20px;
+    grid-template-rows: 40px auto 20px 2px;
     grid-template-columns: 1fr 10fr 1fr;
 
     background-color: #1c1c1c;
@@ -243,6 +248,11 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+}
+.div-form-a {
+    font-size: 14px;
+    grid-row: 4;
+    grid-column: 2;
 }
 /* For some reason padding is being added automatically, remove it */
 [class^='div-'] p {
