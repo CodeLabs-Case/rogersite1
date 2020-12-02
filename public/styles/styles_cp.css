@@ -163,6 +163,9 @@ body {
     font-size: 14px;
     grid-row: 4;
     grid-column: 2;
+
+    justify-self: center;
+    align-self: center;
 }
 /* For some reason padding is being added automatically, remove it */
 [class^='div-'] p {
@@ -253,6 +256,9 @@ body {
     font-size: 14px;
     grid-row: 4;
     grid-column: 2;
+
+    justify-self: center;
+    align-self: center;
 }
 /* For some reason padding is being added automatically, remove it */
 [class^='div-'] p {
