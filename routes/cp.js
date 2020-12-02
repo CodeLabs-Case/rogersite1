@@ -75,7 +75,7 @@ router.route('/deleteArticle/:id').get((req, res)=>{
     var content = fs.readFileSync('/var/app/current/database/collection1.json')
     var jsonContent = JSON.parse(content)
 
-    jsonContent.podcasts.splice(paramInt, 1)
+    jsonContent.articles.splice(paramInt, 1)
 
     // The null, 2 in the parameter list of stringify makes the JSON more readable by adding indents and 2 spaces
     var jsonString = JSON.stringify(jsonContent, null, 2)
