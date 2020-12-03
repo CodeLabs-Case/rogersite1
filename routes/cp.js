@@ -54,6 +54,7 @@ router.route('/addPodcast').get((req, res) => {
     var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
     var jsonPodcasts = JSON.parse(podcasts)
 
+    // Get the date for the podcast
     var obj = new Date()
     var year = (obj.getFullYear()).toString()
     var month = (obj.getMonth() + 1).toString()
@@ -98,10 +99,17 @@ router.route('/addArticles').get((req, res) => {
     var articles = fs.readFileSync('/var/app/current/database/collection1.json')
     var jsonArticles = JSON.parse(articles)
 
+    // Get the date for the article
+    var obj = new Date()
+    var year = (obj.getFullYear()).toString()
+    var month = (obj.getMonth() + 1).toString()
+    var day = (obj.getDate()).toString()
+    var date = month + " - " + day + " - " + year
+
     var temp = {
         "title": title,
         "body": body,
-        "date": "null"
+        "date": date
     }
 
     jsonArticles.articles.unshift(temp)
