@@ -118,7 +118,7 @@ body {
 .div-form-add-p {
     display: block;
 }
-.div-form-add-p div{
+.div-form-add-p div a{
     justify-self: center;
     align-self: center;
 
@@ -217,7 +217,7 @@ body {
 .div-form-add-a {
     display: block;
 }
-.div-form-add-a div{
+.div-form-add-a div a{
     justify-self: center;
     align-self: center;
 
