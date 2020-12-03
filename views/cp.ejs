@@ -80,7 +80,9 @@
                     <div class="div-body-p">
                         <div class='div-body-center-p'>
                             <div class='div-form-add-p'>
-                                <a href="/controlpanel/podcast">ADD</a>
+                                <form action="/controlpanel/podcast">
+                                    <input type="submit" value='Add'>
+                                </form>
                             </div>
                             <% var i = 0 %>
                             <% p.podcasts.forEach(function(podcast){ %>
@@ -144,7 +146,9 @@
                     <div class="div-body-a">
                         <div class='div-body-center-a'>
                             <div class='div-form-add-a'>
-                                <a href="/controlpanel/article">ADD</a>
+                                <form action="/controlpanel/article">
+                                    <input type="submit" value='Add'>
+                                </form>
                             </div>
                             <% var j = 0 %>
                             <% a.articles.forEach(function(article){ %>

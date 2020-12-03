@@ -120,7 +120,7 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.div-form-add-p a{
+.div-form-add-p form{
     grid-row: 1;
     grid-column: 2;
 
@@ -222,7 +222,7 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.div-form-add-a a{
+.div-form-add-a form{
     grid-row: 1;
     grid-column: 2;
 
