@@ -116,13 +116,16 @@ body {
 /* Podcasts */
 /* Body */
 .div-form-add-p {
-    display: block;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.div-form-add-p div a{
+.div-form-add-p a{
+    grid-row: 1;
+    grid-column: 2;
+
     justify-self: center;
     align-self: center;
-
-    text-decoration: none;
 }
 .div-box-inner-wrapper-p {
     display: grid;
@@ -215,13 +218,16 @@ body {
 /* Articles */
 /* Body */
 .div-form-add-a {
-    display: block;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.div-form-add-a div a{
+.div-form-add-a a{
+    grid-row: 1;
+    grid-column: 2;
+
     justify-self: center;
     align-self: center;
-
-    text-decoration: none;
 }
 .div-box-inner-wrapper-a {
     display: grid;
