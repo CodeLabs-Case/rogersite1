@@ -115,6 +115,15 @@ body {
 
 /* Podcasts */
 /* Body */
+.div-form-add-p {
+    display: block;
+}
+.div-form-add-p a{
+    justify-self: center;
+    align-self: center;
+
+    text-decoration: none;
+}
 .div-box-inner-wrapper-p {
     display: grid;
     grid-template-rows: auto 20px 20px 20px;
@@ -205,6 +214,15 @@ body {
 
 /* Articles */
 /* Body */
+.div-form-add-a {
+    display: block;
+}
+.div-form-add-a a{
+    justify-self: center;
+    align-self: center;
+
+    text-decoration: none;
+}
 .div-box-inner-wrapper-a {
     display: grid;
     grid-template-rows: 40px auto 20px 20px;
