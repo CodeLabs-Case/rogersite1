@@ -54,10 +54,16 @@ router.route('/addPodcast').get((req, res) => {
     var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
     var jsonPodcasts = JSON.parse(podcasts)
 
+    var obj = new Date()
+    var year = (obj.getFullYear()).toString()
+    var month = (obj.getMonth() + 1).toString()
+    var day = (obj.getDate()).toString()
+    var date = month + " - " + day + " - " + year
+
     var temp = {
         "text": text,
         "link": link,
-        "date": "null"
+        "date": date
     }
 
     jsonPodcasts.podcasts.unshift(temp)
