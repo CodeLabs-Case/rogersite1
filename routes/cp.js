@@ -41,6 +41,20 @@ router.route('/').get((req, res, err) => {
 
     }    
 })
+router.route('/podcast').get((req, res, err) => {
+    if(err){ 
+        console.log(err)
+    }
+
+    res.render(path.join('/var/app/current/views/addpodcast.ejs'))
+})
+router.route('/article').get((req, res, err) => {
+    if(err){ 
+        console.log(err)
+    }
+
+    res.render(path.join('/var/app/current/views/addarticle.ejs'))
+})
 
 
 
