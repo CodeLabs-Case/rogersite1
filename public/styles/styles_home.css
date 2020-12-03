@@ -97,7 +97,7 @@ body {
     grid-row: 3;
     grid-column: 1;
 
-    background-color: #131313;
+    background-color: #000000;
 }
 .p-podcasts:hover {
     cursor: default;
