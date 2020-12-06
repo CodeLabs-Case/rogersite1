@@ -91,26 +91,26 @@ app.listen(port, (err)=>{
 
 
 app.get('/admin', checkNotAuthenticated, (req, res) => {
-    res.render(path.join('/var/app/current/views/admin.ejs'))
-  })
+    res.render('/admin')
+})
   
-  app.post('/admin', checkNotAuthenticated, passport.authenticate('local', {
+app.post('/admin', checkNotAuthenticated, passport.authenticate('local', {
     successRedirect: '/controlpanel',
     failureRedirect: '/admin',
     failureFlash: true
-  }))
+}))
 
-  function checkAuthenticated(req, res, next) {
+function checkAuthenticated(req, res, next) {
     if (req.isAuthenticated()) {
       return next()
     }
   
     res.redirect('/admin')
-  }
+}
   
-  function checkNotAuthenticated(req, res, next) {
+function checkNotAuthenticated(req, res, next) {
     if (req.isAuthenticated()) {
       return res.redirect('/')
     }
     next()
-  }
+}
