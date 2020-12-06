@@ -1,7 +1,19 @@
 const router = require('express').Router()
 const { json } = require('body-parser')
+const passport = require('passport')
 const path = require('path')
 const fs = require('fs')
+
+
+
+const initializePassport = require('./passport-config')
+initializePassport(
+    passport,
+    email => "roger@gmail.com",
+    id => 1
+    // "roger@gmail.com",
+    // 1
+)
 
 
 
