@@ -91,7 +91,7 @@ app.listen(port, (err)=>{
 
 
 app.get('/admin', checkNotAuthenticated, (req, res) => {
-    res.render('/admin')
+    res.render(path.join('/var/app/current/views/admin.ejs'))
 })
   
 app.post('/admin', checkNotAuthenticated, passport.authenticate('local', {
