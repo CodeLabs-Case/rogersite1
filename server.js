@@ -77,14 +77,40 @@ app.listen(port, (err)=>{
 
 
 
-app.get('/admin', (req, res, err) => {
-    if(err) {
-        console.log(err)
-    }
-    res.render(path.join('/var/app/current/views/admin.ejs'))
-})
+// app.get('/admin', (req, res, err) => {
+//     if(err) {
+//         console.log(err)
+//     }
+//     res.render(path.join('/var/app/current/views/admin.ejs'))
+// })
 // app.post('/admin', passport.authenticate('local'), {
 //     successRedirect: '/controlpanel',
 //     failureRedirect: '/admin',
 //     failureFlash: true
 // })
+
+
+app.get('/admin', checkNotAuthenticated, (req, res) => {
+    res.render(path.join('/var/app/current/views/admin.ejs'))
+  })
+  
+  app.post('/admin', checkNotAuthenticated, passport.authenticate('local', {
+    successRedirect: '/controlpanel',
+    failureRedirect: '/admin',
+    failureFlash: true
+  }))
+
+  function checkAuthenticated(req, res, next) {
+    if (req.isAuthenticated()) {
+      return next()
+    }
+  
+    res.redirect('/admin')
+  }
+  
+  function checkNotAuthenticated(req, res, next) {
+    if (req.isAuthenticated()) {
+      return res.redirect('/')
+    }
+    next()
+  }
