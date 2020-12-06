@@ -24,14 +24,14 @@ const app = express()
 //     id => users.find(user => user.id === id)
 // )
 
-const initializePassport = require('./passport-config')
-initializePassport(
-    passport,
-    email => "roger@gmail.com",
-    id => 1
-    // "roger@gmail.com",
-    // 1
-)
+// const initializePassport = require('./passport-config')
+// initializePassport(
+//     passport,
+//     email => "roger@gmail.com",
+//     id => 1
+//     // "roger@gmail.com",
+//     // 1
+// )
 
 app.set('viewengine', 'ejs')
 
