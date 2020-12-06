@@ -79,12 +79,12 @@ app.listen(port, (err)=>{
 
 
 
-// app.get('/admin', (req, res, err) => {
-//     if(err) {
-//         console.log(err)
-//     }
-//     res.render(path.join('/var/app/current/views/admin.ejs'))
-// })
+app.get('/admin', (req, res, err) => {
+    if(err) {
+        console.log(err)
+    }
+    res.render(path.join('/var/app/current/views/admin.ejs'))
+})
 // app.post('/admin', passport.authenticate('local'), {
 //     successRedirect: '/controlpanel',
 //     failureRedirect: '/admin',
