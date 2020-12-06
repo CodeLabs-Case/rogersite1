@@ -14,21 +14,21 @@ const session = require('express-session')
 const methodOverride = require('method-override')
 const app = express()
 
-// const users = [
-//     {
-//         "id": 1,
-//         "email": "roger@gmail.com",
-//         "password": "things"
-//     }
-// ]
+const users = [
+    {
+        "id": 1,
+        "email": "roger@gmail.com",
+        "password": "things"
+    }
+]
 
 // This is for setting up the login functionality
-// const initializePassport = require('./passport-config')
-// initializePassport(
-//     passport,
-//     email => users.find(user => user.email === email),
-//     id => users.find(user => user.id === id)
-// )
+const initializePassport = require('./passport-config')
+initializePassport(
+    passport,
+    email => users.find(user => user.email === email),
+    id => users.find(user => user.id === id)
+)
 
 // const initializePassport = require('./passport-config')
 // initializePassport(
