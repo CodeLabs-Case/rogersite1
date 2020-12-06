@@ -1,6 +1,6 @@
-if(process.env.NODE_ENV !== 'production'){
-    require('dotenv').config()
-}
+// if(process.env.NODE_ENV !== 'production'){
+//     require('dotenv').config()
+// }
 
 
 const express = require('express')
@@ -23,12 +23,12 @@ const users = [
 ]
 
 // This is for setting up the login functionality
-const initializePassport = require('./passport-config')
-initializePassport(
-    passport,
-    email => users.find(user => user.email === email),
-    id => users.find(user => user.id === id)
-)
+// const initializePassport = require('./passport-config')
+// initializePassport(
+//     passport,
+//     email => users.find(user => user.email === email),
+//     id => users.find(user => user.id === id)
+// )
 
 // const initializePassport = require('./passport-config')
 // initializePassport(
@@ -85,8 +85,8 @@ app.get('/admin', (req, res, err) => {
     }
     res.render(path.join('/var/app/current/views/admin.ejs'))
 })
-app.post('/admin', passport.authenticate('local'), {
-    successRedirect: '/controlpanel',
-    failureRedirect: '/admin',
-    failureFlash: true
-})
+// app.post('/admin', passport.authenticate('local'), {
+//     successRedirect: '/controlpanel',
+//     failureRedirect: '/admin',
+//     failureFlash: true
+// })
