@@ -1,23 +1,23 @@
-const router = require('express').Router()
-const { json } = require('body-parser')
-const passport = require('passport')
-const path = require('path')
-const fs = require('fs')
+// const router = require('express').Router()
+// const { json } = require('body-parser')
+// const passport = require('passport')
+// const path = require('path')
+// const fs = require('fs')
 
 
-const users = [
-    {
-        "id": 1,
-        "email": "roger@gmail.com",
-        "password": "things"
-    }
-]
-const initializePassport = require('./passport-config')
-initializePassport(
-    passport,
-    email => users.find(user => user.email === email),
-    id => users.find(user => user.id === id)
-)
+// const users = [
+//     {
+//         "id": 1,
+//         "email": "roger@gmail.com",
+//         "password": "things"
+//     }
+// ]
+// const initializePassport = require('./passport-config')
+// initializePassport(
+//     passport,
+//     email => users.find(user => user.email === email),
+//     id => users.find(user => user.id === id)
+// )
 
 // const initializePassport = require('./passport-config')
 // initializePassport(
@@ -30,17 +30,17 @@ initializePassport(
 
 
 
-router.get('/', (req, res, err) => {
-    if(err) {
-        console.log(err)
-    }
-    res.render(path.join('/var/app/current/views/admin.ejs'))
-})
-router.post('/', passport.authenticate('local'), {
-    successRedirect: '/controlpanel',
-    failureRedirect: '/admin',
-    failureFlash: true
-})
+// router.get('/', (req, res, err) => {
+//     if(err) {
+//         console.log(err)
+//     }
+//     res.render(path.join('/var/app/current/views/admin.ejs'))
+// })
+// router.post('/', passport.authenticate('local'), {
+//     successRedirect: '/controlpanel',
+//     failureRedirect: '/admin',
+//     failureFlash: true
+// })
 
 
 
@@ -59,4 +59,4 @@ router.post('/', passport.authenticate('local'), {
 
 
 
-module.exports = router
+// module.exports = router

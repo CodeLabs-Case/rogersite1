@@ -14,15 +14,21 @@ const session = require('express-session')
 const methodOverride = require('method-override')
 const app = express()
 
-const users = []
+const users = [
+    {
+        "id": 1,
+        "email": "roger@gmail.com",
+        "password": "things"
+    }
+]
 
 // This is for setting up the login functionality
-// const initializePassport = require('./passport-config')
-// initializePassport(
-//     passport,
-//     email => users.find(user => user.email === email),
-//     id => users.find(user => user.id === id)
-// )
+const initializePassport = require('./passport-config')
+initializePassport(
+    passport,
+    email => users.find(user => user.email === email),
+    id => users.find(user => user.id === id)
+)
 
 // const initializePassport = require('./passport-config')
 // initializePassport(
@@ -56,6 +62,34 @@ app.use('/static', express.static('public'));
 app.use(require('./routes'))
 
 const port = process.env.port || 3000
+
+
+
+
+
+
+
+
+
+
+app.get('/', (req, res, err) => {
+    if(err) {
+        console.log(err)
+    }
+    res.render(path.join('/var/app/current/views/admin.ejs'))
+})
+app.post('/', passport.authenticate('local'), {
+    successRedirect: '/controlpanel',
+    failureRedirect: '/admin',
+    failureFlash: true
+})
+
+
+
+
+
+
+
 
 
 
