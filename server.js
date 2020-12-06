@@ -13,7 +13,8 @@ const session = require('express-session')
 const methodOverride = require('method-override')
 const app = express()
 
-// Moved this to /admin
+
+
 // This is for setting up the login functionality
 // const initializePassport = require('./passport-config')
 // initializePassport(
@@ -21,6 +22,14 @@ const app = express()
 //     email => users.find(user => user.email === email),
 //     id => users.find(user => user.id === id)
 // )
+const initializePassport = require('../passport-config')
+initializePassport(
+    passport,
+    // email => users.find(user => user.email === email),
+    // id => users.find(user => user.id === id)
+    "roger@gmail.com",
+    1
+)
 
 app.set('viewengine', 'ejs')
 
