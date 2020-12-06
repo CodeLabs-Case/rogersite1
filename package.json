@@ -4,9 +4,17 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@okta/oidc-middleware": "^jnpm1.3",
+    "@okta/okta-sdk-nodejs": "^1.2.0",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "ejs": "^3.1.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {

@@ -3,43 +3,45 @@ const path = require('path')
 const fs = require('fs')
 
 
-
 // GET
-router.route('/').get((req, res, err) => {
+router('/', (req, res, err) => {
     if(err){
         console.log(err)
     }
 
-    // Pull the data from the forms
-    // Try two ways to get the data from the forms for testing purposes
-    // const { email, password } = req.body
+    // // Pull the data from the forms
+    // // Try two ways to get the data from the forms for testing purposes
+    // // const { email, password } = req.body
 
-    var email = req.body.email
-    var password = req.body.password
+    // var email = req.body.email
+    // var password = req.body.password
 
-    // Read in the database file
-    var content = fs.readFileSync('/var/app/current/database/signin.json')
-    var jsonContent = JSON.parse(content)
+    // // Read in the database file
+    // var content = fs.readFileSync('/var/app/current/database/signin.json')
+    // var jsonContent = JSON.parse(content)
 
 
-    // Compare the data
-    if(jsonContent.email == email && jsonContent.password == password){
+    // // Compare the data
+    // if(jsonContent.email == email && jsonContent.password == password){
 
-        // Get the data for the page
-        var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
-        var jsonPodcasts = JSON.parse(podcasts)
+    //     // Get the data for the page
+    //     var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
+    //     var jsonPodcasts = JSON.parse(podcasts)
 
-        var articles = fs.readFileSync('/var/app/current/database/collection1.json')
-        var jsonArticles = JSON.parse(articles)
+    //     var articles = fs.readFileSync('/var/app/current/database/collection1.json')
+    //     var jsonArticles = JSON.parse(articles)
 
-        // Send the page
-        res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+    //     // Send the page
+    //     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
 
-    } else {
+    // } else {
 
-        res.render(path.join('/var/app/current/views/admin.ejs'))
+    //     res.render(path.join('/var/app/current/views/admin.ejs'))
 
-    }    
+    // }
+
+
+    res.render(path.join('/var/app/current/views/cp.ejs'))
 })
 router.route('/podcast').get((req, res, err) => {
     if(err){ 
@@ -105,7 +107,7 @@ router.route('/addPodcast').get((req, res) => {
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
 
 })
-router.route('/addArticles').get((req, res) => {
+router.route('/addArticle').get((req, res) => {
     var title = req.body.title
     var body = req.body.body
 
@@ -199,6 +201,25 @@ router.route('/deleteArticle/:id').get((req, res)=>{
     // Send the page
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
 })
+router.delete('logout', (req, res)=>{
+    req.logOut()
+    res.redirect('/var/app/current/views/admin.ejs')
+})
+
+
+
+function checkAuthenticated(req, res, next){
+    if(req.isAuthenticated()) {
+        return next()
+    }
+    res.redirect('/var/app/current/views/admin.ejs')
+}
+function checkNotAuthenticated(req, res, next) {
+    if(req.isAuthenticated()) {
+        return res.redirect('/var/app/current/views/controlpanel.ejs')  
+    }
+    next() 
+}
 
 
 
