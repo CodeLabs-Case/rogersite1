@@ -10,8 +10,13 @@ const passport = require('passport')
 const flash = require('express-flash')
 const session = require('express-session')
 const methodOverride = require('method-override')
+
 const app = express()
 
+
+
+// You wouldn't usually store this here, but as it is just for one admin user and this ...
+// ... project is in a rush, it will have to do.
 const users = [
     {
         "id": 1,
@@ -28,19 +33,6 @@ initializePassport(
     id => users.find(user => user.id === id)
 )
 
-// const initializePassport = require('./passport-config')
-// initializePassport(
-//     passport,
-//     email => "roger@gmail.com",
-//     id => 1
-//     // "roger@gmail.com",
-//     // 1
-// )
-
-app.set('viewengine', 'ejs')
-
-app.use(express.urlencoded({ extended: false }))
-
 app.use(flash())
 app.use(session({
     secret: process.env.SESSION_SECRET,
@@ -50,10 +42,13 @@ app.use(session({
 app.use(passport.initialize())
 app.use(passport.session())
 
-app.use(methodOverride('_method'))
 
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
+
+app.set('viewengine', 'ejs')
+
+app.use(express.urlencoded({ extended: false }))
+
+app.use(methodOverride('_method'))
 
 app.use('/static', express.static('public'));
 
@@ -73,21 +68,6 @@ app.listen(port, (err)=>{
     console.log("Server is live")
 })
 
-
-
-
-
-// app.get('/admin', (req, res, err) => {
-//     if(err) {
-//         console.log(err)
-//     }
-//     res.render(path.join('/var/app/current/views/admin.ejs'))
-// })
-// app.post('/admin', passport.authenticate('local'), {
-//     successRedirect: '/controlpanel',
-//     failureRedirect: '/admin',
-//     failureFlash: true
-// })
 
 
 app.get('/admin', checkNotAuthenticated, (req, res) => {
