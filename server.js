@@ -8,9 +8,9 @@ const fs = require('fs')
 const bodyParser = require('body-parser')
 // const bcrypt = require('bcrypt')
 const passport = require('passport')
-// const flash = require('express-flash')
+const flash = require('express-flash')
 const session = require('express-session')
-// const methodOverride = require('method-override')
+const methodOverride = require('method-override')
 const app = express()
 
 // Moved this to /admin
