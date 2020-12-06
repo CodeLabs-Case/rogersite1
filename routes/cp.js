@@ -196,11 +196,11 @@ function checkAuthenticated(req, res, next){
     if(req.isAuthenticated()) {
         return next()
     }
-    res.redirect(path.join('/var/app/current/views/admin.ejs'))
+    res.redirect('/admin.ejs')
 }
 // function checkNotAuthenticated(req, res, next) {
 //     if(req.isAuthenticated()) {
-//         return res.redirect('/var/app/current/views/controlpanel.ejs')  
+//         return res.redirect(path.join('/var/app/current/views/controlpanel.ejs'))  
 //     }
 //     next() 
 // }
