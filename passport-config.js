@@ -9,7 +9,7 @@ function initialize(passport, getUserByEmail, getUserById){
     const authenticateUser = async (email, password, done) => {
         // The email parameter of this function is ignored because I just hardcoded the admin information here ...
         // ... which you normally wouldn't do but that will work for this project
-        const user = {"id": 1, "email": "roger@gmail.com", "password": "things"}
+        const user = getUserByEmail(email)
         // In case there is no user matching the 'email'
         if(user == null){
             // Handle the done callback
