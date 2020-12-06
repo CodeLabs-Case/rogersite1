@@ -85,8 +85,8 @@ app.get('/admin', (req, res, err) => {
     }
     res.render(path.join('/var/app/current/views/admin.ejs'))
 })
-// app.post('/admin', passport.authenticate('local'), {
-//     successRedirect: '/controlpanel',
-//     failureRedirect: '/admin',
-//     failureFlash: true
-// })
+app.post('/admin', passport.authenticate('local'), {
+    successRedirect: '/controlpanel',
+    failureRedirect: '/admin',
+    failureFlash: true
+})
