@@ -6,14 +6,14 @@ const fs = require('fs')
 
 
 
-const initializePassport = require('./passport-config')
-initializePassport(
-    passport,
-    // email => users.find(user => user.email === email),
-    // id => users.find(user => user.id === id)
-    "roger@gmail.com",
-    "1"
-)
+// const initializePassport = require('../passport-config')
+// initializePassport(
+//     passport,
+//     // email => users.find(user => user.email === email),
+//     // id => users.find(user => user.id === id)
+//     "roger@gmail.com",
+//     "1"
+// )
 
 
 
@@ -31,18 +31,18 @@ router.post('/', passport.authenticate('local'), {
 
 
 
-function checkAuthenticated(req, res, next){
-    if(req.isAuthenticated()) {
-        return next()
-    }
-    res.redirect('/var/app/current/views/admin.ejs')
-}
-function checkNotAuthenticated(req, res, next) {
-    if(req.isAuthenticated()) {
-        return res.redirect('/var/app/current/views/controlpanel.ejs')  
-    }
-    next() 
-}
+// function checkAuthenticated(req, res, next){
+//     if(req.isAuthenticated()) {
+//         return next()
+//     }
+//     res.redirect('/var/app/current/views/admin.ejs')
+// }
+// function checkNotAuthenticated(req, res, next) {
+//     if(req.isAuthenticated()) {
+//         return res.redirect('/var/app/current/views/controlpanel.ejs')  
+//     }
+//     next() 
+// }
 
 
 
