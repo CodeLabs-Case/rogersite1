@@ -187,7 +187,7 @@ router.route('/deleteArticle/:id').get(checkAuthenticated, (req, res)=>{
 })
 router.delete('/logout', checkAuthenticated, (req, res)=>{
     req.logOut()
-    res.redirect('/var/app/current/views/admin.ejs')
+    res.redirect(path.join('/var/app/current/views/admin.ejs'))
 })
 
 
@@ -196,7 +196,7 @@ function checkAuthenticated(req, res, next){
     if(req.isAuthenticated()) {
         return next()
     }
-    res.redirect('/var/app/current/views/admin.ejs')
+    res.redirect(path.join('/var/app/current/views/admin.ejs'))
 }
 // function checkNotAuthenticated(req, res, next) {
 //     if(req.isAuthenticated()) {
