@@ -35,6 +35,8 @@ const app = express()
 
 app.set('viewengine', 'ejs')
 
+app.use(express.urlencoded({ extended: false }))
+
 app.use(flash())
 app.use(session({
     secret: process.env.SESSION_SECRET,
@@ -45,8 +47,6 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 // app.use(methodOverride('_method'))
-
-// app.use(express.urlencoded({ extended: false }))
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
