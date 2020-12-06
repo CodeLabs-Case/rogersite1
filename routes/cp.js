@@ -4,7 +4,7 @@ const fs = require('fs')
 
 
 // GET
-router.get('/', (req, res, err) => {
+router.get('/', checkAuthenticated, (req, res, err) => {
     if(err){
         console.log(err)
     }
@@ -27,14 +27,14 @@ router.get('/', (req, res, err) => {
     // Send the page
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
 })
-router.route('/podcast').get((req, res, err) => {
+router.route('/podcast').get(checkAuthenticated, (req, res, err) => {
     if(err){ 
         console.log(err)
     }
 
     res.render(path.join('/var/app/current/views/addpodcast.ejs'))
 })
-router.route('/article').get((req, res, err) => {
+router.route('/article').get(checkAuthenticated, (req, res, err) => {
     if(err){ 
         console.log(err)
     }
@@ -45,7 +45,7 @@ router.route('/article').get((req, res, err) => {
 
 
 // ADD
-router.route('/addPodcast').get((req, res) => {
+router.route('/addPodcast').get(checkAuthenticated, (req, res) => {
 
     var text = req.body.text
     var link = req.body.link
@@ -91,7 +91,7 @@ router.route('/addPodcast').get((req, res) => {
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
 
 })
-router.route('/addArticle').get((req, res) => {
+router.route('/addArticle').get(checkAuthenticated, (req, res) => {
     var title = req.body.title
     var body = req.body.body
 
@@ -139,7 +139,7 @@ router.route('/addArticle').get((req, res) => {
 
 
 // DELETE
-router.route('/deletePodcast/:id').get((req, res)=>{
+router.route('/deletePodcast/:id').get(checkAuthenticated, (req, res)=>{
     var param = req.query.id
     var paramInt = parseInt(param)
 
@@ -162,7 +162,7 @@ router.route('/deletePodcast/:id').get((req, res)=>{
     // Send the page
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
 })
-router.route('/deleteArticle/:id').get((req, res)=>{
+router.route('/deleteArticle/:id').get(checkAuthenticated, (req, res)=>{
     var param = req.query.id
     var paramInt = parseInt(param)
 
@@ -185,7 +185,7 @@ router.route('/deleteArticle/:id').get((req, res)=>{
     // Send the page
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
 })
-router.delete('/logout', (req, res)=>{
+router.delete('/logout', checkAuthenticated, (req, res)=>{
     req.logOut()
     res.redirect('/var/app/current/views/admin.ejs')
 })
@@ -198,12 +198,12 @@ function checkAuthenticated(req, res, next){
     }
     res.redirect('/var/app/current/views/admin.ejs')
 }
-function checkNotAuthenticated(req, res, next) {
-    if(req.isAuthenticated()) {
-        return res.redirect('/var/app/current/views/controlpanel.ejs')  
-    }
-    next() 
-}
+// function checkNotAuthenticated(req, res, next) {
+//     if(req.isAuthenticated()) {
+//         return res.redirect('/var/app/current/views/controlpanel.ejs')  
+//     }
+//     next() 
+// }
 
 
 
