@@ -11,11 +11,11 @@ router.get('/', (req, res, err) => {
     }
     res.render(path.join('/var/app/current/views/admin.ejs'))
 })
-// router.post('/', passport.authenticate('local'), {
-//     successRedirect: '/controlpanel',
-//     failureRedirect: '/admin',
-//     failureFlash: true
-// })
+router.post('/', passport.authenticate('local'), {
+    successRedirect: '/controlpanel',
+    failureRedirect: '/admin',
+    failureFlash: true
+})
 
 
 
