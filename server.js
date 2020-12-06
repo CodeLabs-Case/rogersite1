@@ -22,27 +22,28 @@ const app = express()
 //     email => users.find(user => user.email === email),
 //     id => users.find(user => user.id === id)
 // )
-const initializePassport = require('../passport-config')
-initializePassport(
-    passport,
-    // email => users.find(user => user.email === email),
-    // id => users.find(user => user.id === id)
-    "roger@gmail.com",
-    1
-)
+
+// const initializePassport = require('./passport-config')
+// initializePassport(
+//     passport,
+//     // email => users.find(user => user.email === email),
+//     // id => users.find(user => user.id === id)
+//     "roger@gmail.com",
+//     1
+// )
 
 app.set('viewengine', 'ejs')
 
-// app.use(flash())
-// app.use(session({
-//     secret: process.env.SESSION_SECRET,
-//     resave: false,
-//     saveUninitialized: false
-// }))
-// app.use(passport.initialize())
-// app.use(passport.session())
+app.use(flash())
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false
+}))
+app.use(passport.initialize())
+app.use(passport.session())
 
-// app.use(methodOverride('_method'))
+app.use(methodOverride('_method'))
 
 // app.use(express.urlencoded({ extended: false }))
 
