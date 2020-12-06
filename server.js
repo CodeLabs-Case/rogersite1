@@ -46,7 +46,7 @@ app.use(session({
 app.use(passport.initialize())
 app.use(passport.session())
 
-// app.use(methodOverride('_method'))
+app.use(methodOverride('_method'))
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
