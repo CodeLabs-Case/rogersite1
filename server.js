@@ -35,10 +35,10 @@ app.set('viewengine', 'ejs')
 
 // app.use(methodOverride('_method'))
 
-app.use(express.urlencoded({ extended: false }))
+// app.use(express.urlencoded({ extended: false }))
 
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use('/static', express.static('public'));
 
