@@ -35,7 +35,7 @@ const app = express()
 
 app.set('viewengine', 'ejs')
 
-// app.use(flash())
+app.use(flash())
 // app.use(session({
 //     secret: process.env.SESSION_SECRET,
 //     resave: false,
