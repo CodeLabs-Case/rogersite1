@@ -196,7 +196,7 @@ function checkAuthenticated(req, res, next){
     if(req.isAuthenticated()) {
         return next()
     }
-    res.redirect('/admin.ejs')
+    res.redirect('/admin')
 }
 // function checkNotAuthenticated(req, res, next) {
 //     if(req.isAuthenticated()) {
