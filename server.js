@@ -5,8 +5,6 @@
 
 const express = require('express')
 const path = require('path')
-const fs = require('fs')
-const bodyParser = require('body-parser')
 // const bcrypt = require('bcrypt')
 const passport = require('passport')
 const flash = require('express-flash')
@@ -23,12 +21,12 @@ const users = [
 ]
 
 // This is for setting up the login functionality
-// const initializePassport = require('./passport-config')
-// initializePassport(
-//     passport,
-//     email => users.find(user => user.email === email),
-//     id => users.find(user => user.id === id)
-// )
+const initializePassport = require('./passport-config')
+initializePassport(
+    passport,
+    email => users.find(user => user.email === email),
+    id => users.find(user => user.id === id)
+)
 
 // const initializePassport = require('./passport-config')
 // initializePassport(
