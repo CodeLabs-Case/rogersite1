@@ -4,7 +4,7 @@ const fs = require('fs')
 
 
 // GET
-router('/', (req, res, err) => {
+router.get('/', (req, res, err) => {
     if(err){
         console.log(err)
     }
@@ -201,7 +201,7 @@ router.route('/deleteArticle/:id').get((req, res)=>{
     // Send the page
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
 })
-router.delete('logout', (req, res)=>{
+router.delete('/logout', (req, res)=>{
     req.logOut()
     res.redirect('/var/app/current/views/admin.ejs')
 })
