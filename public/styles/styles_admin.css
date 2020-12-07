@@ -4,12 +4,17 @@
 /* Header */
 /* Body */
 .div-outter {
-    display: block;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 
     background-color: #303030;
 }
 .div-inner {
     color: #fff;
+
+    grid-row: 1;
+    grid-column: 2;
 
     width: 200px;
 
