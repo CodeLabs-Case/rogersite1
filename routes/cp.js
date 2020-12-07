@@ -47,8 +47,11 @@ router.route('/article').get(checkAuthenticated, (req, res, err) => {
 // ADD
 router.route('/addpodcast').get(checkAuthenticated, (req, res) => {
 
-    var text = req.body.text.toString()
-    var link = req.body.link.toString()
+    var text = req.body.text
+    var link = req.body.link
+
+    var textString = text.toString()
+    var linkString = link.toString()
 
     // Get the data
     var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
@@ -62,8 +65,8 @@ router.route('/addpodcast').get(checkAuthenticated, (req, res) => {
     var date = month + " - " + day + " - " + year
 
     var temp = {
-        "text": text,
-        "link": link,
+        "text": textString,
+        "link": linkString,
         "date": date
     }
 
@@ -93,8 +96,11 @@ router.route('/addpodcast').get(checkAuthenticated, (req, res) => {
 })
 router.route('/addarticle').get(checkAuthenticated, (req, res) => {
 
-    var title = req.body.title.toString()
-    var body = req.body.body.toString()
+    var title = req.body.title
+    var body = req.body.body
+
+    var titleString = title.toString()
+    var bodyString = body.toString()
 
     // Get the data
     var articles = fs.readFileSync('/var/app/current/database/collection1.json')
@@ -108,8 +114,8 @@ router.route('/addarticle').get(checkAuthenticated, (req, res) => {
     var date = month + " - " + day + " - " + year
 
     var temp = {
-        "title": title,
-        "body": body,
+        "title": titleString,
+        "body": bodyString,
         "date": date
     }
 
