@@ -122,6 +122,7 @@ router.route('/addarticle').get(checkAuthenticated, (req, res) => {
     jsonArticles.articles.unshift(temp)
 
 
+    
     var jsonStringArticles = JSON.stringify(jsonArticles, null, 2)
     fs.writeFileSync('/var/app/current/database/collection1.json', jsonStringArticles)
 
