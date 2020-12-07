@@ -5,6 +5,8 @@
 /* Body */
 body {
     background-color: #303030;
+
+    padding: 0px;
 }
 .div-outter {
     display: grid;
