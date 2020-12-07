@@ -51,6 +51,9 @@ body {
     justify-self: center;
     align-self: center;
 }
+.div-one input {
+    height: 400px;
+}
 .div-two {
     grid-row: 2;
     
