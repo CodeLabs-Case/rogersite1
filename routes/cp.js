@@ -122,7 +122,7 @@ router.route('/addarticle').get(checkAuthenticated, (req, res) => {
     jsonArticles.articles.unshift(temp)
 
 
-    
+
     var jsonStringArticles = JSON.stringify(jsonArticles, null, 2)
     fs.writeFileSync('/var/app/current/database/collection1.json', jsonStringArticles)
 
@@ -140,6 +140,7 @@ router.route('/addarticle').get(checkAuthenticated, (req, res) => {
     var articles2 = fs.readFileSync('/var/app/current/database/collection1.json')
     jsonArticles2 = JSON.parse(articles2)
 
+    
     // Send the page
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts2, a: jsonArticles2})
 })
