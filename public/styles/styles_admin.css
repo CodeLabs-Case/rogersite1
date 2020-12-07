@@ -3,6 +3,42 @@
 /* Any sized devices */
 /* Header */
 /* Body */
+body {
+    background-color: #303030;
+}
+.div-wrapper {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr;
+
+    background-color:  #1c1c1c;
+    color: #fff;
+}
+.div-wrapper h1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+.form-admin {
+    grid-row: 2;
+    grid-column: 1;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-columns: 1fr;
+}
+.div-email {
+    grid-row: 1;
+    grid-column: 1;
+}
+.div-password {
+    grid-row: 2;
+    grid-column: 1;
+}
+.button-submit {
+    grid-row: 3;
+    grid-column: 1;
+}
+
 /* Footer */
 
 

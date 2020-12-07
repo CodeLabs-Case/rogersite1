@@ -6,20 +6,22 @@
     <title>Sign In</title>
 </head>
     <body>
-        <h1>Login</h1>
-        <% if (messages.error) { %>
-        <%= messages.error %>
-        <% } %>
-        <form action="/admin" method="POST">
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Login</button>
-        </form>
+        <div class='div-wrapper'>
+            <h1>Login</h1>
+            <% if (messages.error) { %>
+            <%= messages.error %>
+            <% } %>
+            <form class='form-admin'action="/admin" method="POST">
+                <div class='div-email'>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class='div-password'>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button class='button-submit' type="submit">Login</button>
+            </form>
+        </div>
     </body>
 </html>
