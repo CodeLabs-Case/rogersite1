@@ -45,7 +45,7 @@ router.route('/article').get(checkAuthenticated, (req, res, err) => {
 
 
 // ADD
-router.route('/addPodcast').get(checkAuthenticated, (req, res) => {
+router.route('/addpodcast').get(checkAuthenticated, (req, res) => {
 
     var text = req.body.text
     var link = req.body.link
@@ -91,7 +91,7 @@ router.route('/addPodcast').get(checkAuthenticated, (req, res) => {
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts2, a: jsonArticles2})
 
 })
-router.route('/addArticle').get(checkAuthenticated, (req, res) => {
+router.route('/addarticle').get(checkAuthenticated, (req, res) => {
     var title = req.body.title
     var body = req.body.body
 
