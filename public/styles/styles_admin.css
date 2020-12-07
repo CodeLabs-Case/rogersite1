@@ -3,7 +3,29 @@
 /* Any sized devices */
 /* Header */
 /* Body */
+.form-admin {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+.div-email {
+    grid-row: 1;
+    
+    justify-self: center;
+    align-self: center;
+}
+.div-password {
+    grid-row: 2;
+    
+    justify-self: center;
+    align-self: center;
+}
+.button-submit {
+    grid-row: 3;
 
+    justify-self: center;
+    align-self: center;
+}
 
 /* Footer */
 
