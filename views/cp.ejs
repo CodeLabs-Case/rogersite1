@@ -32,6 +32,9 @@
                 <img class='img-large' src="/static/images/header_background_medium.jpg" alt="Image Unavailable">
                 <!-- <img class='img-small' src="/static/images/header_background_small_short.jpg" alt="Image Unavailable"> -->
                 <div class='div-navsection'>
+                    <form class='form-logout' action="/controlpanel/logout?_method=DELETE" method='POST'>
+                        <input type="submit" value='Logout'>
+                    </form>
                     <ul class='ul-navbar'>
                         <li>
                             <p class='p-podcasts'>Podcasts</p>
@@ -62,9 +65,7 @@
 
 
             <div class='div-outter-wrapper'>
-                <form action="/controlpanel/logout?_method=DELETE" method='POST'>
-                    <input type="submit" value='Logout'>
-                </form>
+                
                 
 
 

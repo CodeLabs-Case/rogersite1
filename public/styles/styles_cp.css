@@ -45,8 +45,15 @@ body {
     z-index: 1;
 
     display: grid;
-    grid-template-rows: 1fr 3px 6px;
+    grid-template-rows: 20px 1fr 3px 6px;
     grid-template-columns: 1fr;
+}
+.form-logout {
+    grid-row: 1;
+    grid-column: 1;
+
+    justify-self: center;
+    align-self: center;
 }
 .ul-navbar {
     grid-row: 1;
