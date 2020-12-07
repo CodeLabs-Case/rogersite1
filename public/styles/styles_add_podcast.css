@@ -45,13 +45,13 @@
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
 }
-.input-one {
+.div-one {
     grid-row: 1;
     
     justify-self: center;
     align-self: center;
 }
-.input-two {
+.div-two {
     grid-row: 2;
     
     justify-self: center;

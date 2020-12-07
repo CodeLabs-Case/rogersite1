@@ -14,10 +14,14 @@
             <div class='div-inner'>
                 <h1>Add Podcast</h1>
                 <form class='form-input' action="/controlpanel/addpodcast" method="GET">
-                    <label for="">Body</label>
-                    <input class='input-one' type="text" name='text'>
-                    <label for="">Link</label>
+                    <div class='div-one'>
+                        <label for="">Body</label>
+                        <input type="text" name='text'>
+                    </div>
+                    <div class='div-two'>
+                        <label for="">Link</label>
                     <input class='input-two' type="text" name='link'>
+                    </div>
                     <input class='button-submit' type="submit" value='Add'>
                 </form>
             </div>
