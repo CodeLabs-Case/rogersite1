@@ -10,12 +10,17 @@
 }
 .div-inner {
     color: #fff;
+
+    width: 200px;
+
     justify-self: center;
     align-self: center;
 
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
+
+    background-color: #1c1c1c;
 }
 .div-inner h1 {
     grid-row: 1;
@@ -25,13 +30,11 @@
 }
 .form-admin {
     grid-row: 2;
-    width: 200px;
+    
 
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
-
-    background-color: #1c1c1c;
 }
 .div-email {
     grid-row: 1;
