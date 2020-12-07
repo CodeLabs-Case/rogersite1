@@ -5,8 +5,11 @@
 /* Body */
 .div-outter {
     display: block;
+
+    background-color: #303030;
 }
 .div-inner {
+    color: #fff;
     justify-self: center;
     align-self: center;
 
@@ -22,6 +25,7 @@
 }
 .form-admin {
     grid-row: 2;
+    width: 200px;
 
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
