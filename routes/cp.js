@@ -65,9 +65,9 @@ router.route('/addpodcast').get(checkAuthenticated, (req, res) => {
     var date = month + " - " + day + " - " + year
 
     var temp = {
-        "text": textString,
-        "link": linkString,
-        "date": date
+        text: textString,
+        link: linkString,
+        date: date
     }
 
     jsonPodcasts.podcasts.unshift(temp)
