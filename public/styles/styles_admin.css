@@ -12,14 +12,14 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 
     background-color: #303030;
+
+    padding: 0;
 }
 .div-inner {
     color: #fff;
 
     grid-row: 1;
     grid-column: 2;
-
-    width: 400px;
 
     justify-self: center;
     align-self: center;
@@ -30,7 +30,7 @@ body {
 
     background-color: #1c1c1c;
 
-    border: solid #0e0e0e 2px;
+    border: 2px solid #0e0e0e;
 }
 .div-inner h1 {
     grid-row: 1;
