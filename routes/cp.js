@@ -68,7 +68,7 @@ router.route('/addpodcast').get(checkAuthenticated, (req, res) => {
     var date = month + " - " + day + " - " + year
 
     var temp = {
-        "text": obj.text,
+        "text": req.body.text,
         "link": obj.link,
         "date": date
     }
