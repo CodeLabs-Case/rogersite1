@@ -3,6 +3,9 @@
 /* Any sized devices */
 /* Header */
 /* Body */
+body {
+    background-color: #303030;
+}
 .div-outter {
     display: grid;
     grid-template-rows: 1fr;
@@ -16,7 +19,7 @@
     grid-row: 1;
     grid-column: 2;
 
-    width: 200px;
+    width: 400px;
 
     justify-self: center;
     align-self: center;
@@ -26,6 +29,8 @@
     grid-template-columns: 1fr;
 
     background-color: #1c1c1c;
+
+    border: solid #0e0e0e 2px;
 }
 .div-inner h1 {
     grid-row: 1;
