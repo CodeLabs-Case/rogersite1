@@ -3,6 +3,23 @@
 /* Any sized devices */
 /* Header */
 /* Body */
+.div-outter {
+    display: block;
+}
+.div-inner {
+    justify-self: center;
+    align-self: center;
+
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr;
+}
+.div-inner h1 {
+    grid-row: 1;
+
+    justify-self: center;
+    align-self: center;
+}
 .form-admin {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
