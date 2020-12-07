@@ -6,10 +6,17 @@
     <title>Add Article</title>
 </head>
     <body>
-        <form action="/controlpanel/addarticle" method="GET">
-            <input type="text" name='title'>
-            <input type="textarea" name='body'>
-            <input type="submit" value='Add'>
-        </form>
+        <div class='div-outter'>
+            <div class='div-inner'>
+                <h1>Add Article</h1>
+                <form class='form-input' action="/controlpanel/addarticle" method="GET">
+                    <label for="">Body</label>
+                    <input class='input-one' type="text" name='body'>
+                    <label for="">Title</label>
+                    <input class='input-two' type="text" name='title'>
+                    <input class='button-submit' type="submit" value='Add'>
+                </form>
+            </div>
+        </div>
     </body>
 </html>

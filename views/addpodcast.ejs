@@ -6,10 +6,17 @@
     <title>Add Podcast</title>
 </head>
     <body>
-        <form action="/controlpanel/addpodcast" method="GET">
-            <input type="textarea" name='text'>
-            <input type="text" name='link'>
-            <input type="submit" value='Add'>
-        </form>
+        <div class='div-outter'>
+            <div class='div-inner'>
+                <h1>Add Podcast</h1>
+                <form class='form-input' action="/controlpanel/addpodcast" method="GET">
+                    <label for="">Body</label>
+                    <input class='input-one' type="text" name='text'>
+                    <label for="">Link</label>
+                    <input class='input-two' type="text" name='link'>
+                    <input class='button-submit' type="submit" value='Add'>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
