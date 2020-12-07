@@ -96,8 +96,8 @@ router.route('/addpodcast').get(checkAuthenticated, (req, res) => {
 })
 router.route('/addarticle').get(checkAuthenticated, (req, res) => {
 
-    var title = req.body.title
-    var body = req.body.body
+    var title = req.query.title
+    var body = req.query.body
 
     var titleString = JSON.stringify(title)
     var bodyString = JSON.stringify(body)
