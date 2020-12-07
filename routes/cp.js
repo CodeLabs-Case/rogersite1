@@ -47,14 +47,11 @@ router.route('/article').get(checkAuthenticated, (req, res, err) => {
 // ADD
 router.route('/addpodcast').get(checkAuthenticated, (req, res) => {
 
-    // var text = req.body.text
-    // var link = req.body.link
+    var text = req.query.text
+    var link = req.query.link
 
-    // var textString = JSON.stringify(text)
-    // var linkString = JSON.stringify(link)
-
-    var obj = JSON.stringify(req.body)
-    
+    var textString = JSON.stringify(text)
+    var linkString = JSON.stringify(link)
 
     // Get the data
     var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
@@ -68,8 +65,8 @@ router.route('/addpodcast').get(checkAuthenticated, (req, res) => {
     var date = month + " - " + day + " - " + year
 
     var temp = {
-        "text": req.body.text,
-        "link": obj.link,
+        "text": textString,
+        "link": linkString,
         "date": date
     }
 
