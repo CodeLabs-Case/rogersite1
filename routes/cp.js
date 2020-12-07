@@ -81,14 +81,14 @@ router.route('/addPodcast').get(checkAuthenticated, (req, res) => {
 
 
     // Get the data for the page
-    var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
-    jsonPodcasts = JSON.parse(podcasts)
+    var podcasts2 = fs.readFileSync('/var/app/current/database/collection0.json')
+    jsonPodcasts2 = JSON.parse(podcasts2)
 
-    var articles = fs.readFileSync('/var/app/current/database/collection1.json')
-    jsonArticles = JSON.parse(articles)
+    var articles2 = fs.readFileSync('/var/app/current/database/collection1.json')
+    jsonArticles2 = JSON.parse(articles2)
 
     // Send the page
-    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts2, a: jsonArticles2})
 
 })
 router.route('/addArticle').get(checkAuthenticated, (req, res) => {
@@ -126,14 +126,14 @@ router.route('/addArticle').get(checkAuthenticated, (req, res) => {
 
 
     // Get the data for the page
-    var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
-    var jsonPodcasts = JSON.parse(podcasts)
+    var podcasts2 = fs.readFileSync('/var/app/current/database/collection0.json')
+    var jsonPodcasts2 = JSON.parse(podcasts2)
 
-    articles = fs.readFileSync('/var/app/current/database/collection1.json')
-    jsonArticles = JSON.parse(articles)
+    var articles2 = fs.readFileSync('/var/app/current/database/collection1.json')
+    jsonArticles2 = JSON.parse(articles2)
 
     // Send the page
-    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts2, a: jsonArticles2})
 })
 
 
