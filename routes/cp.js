@@ -187,7 +187,7 @@ router.route('/deleteArticle/:id').get(checkAuthenticated, (req, res)=>{
 })
 router.delete('/logout', checkAuthenticated, (req, res)=>{
     req.logOut()
-    res.redirect(path.join('/var/app/current/views/admin.ejs'))
+    res.redirect('/')
 })
 
 
