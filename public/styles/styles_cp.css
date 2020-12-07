@@ -49,10 +49,12 @@ body {
     grid-template-columns: 1fr;
 }
 .form-logout {
+    margin: 5px;
+
     grid-row: 1;
     grid-column: 1;
 
-    justify-self: center;
+    justify-self: end;
     align-self: center;
 }
 .ul-navbar {
