@@ -50,8 +50,8 @@ router.route('/addpodcast').get(checkAuthenticated, (req, res) => {
     var text = req.body.text
     var link = req.body.link
 
-    var textString = text.toString()
-    var linkString = link.toString()
+    var textString = JSON.stringify(text)
+    var linkString = JSON.stringify(link)
 
     // Get the data
     var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
@@ -99,8 +99,8 @@ router.route('/addarticle').get(checkAuthenticated, (req, res) => {
     var title = req.body.title
     var body = req.body.body
 
-    var titleString = title.toString()
-    var bodyString = body.toString()
+    var titleString = JSON.stringify(title)
+    var bodyString = JSON.stringify(body)
 
     // Get the data
     var articles = fs.readFileSync('/var/app/current/database/collection1.json')
