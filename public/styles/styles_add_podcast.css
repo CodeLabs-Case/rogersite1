@@ -22,7 +22,7 @@ body {
     align-self: center;
 
     display: grid;
-    grid-template-rows: 400px 1fr;
+    grid-template-rows: 200px 1fr;
     grid-template-columns: 1fr;
 
     background-color: #1c1c1c;
