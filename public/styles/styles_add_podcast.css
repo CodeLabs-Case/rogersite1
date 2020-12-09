@@ -63,12 +63,16 @@ body {
 .button-submit {
     grid-row: 3;
 
-    justify-self: center;
+    justify-self: start;
     align-self: center;
+
+    margin-left: 50px;
 }
 .button-cancel {
     grid-row: 3;
 
-    justify-self: center;
+    justify-self: end;
     align-self: center;
+
+    margin-right: 50px;
 }
