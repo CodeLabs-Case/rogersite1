@@ -210,6 +210,9 @@ body {
 
     padding: 40px;
 }
+.div-text-p p{
+    white-space: pre-line;
+}
 .div-link-p {
     font-size: 14px;
     grid-row: 2;
@@ -349,6 +352,9 @@ body {
     grid-template-columns: 1fr;
 
     padding: 40px;
+}
+.div-text-a p{
+    white-space: pre-line;
 }
 .div-date-a {
     font-size: 14px;
