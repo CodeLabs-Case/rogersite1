@@ -104,7 +104,7 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
 
     var newline = String.fromCharCode(13, 10);
     titleString.replace('\\n', newline);
-    bodyString.replace('\\n', newline);
+    textString.replace('\\n', newline);
 
     // Get the date for the article
     var obj = new Date()
