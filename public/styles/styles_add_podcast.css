@@ -62,14 +62,14 @@ body {
 }
 .button-submit {
     width: 50px;
-    
+
     grid-row: 3;
     grid-column: 1;
 
     justify-self: start;
     align-self: center;
 
-    margin-left: 200px;
+    margin-left: 180px;
 }
 .button-cancel {
     grid-row: 3;
@@ -78,7 +78,7 @@ body {
     justify-self: end;
     align-self: center;
 
-    margin-right: 200px;
+    margin-right: 180px;
 }
 .button-cancel input{
     width: 50px;
