@@ -273,7 +273,7 @@ body {
     grid-template-columns: 1fr;
 }
 .div-title-a {
-    font-size: 14px;
+    font-size: 18px;
 
     grid-row: 1;
     grid-column: 2;
