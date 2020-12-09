@@ -61,7 +61,7 @@ body {
     align-self: center;
 }
 .button-submit {
-    width: 50px;
+    width: 60px;
 
     grid-row: 3;
     grid-column: 1;
@@ -81,5 +81,5 @@ body {
     margin-right: 180px;
 }
 .button-cancel input{
-    width: 50px;
+    width: 60px;
 }
