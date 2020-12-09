@@ -50,8 +50,8 @@ router.route('/addpodcast').post(checkAuthenticated, (req, res) => {
     var text = req.query.text
     var link = req.query.link
 
-    var textString = JSON.stringify(text)
-    var linkString = JSON.stringify(link)
+    var textString = JSON.stringify(text.toString())
+    var linkString = JSON.stringify(link.toString())
 
     // Get the data
     var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
