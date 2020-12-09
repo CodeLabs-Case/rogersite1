@@ -47,8 +47,8 @@ router.route('/article').get(checkAuthenticated, (req, res, err) => {
 // ADD
 router.route('/addpodcast').post(checkAuthenticated, (req, res) => {
 
-    var text = req.query.text
-    var link = req.query.link
+    var text = req.body.text
+    var link = req.body.link
 
     // Get the data
     var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
