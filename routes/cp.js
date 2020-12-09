@@ -103,8 +103,8 @@ router.route('/addarticle').get(checkAuthenticated, (req, res) => {
     var bodyString = JSON.stringify(body)
 
     var newline = String.fromCharCode(13, 10);
-    titleString.replaceAll('\\n', newline);
-    bodyString.replaceAll('\\n', newline);
+    titleString.replace('\\n', newline);
+    bodyString.replace('\\n', newline);
 
     // Get the date for the article
     var obj = new Date()
