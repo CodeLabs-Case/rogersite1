@@ -290,6 +290,8 @@ body {
     grid-template-columns: 1fr;
 
     padding: 40px;
+
+    white-space: pre-wrap;
 }
 .div-date-a {
     font-size: 14px;
