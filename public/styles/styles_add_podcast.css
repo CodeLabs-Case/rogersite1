@@ -66,3 +66,9 @@ body {
     justify-self: center;
     align-self: center;
 }
+.button-cancel {
+    grid-row: 3;
+
+    justify-self: center;
+    align-self: center;
+}
