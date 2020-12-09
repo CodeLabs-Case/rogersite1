@@ -115,7 +115,7 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
 
     var temp = {
         "title": titleString,
-        "body": textString,
+        "text": textString,
         "date": date
     }
 
