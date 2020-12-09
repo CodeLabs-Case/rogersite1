@@ -92,12 +92,14 @@ body {
 
 @media only screen and (max-width: 600px) {
     .div-inner {
-        width: 425px;
+        /* width: 425px; */
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .button-submit {
-        margin-left: 105px;
+        /* margin-left: 105px; */
     }
     .button-cancel {
-        margin-right: 105px;
+        /* margin-right: 105px; */
     }
 }
