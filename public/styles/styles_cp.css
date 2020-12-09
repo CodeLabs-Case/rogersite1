@@ -174,6 +174,9 @@ body {
 
     padding: 40px;
 }
+.div-text-p p{
+    white-space: pre-line;
+}
 .div-link-p {
     font-size: 14px;
     grid-row: 2;
