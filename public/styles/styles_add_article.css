@@ -94,4 +94,10 @@ body {
     .div-inner {
         width: 425px;
     }
+    .button-submit {
+        margin-left: 105px;
+    }
+    .button-cancel {
+        margin-right: 105px;
+    }
 }
