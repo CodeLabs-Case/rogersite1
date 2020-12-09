@@ -99,12 +99,12 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
     var title = req.body.title
     var text = req.body.text
 
-    var titleString = JSON.stringify(title.toString())
-    var textString = JSON.stringify(text.toString())
+    // var titleString = JSON.stringify(title.toString())
+    // var textString = JSON.stringify(text.toString())
 
-    var newline = String.fromCharCode(13, 10);
-    titleString.replace('\\r\\n', newline);
-    textString.replace('\\r\\n', newline);
+    // var newline = String.fromCharCode(13, 10);
+    // titleString.replace('\\r\\n', newline);
+    // textString.replace('\\r\\n', newline);
 
     // Get the date for the article
     var obj = new Date()
@@ -114,8 +114,8 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
     var date = month + " - " + day + " - " + year
 
     var temp = {
-        "title": titleString,
-        "text": textString,
+        "title": title,
+        "text": text,
         "date": date
     }
 
