@@ -45,7 +45,7 @@ router.route('/article').get(checkAuthenticated, (req, res, err) => {
 
 
 // ADD
-router.route('/addpodcast').get(checkAuthenticated, (req, res) => {
+router.route('/addpodcast').post(checkAuthenticated, (req, res) => {
 
     var text = req.query.text
     var link = req.query.link
@@ -94,7 +94,7 @@ router.route('/addpodcast').get(checkAuthenticated, (req, res) => {
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts2, a: jsonArticles2})
 
 })
-router.route('/addarticle').get(checkAuthenticated, (req, res) => {
+router.route('/addarticle').post(checkAuthenticated, (req, res) => {
 
     var title = req.query.title
     var body = req.query.body
@@ -122,6 +122,8 @@ router.route('/addarticle').get(checkAuthenticated, (req, res) => {
     // Get the from the file
     var articles = fs.readFileSync('/var/app/current/database/collection1.json')
     var jsonArticles = JSON.parse(articles)
+
+
 
     jsonArticles.articles.unshift(temp)
 

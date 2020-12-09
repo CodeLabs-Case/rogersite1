@@ -5,6 +5,7 @@
 
 const express = require('express')
 const path = require('path')
+var bodyParser = require('body-parser')
 // const bcrypt = require('bcrypt')
 const passport = require('passport')
 const flash = require('express-flash')
@@ -14,6 +15,8 @@ const methodOverride = require('method-override')
 const app = express()
 
 
+var jsonParser = bodyParser.json()
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 // You wouldn't usually store this here, but as it is just for one admin user and this ...
 // ... project is in a rush, it will have to do.
