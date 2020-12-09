@@ -99,8 +99,8 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
     var title = req.body.title
     var text = req.body.text
 
-    title = JSON.stringify(title)
-    text = JSON.stringify(body)
+    var titleString = JSON.stringify(title)
+    var textString = JSON.stringify(text)
 
     // var newline = String.fromCharCode(13, 10);
     // titleString.replace('\\n', newline);
@@ -114,8 +114,8 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
     var date = month + " - " + day + " - " + year
 
     var temp = {
-        "title": title,
-        "body": text,
+        "title": titleString,
+        "body": textString,
         "date": date
     }
 
