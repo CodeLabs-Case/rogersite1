@@ -70,6 +70,7 @@ body {
 }
 .button-cancel {
     grid-row: 3;
+    grid-column: 1;
 
     justify-self: end;
     align-self: center;
