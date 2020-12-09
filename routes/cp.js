@@ -99,8 +99,8 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
     var title = req.body.title
     var text = req.body.text
 
-    // var titleString = JSON.stringify(title)
-    // var bodyString = JSON.stringify(body)
+    title = JSON.stringify(title)
+    text = JSON.stringify(body)
 
     // var newline = String.fromCharCode(13, 10);
     // titleString.replace('\\n', newline);
