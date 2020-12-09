@@ -102,9 +102,9 @@ router.route('/addarticle').get(checkAuthenticated, (req, res) => {
     var titleString = JSON.stringify(title)
     var bodyString = JSON.stringify(body)
 
-    // Get the data
-    var articles = fs.readFileSync('/var/app/current/database/collection1.json')
-    var jsonArticles = JSON.parse(articles)
+    var newline = String.fromCharCode(13, 10);
+    titleString.replaceAll('\\n', newline);
+    bodyString.replaceAll('\\n', newline);
 
     // Get the date for the article
     var obj = new Date()
@@ -118,6 +118,10 @@ router.route('/addarticle').get(checkAuthenticated, (req, res) => {
         "body": bodyString,
         "date": date
     }
+
+    // Get the from the file
+    var articles = fs.readFileSync('/var/app/current/database/collection1.json')
+    var jsonArticles = JSON.parse(articles)
 
     jsonArticles.articles.unshift(temp)
 
