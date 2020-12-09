@@ -62,6 +62,7 @@ body {
 }
 .button-submit {
     grid-row: 3;
+    grid-column: 1;
 
     justify-self: start;
     align-self: center;
