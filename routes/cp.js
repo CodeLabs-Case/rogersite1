@@ -96,7 +96,8 @@ router.route('/addpodcast').post(checkAuthenticated, (req, res) => {
 })
 router.route('/addarticle').post(checkAuthenticated, (req, res) => {
 
-    var data = req.body
+    var title = req.body.title
+    var text = req.body.text
 
     // var titleString = JSON.stringify(title)
     // var bodyString = JSON.stringify(body)
@@ -113,8 +114,8 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
     var date = month + " - " + day + " - " + year
 
     var temp = {
-        "title": data.tite,
-        "body": data.body,
+        "title": title,
+        "body": text,
         "date": date
     }
 
