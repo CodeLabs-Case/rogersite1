@@ -63,7 +63,7 @@ router.route('/addpodcast').post(checkAuthenticated, (req, res) => {
 
     var temp = {
         text: text,
-        link: link.substring(11),
+        link: link.substr(11),
         date: date
     }
 
