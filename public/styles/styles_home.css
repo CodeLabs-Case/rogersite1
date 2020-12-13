@@ -60,6 +60,7 @@ body {
 }
 .ul-social li {
     display: inline;
+    list-style-type: none;
 }
 .ul-navbar {
     grid-row: 2;
