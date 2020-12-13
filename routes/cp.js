@@ -48,7 +48,6 @@ router.route('/article').get(checkAuthenticated, (req, res, err) => {
 router.route('/addpodcast').post(checkAuthenticated, (req, res) => {
 
     var text = req.body.text
-    var link = req.body.link
 
     // Get the data
     var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
@@ -63,7 +62,6 @@ router.route('/addpodcast').post(checkAuthenticated, (req, res) => {
 
     var temp = {
         text: text,
-        link: link.substring(11),
         date: date
     }
 
