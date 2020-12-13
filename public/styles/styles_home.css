@@ -61,6 +61,8 @@ body {
 .ul-social li {
     float: left;
     list-style-type: none;
+
+    margin: 5px;
 }
 .ul-navbar {
     grid-row: 2;
