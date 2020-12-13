@@ -58,6 +58,9 @@ body {
     justify-self: start;
     align-self: center;
 }
+.ul-social li {
+    display: inline;
+}
 .ul-navbar {
     grid-row: 1;
     grid-column: 1;
