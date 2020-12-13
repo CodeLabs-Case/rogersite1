@@ -59,7 +59,7 @@ body {
     align-self: center;
 }
 .ul-social li {
-    display: inline;
+    float: left;
     list-style-type: none;
 }
 .ul-navbar {
