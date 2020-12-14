@@ -62,7 +62,11 @@ body {
     float: left;
     list-style-type: none;
 
-    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.ul-social li:hover {
+    opacity: 0.8;
 }
 .ul-navbar {
     grid-row: 2;
