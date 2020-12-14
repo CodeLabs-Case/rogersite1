@@ -24,8 +24,8 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 const users = [
     {
         "id": 1,
-        "email": "roger@gmail.com",
-        "password": "things"
+        "email": "rogtarheel@gmail.com",
+        "password": "tarheels"
     }
 ]
 
