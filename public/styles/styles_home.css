@@ -399,12 +399,9 @@ body {
 
 /* Sidebar */
 [class^='div-sidebar-'] {
-    width: 200px;
+    width: 300px;
 
     background-color: #f00;
-
-    grid-row: 1;
-    grid-column: 1;
 }
 
 
