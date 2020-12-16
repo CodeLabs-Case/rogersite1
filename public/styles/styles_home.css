@@ -151,15 +151,6 @@ body {
 
 /* Body */
 /* Podcasts */
-/* [class^='div-body-left-'] {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-}
-[class^='div-slidebar-'] {
-    grid-row: 1;
-    grid-column: 1;
-} */
 .div-body-p {
     width: 100%;
     
