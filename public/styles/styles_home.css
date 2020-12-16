@@ -156,13 +156,16 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
 }
-[class^='div-slidebar-']
+[class^='div-slidebar-'] {
+    grid-row: 1;
+    grid-column: 1;
+}
 .div-body-p {
     width: 100%;
     
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 4fr 5fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
 }
 .div-body-left-p {
     /* background-color: var(--bg-lite); */
@@ -293,7 +296,7 @@ body {
     
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 4fr 5fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
 }
 .div-body-left-a {
     /* background-color: var(--bg-lite); */
