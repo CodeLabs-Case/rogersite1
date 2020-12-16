@@ -402,6 +402,8 @@ body {
     width: 300px;
 
     background-color: #f00;
+
+    z-index: 10;
 }
 
 
