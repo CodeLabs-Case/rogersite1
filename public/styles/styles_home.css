@@ -151,13 +151,6 @@ body {
 
 /* Body */
 /* Podcasts */
-.div-body-p {
-    width: 100%;
-    
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 4fr 1fr;
-}
 .div-body-left-p {
     /* background-color: var(--bg-lite); */
     background-color: #1c1c1c;
@@ -282,13 +275,6 @@ body {
 
 
 /* Articles */
-.div-body-a {
-    width: 100%;
-    
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 4fr 1fr;
-}
 .div-body-left-a {
     /* background-color: var(--bg-lite); */
     background-color: #1c1c1c;
@@ -628,14 +614,14 @@ body {
         
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-columns: 1fr 4fr 1fr;
     }
     .div-body-a {
         width: 100%;
         
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-columns: 1fr 4fr 1fr;
     }
 }
 
