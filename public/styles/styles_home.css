@@ -151,6 +151,9 @@ body {
 
 /* Body */
 /* Podcasts */
+.div-body-p {
+    z-index: 1;
+}
 .div-body-left-p {
     /* background-color: var(--bg-lite); */
     background-color: #1c1c1c;
@@ -275,6 +278,9 @@ body {
 
 
 /* Articles */
+.div-body-a {
+    z-index: 1;
+}
 .div-body-left-a {
     /* background-color: var(--bg-lite); */
     background-color: #1c1c1c;
