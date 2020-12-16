@@ -2,6 +2,7 @@ $(document).ready(()=>{
     var windowHeight = $(window).height()
     $('.div-body-p').css('height', windowHeight)
     $('.div-body-a').css('height', windowHeight)
+    $('[class^=div-sidebar-]').css('height', windowHeight)
 
     // Check on rotation
     $(window).on( "orientationchange", (event)=>{
