@@ -15,17 +15,34 @@ $(document).ready(()=>{
         }
     })
 
+
+
+
+
+    $('.p-home').on("click", ()=>{
+        $('.div-wrapper-h').css('z-index', "1")
+        $('.div-wrapper-p').css('z-index', "0")
+        $('.div-wrapper-a').css('z-index', "0")
+
+        $('.img-selector-p').css('visibility', "hiden")
+        $('.img-selector-a').css('visibility', "hidden")
+
+        $('.div-underline-move').animate({"margin-left": "0px"}, 500)
+    })
+
     $('.p-podcasts').on("click", ()=>{
+        $('.div-wrapper-h').css('z-index', "0")
         $('.div-wrapper-p').css('z-index', "1")
         $('.div-wrapper-a').css('z-index', "0")
 
         $('.img-selector-p').css('visibility', "visible")
         $('.img-selector-a').css('visibility', "hidden")
 
-        $('.div-underline-move').animate({"margin-left": "0px"}, 500)
+        $('.div-underline-move').animate({"margin-left": "140px"}, 500)
     })
 
     $('.p-articles').on("click", ()=>{
+        $('.div-wrapper-h').css('z-index', "0")
         $('.div-wrapper-p').css('z-index', "0")
         $('.div-wrapper-a').css('z-index', "1")
 
@@ -33,7 +50,7 @@ $(document).ready(()=>{
         $('.img-selector-a').css('visibility', "visible")
 
         
-        $('.div-underline-move').animate({"margin-left": "140px"}, 500)
+        $('.div-underline-move').animate({"margin-left": "280px"}, 500)
     })
 
 
