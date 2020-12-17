@@ -490,7 +490,15 @@ body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
-[class^='div-sidebar-p-'] {
+.div-sidebar-p-h{
+    grid-row: 1;
+    grid-column: 1;
+}
+.div-sidebar-p-p{
+    grid-row: 1;
+    grid-column: 1;
+}
+.div-sidebar-p-a{
     grid-row: 1;
     grid-column: 1;
 }
