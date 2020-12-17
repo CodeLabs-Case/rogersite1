@@ -185,6 +185,8 @@ body {
     justify-content: center;
     
     display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
 /* .div-body-center-card-h {
     
@@ -196,7 +198,14 @@ body {
     grid-column: 3;
     grid-row: 1;
 }
+.div-body-center-card-h {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
+    background-color: #1c1c1c;
+}
 
 
 
