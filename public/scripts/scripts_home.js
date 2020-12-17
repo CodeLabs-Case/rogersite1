@@ -1,5 +1,6 @@
 $(document).ready(()=>{
     var windowHeight = $(window).height()
+    $('.div-wrapper-h').css('height', windowHeight)
     $('.div-body-h').css('height', windowHeight)
     $('.div-body-p').css('height', windowHeight)
     $('.div-body-a').css('height', windowHeight)
@@ -68,7 +69,7 @@ $(document).ready(()=>{
 
 
 
-    
+
     // State information and animations for the sidebar
     // Boolean to deteremine if the sidebar is in the extended position
     var sidep = 0

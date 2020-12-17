@@ -186,6 +186,11 @@ body {
   
     align-content: center;
     justify-content: center;
+    
+    display: grid;
+}
+.div-body-center-card-h {
+    
 }
 .div-body-right-h {
     /* background-color: var(--bg-lite); */
