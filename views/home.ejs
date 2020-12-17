@@ -111,13 +111,15 @@
                             </p>
                         </div>
                         <ul class='ul-titles'>
+                            <% var i = 0 %>
                         <% p.podcasts.forEach(function(podcast){ %>
-                        <li>
+                        <li class='<%=i%>'>
                             <p>
                                 <%= podcast.title %>
                             </p>
                         </li>
                         <% }) %>
+                        <% i++ %>
                         </ul>
                     </div>
                     <div class="div-body-p">
