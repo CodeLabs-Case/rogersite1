@@ -476,6 +476,10 @@ body {
     z-index: 100;
     position: absolute;
 }
+.p-title-sidebar {
+    font-size: 18px;
+    margin: 10px;
+}
 .div-side-title {
     margin: 10px;
 }
