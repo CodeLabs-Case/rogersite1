@@ -409,6 +409,8 @@ body {
     background-color: #f00;
 
     z-index: 100;
+
+    position: absolute;
 }
 
 
@@ -421,8 +423,6 @@ body {
     grid-template-columns: 1fr;
 
     background-color: #1c1c1c;
-
-    z-index: 0;
 }
 .div-wrapper-p {
     grid-row: 1;
