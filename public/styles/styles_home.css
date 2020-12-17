@@ -476,10 +476,6 @@ body {
     z-index: 100;
     position: absolute;
 
-    display: grid;
-    grid-template-rows: 50px;
-    grid-template-columns: 1fr;
-
     /* overflow-y: scroll; */
 }
 .div-sidebar-p::-webkit-scrollbar {
@@ -489,9 +485,6 @@ body {
 .div-sidebar-p {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-}
-.div-sidebar-body-p p {
-    margin: 10px;
 }
 
 

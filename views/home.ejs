@@ -105,14 +105,11 @@
 
                 <div class="div-wrapper-p">
                     <div class='div-sidebar-p'>
-                        <div class="div-sidebar-body-p">
-                            <% p.podcasts.forEach(function(podcast){ %>
-                            <p>
-                                <%= podcast.title %>
-                            </p>
-                            </div>
-                            <% }) %>
-                        </div>
+                        <% p.podcasts.forEach(function(podcast){ %>
+                        <p>
+                            <%= podcast.title %>
+                        </p>
+                        <% }) %>
                     </div>
                     <div class="div-body-p">
                         
