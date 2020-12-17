@@ -491,6 +491,8 @@ body {
 
     justify-self: center;
     align-self: center;
+
+    cursor: default;
 }
 .div-side-titles {
     display: grid;
@@ -507,6 +509,9 @@ body {
 
     justify-self: center;
     align-self: center;
+}
+.div-side-titles:hover {
+    cursor: pointer;
 }
 
 
