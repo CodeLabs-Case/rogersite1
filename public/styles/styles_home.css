@@ -167,6 +167,7 @@ body {
 /* Home */
 .div-body-h {
     z-index: 1;
+    height: 300px;
 }
 .div-body-left-h {
     /* background-color: var(--bg-lite); */
