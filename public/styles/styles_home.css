@@ -167,7 +167,6 @@ body {
 /* Home */
 .div-body-h {
     height: 300px;
-    min-height: 300px;
 
     display: grid;
     grid-template-rows: 1fr;
