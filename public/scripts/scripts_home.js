@@ -28,4 +28,26 @@ $(document).ready(()=>{
         
         $('.div-underline-move').animate({"margin-left": "140px"}, 500)
     })
+
+
+
+    // State information and animations for the sidebar
+    var sidep = 1
+    var sidea = 0
+
+    $('.img-selector-p').css('z-index', "1")
+    $('.img-selector-a').css('z-index', "0")
+    $('.img-selector-a').css('margin-left', "-300px")
+
+
+    $('.img-selector-p').on('click', ()=>{
+        if(sidep == 1){
+            $('.img-selector-p').css('margin-left', "-300px")
+            sidep = 0
+        }
+        else if(sidep == 0){
+            $('.img-selector-p').css('margin-left', "0px")
+            sidep = 1
+        }
+    })
 })
