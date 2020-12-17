@@ -38,7 +38,7 @@ $(document).ready(()=>{
         $('.img-selector-p').css('visibility', "visible")
         $('.img-selector-a').css('visibility', "hidden")
 
-        $('.div-underline-move').animate({"margin-left": "140px"}, 500)
+        $('.div-underline-move').animate({"margin-left": "100px"}, 500)
     })
 
     $('.p-articles').on("click", ()=>{
@@ -50,7 +50,7 @@ $(document).ready(()=>{
         $('.img-selector-a').css('visibility', "visible")
 
         
-        $('.div-underline-move').animate({"margin-left": "280px"}, 500)
+        $('.div-underline-move').animate({"margin-left": "200px"}, 500)
     })
 
 
