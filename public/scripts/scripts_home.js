@@ -18,7 +18,10 @@ $(document).ready(()=>{
 
 
 
-
+    // Make the selector hidden on page load
+    $('.img-selector-p').css('visibility', "hidden")
+    $('.img-selector-a').css('visibility', "hidden")
+    // Logic
     $('.p-home').on("click", ()=>{
         $('.div-wrapper-h').css('z-index', "1")
         $('.div-wrapper-p').css('z-index', "0")
