@@ -21,6 +21,10 @@ $(document).ready(()=>{
     // Make the selector hidden on page load
     $('.img-selector-p').css('visibility', "hidden")
     $('.img-selector-a').css('visibility', "hidden")
+    // Make the Home tab section be the top one on page load
+    $('.div-wrapper-h').css('z-index', "1")
+    $('.div-wrapper-p').css('z-index', "0")
+    $('.div-wrapper-a').css('z-index', "0")
     // Logic
     $('.p-home').on("click", ()=>{
         $('.div-wrapper-h').css('z-index', "1")
