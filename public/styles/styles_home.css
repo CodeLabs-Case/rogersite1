@@ -476,6 +476,9 @@ body {
     z-index: 100;
     position: absolute;
 }
+.div-side-title {
+    margin: 10px;
+}
 
 
 
