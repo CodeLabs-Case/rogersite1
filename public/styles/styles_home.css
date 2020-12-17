@@ -166,7 +166,6 @@ body {
 /* Body */
 /* Home */
 .div-body-h {
-    z-index: 1;
     height: 300px;
 }
 .div-body-left-h {
@@ -190,9 +189,9 @@ body {
     
     display: grid;
 }
-.div-body-center-card-h {
+/* .div-body-center-card-h {
     
-}
+} */
 .div-body-right-h {
     /* background-color: var(--bg-lite); */
     background-color: #1c1c1c;
@@ -211,9 +210,6 @@ body {
 
 
 /* Podcasts */
-.div-body-p {
-    z-index: 0;
-}
 .div-body-left-p {
     /* background-color: var(--bg-lite); */
     background-color: #1c1c1c;
@@ -338,9 +334,6 @@ body {
 
 
 /* Articles */
-.div-body-a {
-    z-index: 1;
-}
 .div-body-left-a {
     /* background-color: var(--bg-lite); */
     background-color: #1c1c1c;
