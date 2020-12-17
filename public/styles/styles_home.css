@@ -404,6 +404,11 @@ body {
 
 
 
+[class^='div-sidebar-'] {
+    width: 300px;
+
+    z-index: 2;
+}
 
 
 
