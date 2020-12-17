@@ -477,6 +477,14 @@ body {
     position: absolute;
 }
 .div-title-sidebar {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30px;
+}
+.div-title-sidebar {
+    grid-row: 1;
+    grid-column: 1;
+
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
