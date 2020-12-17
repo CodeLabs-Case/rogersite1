@@ -104,7 +104,7 @@ body {
     cursor: pointer;
 }
 .div-underline {
-    width: 96px;
+    width: 289px;
     height: 3px;
 
     grid-row: 3;
@@ -145,7 +145,7 @@ body {
     cursor: default;
 }
 .div-underline-move {
-    width: 130px;
+    width: 96px;
     height: 3px;
     background-color: #fff;
 
