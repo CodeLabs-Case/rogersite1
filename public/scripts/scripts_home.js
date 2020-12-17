@@ -19,8 +19,8 @@ $(document).ready(()=>{
         $('.div-wrapper-p').css('z-index', "1")
         $('.div-wrapper-a').css('z-index', "0")
 
-        $('.img-selector-p').css('display', "auto")
-        $('.img-selector-a').css('display', "none")
+        $('.img-selector-p').css('visibility', "visible")
+        $('.img-selector-a').css('visibility', "hidden")
 
         $('.div-underline-move').animate({"margin-left": "0px"}, 500)
     })
@@ -29,8 +29,8 @@ $(document).ready(()=>{
         $('.div-wrapper-p').css('z-index', "0")
         $('.div-wrapper-a').css('z-index', "1")
 
-        $('.img-selector-p').css('display', "none")
-        $('.img-selector-a').css('display', "auto")
+        $('.img-selector-p').css('visibility', "hidden")
+        $('.img-selector-a').css('visibility', "visible")
 
         
         $('.div-underline-move').animate({"margin-left": "140px"}, 500)
