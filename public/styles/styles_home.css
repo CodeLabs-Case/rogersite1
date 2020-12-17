@@ -510,7 +510,7 @@ body {
     justify-self: center;
     align-self: center;
 }
-.li-title:hover {
+.li-title p:hover {
     cursor: pointer;
 }
 
