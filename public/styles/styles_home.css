@@ -494,12 +494,12 @@ body {
 .ul-titles {
     padding: 0px;
 }
-.li-title {
+.ul-titles li {
     display: grid;
     grid-template-rows: 30px;
     grid-template-columns: 1fr;
 }
-.li-title p{
+.ul-titles li p{
     grid-row: 1;
     grid-column: 1;
 
@@ -510,7 +510,7 @@ body {
     justify-self: center;
     align-self: center;
 }
-.li-title:hover {
+.ul-titles li:hover {
     background-color: #1c1c1c;
     cursor: pointer;
 }
