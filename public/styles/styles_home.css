@@ -83,8 +83,8 @@ body {
 
     list-style-type: none;
 
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     /* Prevent text selection highlighting */
     -webkit-touch-callout: none; /* iOS Safari */
