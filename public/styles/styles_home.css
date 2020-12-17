@@ -475,10 +475,6 @@ body {
     background-color: #181818;
     z-index: 100;
     position: absolute;
-
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
 }
 
 
