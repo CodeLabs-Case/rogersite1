@@ -19,12 +19,19 @@ $(document).ready(()=>{
         $('.div-wrapper-p').css('z-index', "1")
         $('.div-wrapper-a').css('z-index', "0")
 
+        $('.img-selector-p').css('z-index', "1")
+        $('.img-selector-a').css('z-index', "0")
+
         $('.div-underline-move').animate({"margin-left": "0px"}, 500)
     })
 
     $('.p-articles').on("click", ()=>{
         $('.div-wrapper-p').css('z-index', "0")
         $('.div-wrapper-a').css('z-index', "1")
+
+        $('.img-selector-p').css('z-index', "0")
+        $('.img-selector-a').css('z-index', "1")
+
         
         $('.div-underline-move').animate({"margin-left": "140px"}, 500)
     })
@@ -32,22 +39,35 @@ $(document).ready(()=>{
 
 
     // State information and animations for the sidebar
-    var sidep = 1
+    // Boolean to deteremine if the sidebar is in the extended position
+    var sidep = 0
     var sidea = 0
 
     $('.img-selector-p').css('z-index', "1")
     $('.img-selector-a').css('z-index', "0")
+    $('.div-sidebar-p').css('margin-left', "-300px")
     $('.div-sidebar-a').css('margin-left', "-300px")
 
 
     $('.img-selector-p').on('click', ()=>{
         if(sidep == 1){
-            $('.div-sidebar-p').css('margin-left', "-300px")
+            $('.div-sidebar-p').stop(true, true).animate({'margin-left': "-300px"}, 500)
             sidep = 0
         }
         else if(sidep == 0){
-            $('.div-sidebar-p').css('margin-left', "0px")
+            $('.div-sidebar-p').stop(true, true).animate({'margin-left': "0px"}, 500)
             sidep = 1
+        }
+    })
+
+    $('.img-selector-a').on('click', ()=>{
+        if(sidea == 1){
+            $('.div-sidebar-a').stop(true, true).animate({'margin-left': "-300px"}, 500)
+            sidea = 0
+        }
+        else if(sidea == 0){
+            $('.div-sidebar-a').stop(true, true).animate({'margin-left': "0px"}, 500)
+            sidea = 1
         }
     })
 })
