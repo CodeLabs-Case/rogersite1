@@ -5,6 +5,10 @@ $(document).ready(()=>{
     $('.div-body-a').css('height', windowHeight)
     $('[class^=div-sidebar-]').css('height', windowHeight)
 
+
+
+
+
     // Check on rotation
     $(window).on( "orientationchange", (event)=>{
         if(!window.screen.orientation.angle){
@@ -63,6 +67,8 @@ $(document).ready(()=>{
 
 
 
+
+    
     // State information and animations for the sidebar
     // Boolean to deteremine if the sidebar is in the extended position
     var sidep = 0
