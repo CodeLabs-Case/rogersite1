@@ -494,12 +494,12 @@ body {
 
     cursor: default;
 }
-.div-side-titles {
+[class^='div-side-titles'] {
     display: grid;
     grid-template-rows: 30px;
     grid-template-columns: 1fr;
 }
-.div-side-titles p{
+[class^='div-side-titles'] p{
     grid-row: 1;
     grid-column: 1;
 
@@ -510,7 +510,7 @@ body {
     justify-self: center;
     align-self: center;
 }
-.div-side-titles:hover {
+[class^='div-side-titles']:hover {
     cursor: pointer;
 }
 
