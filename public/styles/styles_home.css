@@ -494,12 +494,15 @@ body {
 
     cursor: default;
 }
-[class^='div-side-titles'] {
+.ul-titles {
+    padding: 0px;
+}
+.li-title {
     display: grid;
     grid-template-rows: 30px;
     grid-template-columns: 1fr;
 }
-[class^='div-side-titles'] p{
+.li-title p{
     grid-row: 1;
     grid-column: 1;
 
@@ -510,7 +513,7 @@ body {
     justify-self: center;
     align-self: center;
 }
-[class^='div-side-titles']:hover {
+.li-title:hover {
     cursor: pointer;
 }
 

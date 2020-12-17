@@ -110,15 +110,13 @@
                                 Podcasts
                             </p>
                         </div>
-                        <ul class='ul-test'>
-                        <% var i = 0 %>
+                        <ul class='ul-titles'>
                         <% p.podcasts.forEach(function(podcast){ %>
-                        <li class='div-side-titles<%=i%>'>
+                        <li class='li-title'>
                             <p>
                                 <%= podcast.title %>
                             </p>
                         </li>
-                        <% i = i + 1 %>
                         <% }) %>
                         </ul>
                     </div>
