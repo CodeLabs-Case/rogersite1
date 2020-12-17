@@ -510,7 +510,8 @@ body {
     justify-self: center;
     align-self: center;
 }
-.li-title p:hover {
+.li-title:hover {
+    background-color: #1a1a1a;
     cursor: pointer;
 }
 
