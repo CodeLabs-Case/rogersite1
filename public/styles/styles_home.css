@@ -417,9 +417,13 @@ body {
 
 [class^='div-sidebar-'] {
     width: 300px;
-    background-color: #595959;
+    background-color: #484848;
     z-index: 100;
     position: absolute;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
 
 
