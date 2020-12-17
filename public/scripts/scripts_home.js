@@ -52,21 +52,29 @@ $(document).ready(()=>{
     $('.img-selector-p').on('click', ()=>{
         if(sidep == 1){
             $('.div-sidebar-p').stop(true, true).animate({'margin-left': "-300px"}, 500)
+            $('.div-sidebar-a').stop(true, true).animate({'margin-left': "-300px"}, 500)
             sidep = 0
+            sidea = 0
         }
         else if(sidep == 0){
             $('.div-sidebar-p').stop(true, true).animate({'margin-left': "0px"}, 500)
+            $('.div-sidebar-a').stop(true, true).animate({'margin-left': "0px"}, 500)
             sidep = 1
+            sidea = 1
         }
     })
 
     $('.img-selector-a').on('click', ()=>{
         if(sidea == 1){
+            $('.div-sidebar-p').stop(true, true).animate({'margin-left': "-300px"}, 500)
             $('.div-sidebar-a').stop(true, true).animate({'margin-left': "-300px"}, 500)
+            sidep = 0
             sidea = 0
         }
         else if(sidea == 0){
+            $('.div-sidebar-p').stop(true, true).animate({'margin-left': "0px"}, 500)
             $('.div-sidebar-a').stop(true, true).animate({'margin-left': "0px"}, 500)
+            sidep = 1
             sidea = 1
         }
     })
