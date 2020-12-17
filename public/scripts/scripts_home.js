@@ -114,8 +114,9 @@ $(document).ready(()=>{
 
 
     // Make the proper podcast/article jump to the top of the list when the title in the sidebar is clicked on
-    $('.ul-titles .li-title p').on('click', ()=>{
-        var val = $(this).parent('li').index()
+    $('.ul-titles li').on('click', ()=>{
+        // var val = $(this).parent('li').index()
+        var val = $(this).prevAll("li").size();
         alert(val)
     })
 })
