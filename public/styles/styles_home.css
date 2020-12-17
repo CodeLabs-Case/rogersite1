@@ -495,10 +495,11 @@ body {
     padding: 0px;
 }
 .li-title {
-    /* display: grid;
+    display: grid;
     grid-template-rows: 30px;
-    grid-template-columns: 1fr; */
-
+    grid-template-columns: 1fr;
+}
+.li-title p{
     grid-row: 1;
     grid-column: 1;
 
@@ -509,17 +510,6 @@ body {
     justify-self: center;
     align-self: center;
 }
-/* .li-title p{
-    grid-row: 1;
-    grid-column: 1;
-
-    font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    justify-self: center;
-    align-self: center;
-} */
 .li-title:hover {
     background-color: #1c1c1c;
     cursor: pointer;
