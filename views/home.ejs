@@ -92,7 +92,7 @@
                         <div class='div-body-left-h'></div>
                         <div class='div-body-center-h'>
                             <div class='div-body-center-card-h'>
-                                
+
                             </div>
                         </div>
                         <div class='div-body-right-h'></div>
@@ -159,7 +159,20 @@
 
                 <div class="div-wrapper-a">
                     <div class='div-sidebar-a'>
-                        
+                        <div class='div-header-sidebar'>
+                            <p>
+                                Articles
+                            </p>
+                        </div>
+                        <ul class='ul-titles'>
+                        <% a.articles.forEach(function(article){ %>
+                        <li class='li-title'>
+                            <p>
+                                <%= article.title %>
+                            </p>
+                        </li>
+                        <% }) %>
+                        </ul>
                     </div>
                     <div class="div-body-a">
                         <div class='div-body-left-a'></div>

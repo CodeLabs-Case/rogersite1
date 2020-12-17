@@ -186,9 +186,6 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
 }
-/* .div-body-center-card-h {
-    
-} */
 .div-body-right-h {
     /* background-color: var(--bg-lite); */
     background-color: #1c1c1c;
@@ -614,9 +611,6 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
-    .div-text-h {
-        padding: 10px;
-    }
     .div-body-p {
         width: 100%;
         
@@ -689,7 +683,7 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
-    .div-body-h {
+    .div-body-p {
         width: 100%;
         
         display: grid;
