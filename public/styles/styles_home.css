@@ -470,22 +470,17 @@ body {
 
 
 
-.div-sidebar-p {
+[class^='div-sidebar-'] {
     width: 300px;
     background-color: #181818;
     z-index: 100;
     position: absolute;
 
-    /* overflow-y: scroll; */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
-.div-sidebar-p::-webkit-scrollbar {
-    display: none;
-}
-  /* Hide scrollbar for IE, Edge and Firefox */
-.div-sidebar-p {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
+
 
 
 
