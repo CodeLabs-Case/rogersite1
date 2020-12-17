@@ -481,13 +481,16 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 30px;
 }
-.div-title-sidebar {
+.div-title-sidebar p{
     grid-row: 1;
     grid-column: 1;
 
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
+
+    justify-self: center;
+    align-self: center;
 }
 .div-side-title {
     margin: 10px;
