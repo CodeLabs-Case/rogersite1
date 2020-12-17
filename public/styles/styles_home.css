@@ -480,7 +480,7 @@ body {
     grid-template-rows: 50px 1fr;
     grid-template-columns: 1fr;
 
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 [class^='div-sidebar-']::-webkit-scrollbar {
     display: none;
