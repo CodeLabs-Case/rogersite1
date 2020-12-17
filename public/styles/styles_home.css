@@ -417,7 +417,7 @@ body {
 
 [class^='div-sidebar-'] {
     width: 300px;
-    background-color: #f00;
+    background-color: #222222;
     z-index: 100;
     position: absolute;
 }
