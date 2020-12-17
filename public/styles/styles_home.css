@@ -477,10 +477,30 @@ body {
     position: absolute;
 
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 50px 1fr;
     grid-template-columns: 1fr;
-}
 
+    overflow-y: scroll;
+}
+[class^='div-sidebar-']::-webkit-scrollbar {
+    display: none;
+}
+  /* Hide scrollbar for IE, Edge and Firefox */
+  [class^='div-sidebar-'] {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+[class^='div-sidebar-p-'] {
+    grid-row: 1;
+    grid-column: 1;
+}
+[class^='div-sidebar-body-'] {
+    grid-row: 2;
+    grid-column: 1;
+}
+[class^='div-sidebar-body-title-'] {
+    margin: 5px;
+}
 
 
 
