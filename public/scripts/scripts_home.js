@@ -1,6 +1,6 @@
 $(document).ready(()=>{
     var windowHeight = $(window).height()
-    $('.div-body-h').css('height', '200px')
+    $('.div-body-h').css('height', windowHeight)
     $('.div-body-p').css('height', windowHeight)
     $('.div-body-a').css('height', windowHeight)
     $('[class^=div-sidebar-]').css('height', windowHeight)
