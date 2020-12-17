@@ -479,11 +479,17 @@ body {
 
     background-color: #1c1c1c;
 }
-.div-wrapper-p {
+.div-wrapper-h {
     grid-row: 1;
     grid-column: 1;
 
     z-index: 1;
+}
+.div-wrapper-p {
+    grid-row: 1;
+    grid-column: 1;
+
+    z-index: 0;
 }
 .div-wrapper-a {
     grid-row: 1;

@@ -35,7 +35,7 @@ $(document).ready(()=>{
         $('.img-selector-p').css('visibility', "hidden")
         $('.img-selector-a').css('visibility', "hidden")
 
-        $('.div-underline-move').animate({"margin-left": "0px"}, 500)
+        $('.div-underline-move').stop(true, true).animate({"margin-left": "0px"}, 500)
     })
 
     $('.p-podcasts').on("click", ()=>{
@@ -46,7 +46,7 @@ $(document).ready(()=>{
         $('.img-selector-p').css('visibility', "visible")
         $('.img-selector-a').css('visibility', "hidden")
 
-        $('.div-underline-move').animate({"margin-left": "96px"}, 500)
+        $('.div-underline-move').stop(true, true).animate({"margin-left": "96px"}, 500)
     })
 
     $('.p-articles').on("click", ()=>{
@@ -58,7 +58,7 @@ $(document).ready(()=>{
         $('.img-selector-a').css('visibility', "visible")
 
         
-        $('.div-underline-move').animate({"margin-left": "193px"}, 500)
+        $('.div-underline-move').stop(true, true).animate({"margin-left": "193px"}, 500)
     })
 
 
