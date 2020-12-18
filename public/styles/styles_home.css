@@ -167,6 +167,21 @@ body {
 .div-buffer {
     display: block;
     background-color: 303030;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    grid-template-columns: 1fr;  
+}
+.div-buffer img {
+    grid-row: 1;
+    grid-column: 1;
+
+    justify-self: center;
+    align-self: center;
 }
 /* Home */
 .div-body-left-h {
