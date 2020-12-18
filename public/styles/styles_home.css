@@ -194,9 +194,6 @@ body {
     grid-row: 1;
 }
 .div-body-center-card-h {
-    width: 100px;
-    height: auto;
-    
     grid-row: 1;
     grid-column: 1;
 
@@ -627,6 +624,9 @@ body {
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
+    }
+    .div-body-center-card-h {
+        width: 100%;
     }
     .div-body-p {
         width: 100%;
