@@ -223,7 +223,7 @@ body {
     background-color: #303030;
 
     padding-bottom: 5px;
-    padding-left: none;
+    padding-left: 0px;
   
     grid-column: 2;
     grid-row: 1;
