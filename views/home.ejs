@@ -121,32 +121,34 @@
                     <div class="div-body-p">
                         
                         <div class='div-body-left-p'></div>
-                        <div class='div-body-center-p'>
+                        <ul class='div-body-center-p'>
                             <% p.podcasts.forEach(function(podcast){ %>
-                            <div class='div-box-p'>
-                                <div class='div-box-inner-wrapper-p'>
-                                    <div class='div-img-p'>
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class='div-title-p'>
-                                        <p>
-                                            <%= podcast.title %>
-                                        </p>
-                                    </div>
-                                    <div class='div-text-p'>
-                                        <p>
-                                            <%= podcast.text %>
-                                        </p>
-                                    </div>
-                                    <div class='div-date-p'>
-                                        <p>
-                                            <%= podcast.date %>
-                                        </p>
+                            <li>
+                                <div class='div-box-p'>
+                                    <div class='div-box-inner-wrapper-p'>
+                                        <div class='div-img-p'>
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class='div-title-p'>
+                                            <p>
+                                                <%= podcast.title %>
+                                            </p>
+                                        </div>
+                                        <div class='div-text-p'>
+                                            <p>
+                                                <%= podcast.text %>
+                                            </p>
+                                        </div>
+                                        <div class='div-date-p'>
+                                            <p>
+                                                <%= podcast.date %>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </li>
                             <% }) %>
-                        </div>
+                        </ul>
                         <div class='div-body-right-p'></div>
                     </div>
                 </div>
