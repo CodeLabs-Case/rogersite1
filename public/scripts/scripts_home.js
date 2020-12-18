@@ -117,4 +117,7 @@ $(document).ready(()=>{
     $('.ul-titles li:nth-child(1)').on('click', ()=>{
         alert('1')
     })
+    $('.ul-titles li:nth-child(2)').on('click', ()=>{
+        alert('2')
+    })
 })
