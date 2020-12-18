@@ -71,6 +71,13 @@ $(document).ready(()=>{
 
 
 
+    // Make the image for the podcast become opaque and grow when hovered over
+    
+
+
+
+
+
     // State information and animations for the sidebar
     // Boolean to deteremine if the sidebar is in the extended position
     var sidep = 0
@@ -115,7 +122,7 @@ $(document).ready(()=>{
 
 
 
-    
+
     // Make the proper podcast/article jump to the top of the list when the title in the sidebar is clicked on
     $(".ul-titles-p li").on('click', function(){
         // Determine which li was clicked on and save the index
