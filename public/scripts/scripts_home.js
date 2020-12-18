@@ -114,7 +114,16 @@ $(document).ready(()=>{
 
 
     // Make the proper podcast/article jump to the top of the list when the title in the sidebar is clicked on
-    $(".ul-titles li").on('click', function(){
-        alert($(this).index())
+    $(".ul-titles-p li").on('click', function(){
+        var index = $(this).index()
+
+        var element = $(`.ul-body-center-p li:nth-child(${index})`)
+        var topPos = myElement.offsetTop
+
+        $('.ul-body-center-p').scrollTop = topPos
+    })
+
+    $(".ul-titles-a li").on('click', function(){
+        var index = $(this).index()
     })
 })
