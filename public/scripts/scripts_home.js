@@ -120,7 +120,7 @@ $(document).ready(()=>{
 
         var $container = $('.ul-body-center-p'), $scrollTo = $('.ul-body-center-p li:nth-child(2)')
         $container.scrollTop(
-            ($scrollTo.offset().top - $container.offset().top + $container.scrollTop()) + 5
+            ($scrollTo.offset().top - $container.offset().top + $container.scrollTop()) - 5
         );
     })
 
