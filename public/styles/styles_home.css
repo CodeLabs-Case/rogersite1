@@ -183,7 +183,19 @@ body {
     justify-self: center;
     align-self: center;
 }
+
+
+
+
+
 /* Home */
+.div-body-h {
+    width: 100%;
+    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
+}
 .div-body-left-h {
     /* background-color: var(--bg-lite); */
     background-color: #1c1c1c;
