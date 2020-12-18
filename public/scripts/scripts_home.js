@@ -115,10 +115,12 @@ $(document).ready(()=>{
 
     // Make the proper podcast/article jump to the top of the list when the title in the sidebar is clicked on
     $(".ul-titles-p li").on('click', function(){
+        // Determine which li was clicked on and save the index
         var index = $(this).index()
         index = index + 1
 
-        var $container = $('.ul-body-center-p'), $scrollTo = $('.ul-body-center-p li:nth-child(2)')
+        // Make the selected box rise to the top
+        var $container = $('.ul-body-center-p'), $scrollTo = $(`.ul-body-center-p li:nth-child(${index})`)
         $container.scrollTop(
             ($scrollTo.offset().top - $container.offset().top + $container.scrollTop()) - 5
         );
