@@ -4,8 +4,8 @@ $(document).ready(()=>{
     $('.div-body-p').css('height', windowHeight)
     $('.div-body-a').css('height', windowHeight)
     $('[class^=div-sidebar-]').css('height', windowHeight)
-    // Make the buffer the height of the window
-    $('.div-buffer').css('height', windowHeight)
+    // Make the buffer so that the final element in the list can rise to the top
+    $('.div-buffer').css('height', windowHeight/4)
 
 
 
@@ -125,7 +125,7 @@ $(document).ready(()=>{
         var $container = $('.ul-body-center-p'), $scrollTo = $(`.ul-body-center-p li:nth-child(${index})`)
         $container.stop(true, true).animate({
             scrollTop: ($scrollTo.offset().top - $container.offset().top + $container.scrollTop()) - 5
-        }, 1000);
+        }, 500);
     })
 
     $(".ul-titles-a li").on('click', function(){
@@ -137,6 +137,6 @@ $(document).ready(()=>{
         var $container = $('.ul-body-center-a'), $scrollTo = $(`.ul-body-center-a li:nth-child(${index})`)
         $container.stop(true, true).animate({
             scrollTop: ($scrollTo.offset().top - $container.offset().top + $container.scrollTop()) - 5
-        }, 1000);
+        }, 500);
     })
 })
