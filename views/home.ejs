@@ -132,9 +132,16 @@
                                                 <%= podcast.title %>
                                             </p>
                                         </div>
+                                        <div class='div-link-p'>
+                                            <p>
+                                                <a href="<%= podcast.link %>">
+                                                    <img src="/static/images/note.png" alt="">
+                                                </a> 
+                                            </p>
+                                        </div>
                                         <div class='div-text-p'>
                                             <p>
-                                                <a href="<%= podcast.text %>"> Link</a>
+                                                <%= podcast.text %>
                                             </p>
                                         </div>
                                         <div class='div-date-p'>
