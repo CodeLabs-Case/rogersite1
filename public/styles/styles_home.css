@@ -173,7 +173,7 @@ body {
     margin-top: 5px;
 
     display: grid;
-    grid-template-rows: 20px 1fr;
+    grid-template-rows: 40px 1fr;
     grid-template-columns: 1fr;  
 }
 .div-buffer img {
