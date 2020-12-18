@@ -194,7 +194,7 @@ body {
     
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1/2fr 10fr 1/2fr;
+    grid-template-columns: 1fr 10fr 1fr;
 }
 .div-body-left-h {
     /* background-color: var(--bg-lite); */
