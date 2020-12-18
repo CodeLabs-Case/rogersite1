@@ -118,9 +118,7 @@ $(document).ready(()=>{
         var index = $(this).index()
 
         var element = $(`.ul-body-center-p li:nth-child(${index})`)
-        var topPos = myElement.offsetTop
-
-        $('.ul-body-center-p').scrollTop = topPos
+        element.stop(true, true).animate({"margin-top": "50px"})
     })
 
     $(".ul-titles-a li").on('click', function(){
