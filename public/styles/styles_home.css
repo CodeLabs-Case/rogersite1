@@ -203,6 +203,9 @@ body {
     margin-bottom: 5px;
 
     background-color: #1c1c1c;
+
+    /* This lovely property here makes the element's width span the entire container */
+    display: block;
 }
 
 
@@ -624,9 +627,6 @@ body {
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
-    }
-    .div-body-center-card-h {
-        width: 300px;
     }
     .div-body-p {
         width: 100%;
