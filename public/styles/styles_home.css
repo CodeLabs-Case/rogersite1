@@ -185,6 +185,9 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+
+    /* This lovely property here makes the element's width span the entire container */
+    display: block;
 }
 .div-body-right-h {
     /* background-color: var(--bg-lite); */
