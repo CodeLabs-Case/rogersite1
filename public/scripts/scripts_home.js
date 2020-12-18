@@ -71,7 +71,8 @@ $(document).ready(()=>{
 
 
 
-    // Make the image for the podcast become opaque and grow when hovered over
+    // Make the image for the podcast become opaque and grow when hovered over ...
+    // ... and then do the inverse
     $('.div-link-p p a').on('mouseenter', ()=>{
         $(this).stop(true, true).animate({ "opacity": "1.0", "width": "110%", "height": "110%" }, 500)
     })
