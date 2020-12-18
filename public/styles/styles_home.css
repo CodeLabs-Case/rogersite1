@@ -519,6 +519,8 @@ body {
     background-color: #181818;
     z-index: 100;
     position: absolute;
+
+    overflow-y: scroll;
 }
 .div-header-sidebar {
     display: grid;
