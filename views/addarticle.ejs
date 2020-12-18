@@ -14,16 +14,21 @@
             <div class='div-inner'>
                 <h1>Add Article</h1>
                 <form class='form-input' action="/controlpanel/addarticle" method="POST">
+                    
                     <div class='div-one'>
                         <label for="">Body</label>
                         <br>
                         <textarea style="resize: none;" rows='10' cols='50' name='text'></textarea>
                     </div>
+                    
                     <div class='div-two'>
                         <label for="">Title</label>
                         <br>
                         <input type="text" name='title'>
                     </div>
+                    
+                    
+                    
                     <input class='button-submit' type="submit" value='Add'>
                     <a class='button-cancel' href="/controlpanel/">
                         <input type="button" value="Cancel">

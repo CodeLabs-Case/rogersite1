@@ -14,11 +14,26 @@
             <div class='div-inner'>
                 <h1>Add Podcast</h1>
                 <form class='form-input' action="/controlpanel/addpodcast" method="POST">
+                    
                     <div class='div-one'>
                         <label for="">Body</label>
                         <br>
                         <textarea style="resize: none;" rows='10' cols='50' name='text'></textarea>
                     </div>
+                    
+                    <div class='div-two'>
+                        <label for="">Title</label>
+                        <br>
+                        <input type="text" name='title'>
+                    </div>
+
+                    <div class='div-three'>
+                        <label for="">Link</label>
+                        <br>
+                        <input type="text" name='link'>
+                    </div>
+                    
+                    
                     <input class='button-submit' type="submit" value='Add'>
                     <a class='button-cancel' href="/controlpanel/">
                         <input type="button" value="Cancel">
