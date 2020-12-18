@@ -233,6 +233,9 @@ body {
   
     overflow-y: scroll;
 }
+.div-body-center-p li {
+    list-style-type: none;
+}
   /* Hide scrollbar for Chrome, Safari and Opera */
 .div-body-center-p::-webkit-scrollbar {
     display: none;
