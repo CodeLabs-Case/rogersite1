@@ -121,9 +121,9 @@ $(document).ready(()=>{
 
         // Make the selected box rise to the top
         var $container = $('.ul-body-center-p'), $scrollTo = $(`.ul-body-center-p li:nth-child(${index})`)
-        $container.scrollTop(
-            ($scrollTo.offset().top - $container.offset().top + $container.scrollTop()) - 5
-        );
+        $container.stop(true, true).animate({
+            scrollTop: ($scrollTo.offset().top - $container.offset().top + $container.scrollTop()) - 5
+        }, 1000);
     })
 
     $(".ul-titles-a li").on('click', function(){
