@@ -123,7 +123,7 @@ $(document).ready(()=>{
 
         // var posArray = element.positionedOffset();
         var el = $(`.ul-body-center-p li:nth-child(${index})`).offset().top
-        $('.ul-body-center-p').scrollTo({top: el, behavior: 'smooth'})
+        $(window).scrollTo({top: el, behavior: 'smooth'})
     })
 
     $(".ul-titles-a li").on('click', function(){
