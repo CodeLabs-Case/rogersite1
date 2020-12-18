@@ -5,7 +5,7 @@ $(document).ready(()=>{
     $('.div-body-a').css('height', windowHeight)
     $('[class^=div-sidebar-]').css('height', windowHeight)
     // Make the buffer so that the final element in the list can rise to the top
-    $('.div-buffer').css('height', windowHeight/4)
+    $('.div-buffer').css('height', windowHeight/2)
 
 
 
