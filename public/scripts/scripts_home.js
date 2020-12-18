@@ -73,11 +73,11 @@ $(document).ready(()=>{
 
     // Make the image for the podcast become opaque and grow when hovered over ...
     // ... and then do the inverse
-    $('.div-link-p p a').on('mouseenter', ()=>{
-        $(this).stop(true, true).animate({ "opacity": "1.0", "width": "110%", "height": "110%" }, 500)
+    $('.img-link').on('mouseenter', ()=>{
+        $(this).stop(true, true).animate({ "opacity": "1.0"}, 500)
     })
-    $('.div-link-p p a').on('mouseleave', ()=>{
-        $(this).stop(true, true).animate({ "opacity": "0.5", "width": "100%", "height": "100%" }, 500)
+    $('.img-link').on('mouseleave', ()=>{
+        $(this).stop(true, true).animate({ "opacity": "0.5"}, 500)
     })
 
 
