@@ -72,7 +72,9 @@ $(document).ready(()=>{
 
 
     // Make the image for the podcast become opaque and grow when hovered over
-    
+    $('.div-link-p p a').on('hover', ()=>{
+        $('.div-link-p p a').stop(true, true).animate({ "opacity": "1.0", "width": "110%", "height": "110%" })
+    })
 
 
 
