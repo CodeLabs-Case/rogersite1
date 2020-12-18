@@ -118,7 +118,7 @@ $(document).ready(()=>{
         var index = $(this).index()
         index = index + 1
 
-        $(window).scrollTo({top: 100, behavior: 'smooth'})
+        $(window).scrollTo(0, 500)
         // element.stop(true, true).animate({"top": "0px"})
 
         // var posArray = element.positionedOffset();
