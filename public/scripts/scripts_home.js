@@ -116,6 +116,7 @@ $(document).ready(()=>{
     // Make the proper podcast/article jump to the top of the list when the title in the sidebar is clicked on
     $(".ul-titles-p li").on('click', function(){
         var index = $(this).index()
+        index = index + 1
 
         var element = $(`.ul-body-center-p li:nth-child(${index})`)
         element.stop(true, true).animate({"margin-top": "50px"})
