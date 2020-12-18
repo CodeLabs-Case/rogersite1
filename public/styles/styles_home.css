@@ -501,15 +501,15 @@ body {
 
     cursor: default;
 }
-.ul-titles {
+[class^='ul-titles-'] {
     padding: 0px;
 }
-.ul-titles li {
+[class^='ul-titles-'] li {
     display: grid;
     grid-template-rows: 30px;
     grid-template-columns: 1fr;
 }
-.ul-titles li p{
+[class^='ul-titles-'] li p{
     grid-row: 1;
     grid-column: 1;
 
@@ -520,7 +520,7 @@ body {
     justify-self: center;
     align-self: center;
 }
-.ul-titles li:hover {
+[class^='ul-titles-'] li:hover {
     background-color: #1c1c1c;
     cursor: pointer;
 }
