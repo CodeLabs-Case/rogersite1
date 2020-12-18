@@ -626,6 +626,8 @@ body {
         grid-template-columns: 1fr;
     }
     .div-body-center-card-h {
+        grid-row: 1;
+        grid-column: 1;
         width: 100%;
     }
     .div-body-p {
