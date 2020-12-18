@@ -118,7 +118,7 @@ $(document).ready(()=>{
         var index = $(this).index()
         index = index + 1
 
-        $(`.ul-body-center-p li:nth-child(${index})`).scrollIntoView()
+        $(`.ul-body-center-p li:nth-child(${index})`).scrollTo({top: '100px', behavior: 'smooth'})
         // element.stop(true, true).animate({"top": "0px"})
 
         // var posArray = element.positionedOffset();
