@@ -152,6 +152,9 @@ body {
 .p-articles:hover {
     cursor: default;
 }
+[class^='img-selector-'] {
+    cursor: pointer;
+}
 
 
 
