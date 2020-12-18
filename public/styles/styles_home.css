@@ -349,8 +349,8 @@ body {
     justify-self: center;
     align-self: center;
 }
-.div-link-p a img{
-    opacity: 0.1;
+.img-link{
+    opacity: 0.5;
 }
 .div-text-p {
     font-size: 14px;

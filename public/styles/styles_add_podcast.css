@@ -42,7 +42,7 @@ body {
     
 
     display: grid;
-    grid-template-rows: 1fr 50px 50px;
+    grid-template-rows: 1fr 50px 50px 50px;
     grid-template-columns: 1fr;
 }
 .div-one {
@@ -60,10 +60,16 @@ body {
     justify-self: center;
     align-self: center;
 }
+.div-three {
+    grid-row: 3;
+    
+    justify-self: center;
+    align-self: center;
+}
 .button-submit {
     width: 60px;
 
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 1;
 
     justify-self: start;
@@ -72,7 +78,7 @@ body {
     margin-left: 180px;
 }
 .button-cancel {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 1;
 
     justify-self: end;
