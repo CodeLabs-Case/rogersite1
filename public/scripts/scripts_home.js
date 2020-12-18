@@ -4,6 +4,8 @@ $(document).ready(()=>{
     $('.div-body-p').css('height', windowHeight)
     $('.div-body-a').css('height', windowHeight)
     $('[class^=div-sidebar-]').css('height', windowHeight)
+    // Make the buffer the height of the window
+    $('.div-buffer').css('height', windowHeight)
 
 
 
@@ -127,6 +129,14 @@ $(document).ready(()=>{
     })
 
     $(".ul-titles-a li").on('click', function(){
+        // Determine which li was clicked on and save the index
         var index = $(this).index()
+        index = index + 1
+
+        // Make the selected box rise to the top
+        var $container = $('.ul-body-center-a'), $scrollTo = $(`.ul-body-center-a li:nth-child(${index})`)
+        $container.stop(true, true).animate({
+            scrollTop: ($scrollTo.offset().top - $container.offset().top + $container.scrollTop()) - 5
+        }, 1000);
     })
 })

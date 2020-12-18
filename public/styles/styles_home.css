@@ -164,6 +164,10 @@ body {
 
 
 /* Body */
+.div-buffer {
+    display: block;
+    background-color: 303030;
+}
 /* Home */
 .div-body-left-h {
     /* background-color: var(--bg-lite); */
