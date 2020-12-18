@@ -122,7 +122,7 @@ $(document).ready(()=>{
         // element.stop(true, true).animate({"top": "0px"})
 
         var posArray = element.positionedOffset();
-        $('.ul-body-center-p').scrollTop = posArray[1];
+        $('.ul-body-center-p').scrollTop = posArray;
     })
 
     $(".ul-titles-a li").on('click', function(){
