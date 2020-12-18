@@ -118,11 +118,11 @@ $(document).ready(()=>{
         var index = $(this).index()
         index = index + 1
 
-        var element = $(`.ul-body-center-p li:nth-child(${index})`)
+        var element = $(`.ul-body-center-p li:nth-child(${index})`).css('top', "0px")
         // element.stop(true, true).animate({"top": "0px"})
 
-        var posArray = element.positionedOffset();
-        $('.ul-body-center-p').scrollTop = posArray;
+        // var posArray = element.positionedOffset();
+        // $('.ul-body-center-p').scrollTop = posArray;
     })
 
     $(".ul-titles-a li").on('click', function(){
