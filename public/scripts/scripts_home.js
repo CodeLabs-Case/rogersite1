@@ -119,7 +119,7 @@ $(document).ready(()=>{
         index = index + 1
 
         var element = $(`.ul-body-center-p li:nth-child(${index})`)
-        element.stop(true, true).animate({"margin-top": "50px"})
+        element.stop(true, true).animate({"top": "0px"})
     })
 
     $(".ul-titles-a li").on('click', function(){
