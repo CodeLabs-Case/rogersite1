@@ -112,25 +112,10 @@ $(document).ready(()=>{
         }
     })
 
-    $('[class^=img-selector-]').on('focusout', function () {
-        if(sidea == 1){
-            $('.div-sidebar-p').stop(true, true).animate({'margin-left': "-300px"}, 250)
-            $('.div-sidebar-a').stop(true, true).animate({'margin-left': "-300px"}, 250)
-            sidep = 0
-            sidea = 0
-        }
-
-        if(sidep == 1){
-            $('.div-sidebar-p').stop(true, true).animate({'margin-left': "-300px"}, 250)
-            $('.div-sidebar-a').stop(true, true).animate({'margin-left': "-300px"}, 250)
-            sidep = 0
-            sidea = 0
-        }
-    });
 
 
 
-
+    
     // Make the proper podcast/article jump to the top of the list when the title in the sidebar is clicked on
     $(".ul-titles-p li").on('click', function(){
         // Determine which li was clicked on and save the index
