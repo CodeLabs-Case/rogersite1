@@ -234,15 +234,15 @@ body {
   
     overflow-y: scroll;
 }
-.div-body-center-p li {
+.ul-body-center-p li {
     list-style-type: none;
 }
   /* Hide scrollbar for Chrome, Safari and Opera */
-.div-body-center-p::-webkit-scrollbar {
+.ul-body-center-p::-webkit-scrollbar {
     display: none;
 }
   /* Hide scrollbar for IE, Edge and Firefox */
-.div-body-center-p {
+.ul-body-center-p {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
@@ -357,11 +357,13 @@ body {
     grid-column: 1;
     grid-row: 1;
 }
-.div-body-center-a {
+.ul-body-center-a {
     /* background-color: var(--bg-dark); */
     background-color: #303030;
 
     padding-bottom: 5px;
+    padding-left: 0px;
+    margin: 0px;
   
     grid-column: 2;
     grid-row: 1;
@@ -371,12 +373,15 @@ body {
   
     overflow-y: scroll;
 }
+.ul-body-center-a li {
+    list-style-type: none;
+}
   /* Hide scrollbar for Chrome, Safari and Opera */
-.div-body-center-a::-webkit-scrollbar {
+.ul-body-center-a::-webkit-scrollbar {
     display: none;
 }
   /* Hide scrollbar for IE, Edge and Firefox */
-.div-body-center-a {
+.ul-body-center-a {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
