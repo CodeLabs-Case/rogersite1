@@ -696,13 +696,13 @@ body {
 
 
     /* Body */
-    .div-body-h {
+    /* .div-body-h {
         width: 100%;
         
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
-    }
+    } */
     .div-body-p {
         width: 100%;
         
