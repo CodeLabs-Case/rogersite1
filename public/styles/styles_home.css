@@ -194,6 +194,12 @@ body {
     grid-row: 1;
 }
 .div-body-center-card-h {
+    width: 100px;
+    height: auto;
+    
+    grid-row: 1;
+    grid-column: 1;
+
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 5px;
