@@ -95,6 +95,12 @@ body {
     .div-inner {
         width: 450px;
     }
+    .button-submit {
+        margin-left: 120px;
+    }
+    .button-cancel {
+        margin-right: 120px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
