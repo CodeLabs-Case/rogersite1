@@ -1,6 +1,13 @@
 $(document).ready(()=>{
-    $('.div-wrapper-a').css('opacity', "0")
+    if($(window).width() < 600){
+        $('.div-wrapper-p').css("opacity", "0")
+        $('.div-wrapper-a').css('opacity', "1")
+    } else {
+        $('.div-wrapper-p').css("opacity", "1")
+        $('.div-wrapper-a').css('opacity', "1")
+    }
 
+    
 
     $('.p-podcasts').on("click", ()=>{
         $('.div-underline-move').stop(true, true).animate({"margin-left": "0px"}, 500)
