@@ -1,6 +1,5 @@
-$(document).on('ready', ()=>{
+$(document).ready(()=>{
 
-    
 
     $('.p-podcasts').on("click", ()=>{
         $('.div-underline-move').animate({"margin-left": "0px"}, 500)
@@ -8,7 +7,7 @@ $(document).on('ready', ()=>{
         $('.div-wrapper-p').css('z-index', "1")
         $('.div-wrapper-a').css('z-index', "0")
 
-        if($(window).css("max-width") == 600){
+        if($(window).css("width") <= 600){
             $('.div-wrapper-p').css("opacity", "0")
             $('.div-wrapper-a').css('opacity', "1")
         }
@@ -20,7 +19,7 @@ $(document).on('ready', ()=>{
         $('.div-wrapper-p').css('z-index', "0")
         $('.div-wrapper-a').css('z-index', "1")
 
-        if($(window).css("max-width") == 600){
+        if($(window).css("width") <= 600){
             $('.div-wrapper-p').css("opacity", "0")
             $('.div-wrapper-a').css('opacity', "1")
         }
@@ -29,7 +28,7 @@ $(document).on('ready', ()=>{
     
 
     // Show the sections again when the screen is resized above 600
-    $(window).on('resize', ()=>{
+    $(window).resize(()=>{
         if($(window).css("width") > 600){
             $('.div-wrapper-p').css("opacity", "1")
             $('.div-wrapper-a').css('opacity', "1")
