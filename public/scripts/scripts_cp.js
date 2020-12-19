@@ -7,7 +7,7 @@ $(document).ready(()=>{
         $('.div-wrapper-p').css('z-index', "1")
         $('.div-wrapper-a').css('z-index', "0")
 
-        if($(window).css("max-width") == 600){
+        if($(window).width() < 600){
             $('.div-wrapper-p').css("opacity", "0")
             $('.div-wrapper-a').css('opacity', "1")
         }
@@ -19,7 +19,7 @@ $(document).ready(()=>{
         $('.div-wrapper-p').css('z-index', "0")
         $('.div-wrapper-a').css('z-index', "1")
 
-        if($(window).css("max-width") == 600){
+        if($(window).width() < 600){
             $('.div-wrapper-p').css("opacity", "0")
             $('.div-wrapper-a').css('opacity', "1")
         }
@@ -29,7 +29,6 @@ $(document).ready(()=>{
 
     // Show the sections again when the screen is resized above 600
     $(window).resize(()=>{
-        alert($(window).width())
         if($(window).css("width") > 600){
             $('.div-wrapper-p').css("opacity", "1")
             $('.div-wrapper-a').css('opacity', "1")
