@@ -374,11 +374,6 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-
-    align-self: end;
-}
-.div-date-p p {
-    align-self: end;
 }
 /* For some reason padding is being added automatically, remove it */
 [class^='div-'] p {
@@ -512,11 +507,6 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-
-    align-self: end;
-}
-.div-date-a p {
-    align-self: end;
 }
 /* For some reason padding is being added automatically, remove it */
 [class^='div-'] p {
