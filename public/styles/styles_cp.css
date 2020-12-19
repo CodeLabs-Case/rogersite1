@@ -150,7 +150,7 @@ body {
 }
 .div-box-inner-wrapper-p {
     display: grid;
-    grid-template-rows: 20px 20px auto 20px 20px;
+    grid-template-rows: 20px 20px auto 20px 20px 40px;
     grid-template-columns: 1fr 10fr 1fr;
 
     background-color: #1c1c1c;
@@ -216,8 +216,6 @@ body {
 
     justify-self: center;
     align-self: center;
-
-    margin-bottom: 20px;
 }
 /* For some reason padding is being added automatically, remove it */
 [class^='div-'] p {
@@ -275,7 +273,7 @@ body {
 }
 .div-box-inner-wrapper-a {
     display: grid;
-    grid-template-rows: 20px 20px auto 20px 20px;
+    grid-template-rows: 20px 20px auto 20px 20px 40px;
     grid-template-columns: 1fr 10fr 1fr;
 
     background-color: #1c1c1c;
@@ -339,8 +337,6 @@ body {
 
     justify-self: center;
     align-self: center;
-
-    margin-bottom: 20px;
 }
 /* For some reason padding is being added automatically, remove it */
 [class^='div-'] p {
