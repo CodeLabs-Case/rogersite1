@@ -8,8 +8,8 @@ $(document).ready(()=>{
         $('.div-wrapper-a').css('z-index', "0")
 
         if($(window).width() < 600){
-            $('.div-wrapper-p').css("opacity", "0")
-            $('.div-wrapper-a').css('opacity', "1")
+            $('.div-wrapper-p').css("opacity", "1")
+            $('.div-wrapper-a').css('opacity', "0")
         }
     })
 
