@@ -30,7 +30,7 @@ $(document).ready(()=>{
 
     // Show the sections again when the screen is resized above 600
     $(window).resize(()=>{
-        if($(window).css("width") > 600){
+        if($(window).width() > 600){
             $('.div-wrapper-p').css("opacity", "1")
             $('.div-wrapper-a').css('opacity', "1")
         }
