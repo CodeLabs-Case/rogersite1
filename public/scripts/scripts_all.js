@@ -1,4 +1,4 @@
-$(document).ready(()=>{
+$(document).on('ready', ()=>{
     var windowHeight = $(window).height()
     $('.div-body').css('height', windowHeight)
 

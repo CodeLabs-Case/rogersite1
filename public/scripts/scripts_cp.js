@@ -1,5 +1,6 @@
-$(document).ready(()=>{
+$(document).on('ready', ()=>{
 
+    
 
     $('.p-podcasts').on("click", ()=>{
         $('.div-underline-move').animate({"margin-left": "0px"}, 500)
@@ -28,7 +29,9 @@ $(document).ready(()=>{
     
 
     // Show the sections again when the screen is resized above 600
-    $(window).resize(()=>{
+    $(window).on('resize', ()=>{
+        alert($(window).css('max-width'))
+
         if($(window).css("width") > 600){
             $('.div-wrapper-p').css("opacity", "1")
             $('.div-wrapper-a').css('opacity', "1")
