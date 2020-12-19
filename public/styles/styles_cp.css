@@ -132,9 +132,6 @@ body {
 
 /* Podcasts */
 /* Body */
-.div-wrapper-p {
-    border-top: 5px solid #303030;
-}
 .div-form-add-p {
     display: grid;
     grid-template-rows: 1fr;
@@ -258,9 +255,6 @@ body {
 
 /* Articles */
 /* Body */
-.div-wrapper-a {
-    border-top: 5px solid #303030;
-}
 .div-form-add-a {
     display: grid;
     grid-template-rows: 1fr;
