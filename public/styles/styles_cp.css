@@ -273,7 +273,7 @@ body {
 }
 .div-box-inner-wrapper-a {
     display: grid;
-    grid-template-rows: 20px 20px auto 20px 40px;
+    grid-template-rows: 20px auto 20px 20px 40px;
     grid-template-columns: 1fr 10fr 1fr;
 
     background-color: #1c1c1c;
