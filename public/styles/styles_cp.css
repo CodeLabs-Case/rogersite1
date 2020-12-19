@@ -195,7 +195,8 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
 
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .div-text-p p{
     white-space: pre-line;
@@ -306,7 +307,8 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
 
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .div-text-a p{
     white-space: pre-line;
