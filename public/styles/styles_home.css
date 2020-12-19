@@ -311,7 +311,7 @@ body {
 
 .div-box-inner-wrapper-p {
     display: grid;
-    grid-template-rows: 80px auto auto 40px;
+    grid-template-rows: 80px auto auto 20px;
     grid-template-columns: 1fr 10fr 1fr;
 
     background-color: #1c1c1c;
@@ -460,7 +460,7 @@ body {
 
 .div-box-inner-wrapper-a {
     display: grid;
-    grid-template-rows: 40px auto 40px;
+    grid-template-rows: 40px auto 20px;
     grid-template-columns: 1fr 10fr 1fr;
 
     background-color: #1c1c1c;
