@@ -67,12 +67,12 @@ body {
 .button-submit {
     grid-row: 3;
 
-    margin-left: 180px;
+    margin-left: 100px;
 }
 .button-cancel {
     grid-row: 3;
 
-    margin-right: 180px;
+    margin-right: 100px;
 }
 /* Footer */
 
