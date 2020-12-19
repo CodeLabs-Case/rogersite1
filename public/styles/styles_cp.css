@@ -427,12 +427,12 @@ body {
         background-color: #1c1c1c;
     }
     .div-box-inner-wrapper-p {
-        border-top: 5px solid #303030;
+        border-bottom: 5px solid #303030;
         border-left: 5px solid #303030;
         border-right: 5px solid #303030;
     }
     .div-box-inner-wrapper-a {
-        border-top: 5px solid #303030;
+        border-bottom: 5px solid #303030;
         border-left: 5px solid #303030;
         border-right: 5px solid #303030;
     }
