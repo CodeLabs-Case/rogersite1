@@ -66,7 +66,7 @@ body {
     justify-self: start;
     align-self: center;
 
-    margin-left: 105px;
+    margin-left: 180px;
 }
 .button-cancel {
     grid-row: 3;
@@ -75,7 +75,7 @@ body {
     justify-self: end;
     align-self: center;
 
-    margin-right: 105px;
+    margin-right: 180px;
 }
 .button-cancel input{
     width: 60px;
