@@ -113,10 +113,10 @@ body {
     background-color: #0e0e0e;
 }
 .p-podcasts:hover {
-    cursor: pointer;
+    cursor: default;
 }
 .p-articles:hover {
-    cursor: pointer;
+    cursor: default;
 }
 
 
@@ -423,6 +423,12 @@ body {
         grid-column: 1;
 
         z-index: 0;
+    }
+    .p-podcasts:hover {
+        cursor: pointer;
+    }
+    .p-articles:hover {
+        cursor: pointer;
     }
     /* Footer */
 }
