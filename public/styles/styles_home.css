@@ -350,6 +350,8 @@ body {
     align-self: center;
 }
 .img-link{
+    width: 200px;
+    height: 200px;
     opacity: 0.5;
 }
 .div-text-p {
