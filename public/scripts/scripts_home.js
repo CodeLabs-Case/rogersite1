@@ -1,10 +1,4 @@
 $(document).ready(()=>{
-    var navbarHeight = parseInt($('.ul-navbar').offset().top)
-    window.scrollTo(navbarHeight)
-
-
-
-
 
     var windowHeight = $(window).height()
     $('.div-body-h').css('height', windowHeight)
@@ -13,6 +7,13 @@ $(document).ready(()=>{
     $('[class^=div-sidebar-]').css('height', windowHeight)
     // Make the buffer so that the final element in the list can rise to the top
     $('.div-buffer').css('height', windowHeight)
+
+
+
+
+    
+    var navbarHeight = parseInt($('.ul-navbar').offset().top)
+    window.scrollTo(navbarHeight)
 
 
 
