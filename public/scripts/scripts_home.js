@@ -1,5 +1,5 @@
 $(document).ready(()=>{
-    $('.ul-nabar').scrollTop()
+    $('.ul-navbar').scrollTop()
 
 
 
