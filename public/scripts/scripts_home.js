@@ -1,5 +1,5 @@
 $(document).ready(()=>{
-    var navbarHeight = $('.ul-navbar').offset().top
+    var navbarHeight = parseInt($('.ul-navbar').offset().top)
     alert(navbarHeight)
 
 
