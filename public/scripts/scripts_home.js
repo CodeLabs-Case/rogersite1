@@ -147,6 +147,13 @@ $(document).ready(()=>{
         }
     })
 
+    $('[div-sidebar-']).on('focusout', function(){
+        $('.div-sidebar-p').stop(true, true).animate({'margin-left': "-300px"}, 250)
+            $('.div-sidebar-a').stop(true, true).animate({'margin-left': "-300px"}, 250)
+            sidep = 0
+            sidea = 0
+    })
+
 
 
 
