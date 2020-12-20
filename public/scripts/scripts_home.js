@@ -1,4 +1,9 @@
 $(document).ready(()=>{
+    var nabarLocation = $('.ul-nabar').scrollTop()
+    $(window).scrollTop({nabarLocation, behavior: 'smooth'})
+
+
+
     var windowHeight = $(window).height()
     $('.div-body-h').css('height', windowHeight)
     $('.div-body-p').css('height', windowHeight)
