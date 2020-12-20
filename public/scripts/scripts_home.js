@@ -1,6 +1,6 @@
 $(document).ready(()=>{
-    var nabarLocation = $('.ul-nabar').offset().top
-    window.scrollTop({top: nabarLocation, behavior: 'smooth'})
+    // var navbarLocation = $('.ul-nabar').offset().top
+    // window.scrollTop({top: navbarLocation, behavior: 'smooth'})
 
 
 
