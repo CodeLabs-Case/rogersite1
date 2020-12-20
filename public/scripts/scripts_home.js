@@ -52,6 +52,10 @@ $(document).ready(()=>{
         $('.img-selector-a').css('visibility', "hidden")
 
         $('.div-underline-move').stop(true, true).animate({"margin-left": "0px"}, 500)
+
+        window.scrollTo({ 
+            top: navbarHeight, behavior: 'smooth'
+        })
     })
 
     $('.p-podcasts').on("click", ()=>{
@@ -63,6 +67,10 @@ $(document).ready(()=>{
         $('.img-selector-a').css('visibility', "hidden")
 
         $('.div-underline-move').stop(true, true).animate({"margin-left": "96px"}, 500)
+
+        window.scrollTo({ 
+            top: navbarHeight, behavior: 'smooth'
+        })
     })
 
     $('.p-articles').on("click", ()=>{
@@ -75,6 +83,10 @@ $(document).ready(()=>{
 
         
         $('.div-underline-move').stop(true, true).animate({"margin-left": "193px"}, 500)
+
+        window.scrollTo({ 
+            top: navbarHeight, behavior: 'smooth'
+        })
     })
     
 
