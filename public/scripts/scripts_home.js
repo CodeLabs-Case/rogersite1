@@ -1,6 +1,6 @@
 $(document).ready(()=>{
     // var navbarLocation = $('.ul-nabar').offset().top
-    window.scrollTop({top: 100, behavior: 'smooth'})
+    window.scrollTop(100)
 
 
 
@@ -71,7 +71,7 @@ $(document).ready(()=>{
         
         $('.div-underline-move').stop(true, true).animate({"margin-left": "193px"}, 500)
     })
-
+    
 
 
 
