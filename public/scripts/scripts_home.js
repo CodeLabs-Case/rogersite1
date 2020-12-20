@@ -1,6 +1,6 @@
 $(document).ready(()=>{
     var navbarHeight = parseInt($('.ul-navbar').offset().top)
-    alert(navbarHeight)
+    window.scrollTo(navbarHeight)
 
 
 
