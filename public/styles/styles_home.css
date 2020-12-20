@@ -476,7 +476,7 @@ body {
     grid-template-columns: 1fr;
 }
 .div-title-a {
-    font-size: 18px;
+    font-size: 22px;
 
     grid-row: 1;
     grid-column: 2;
