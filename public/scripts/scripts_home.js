@@ -147,7 +147,7 @@ $(document).ready(()=>{
         }
     })
 
-    $('[div-sidebar-]').on('focusout', function(){
+    $('[div-sidebar-]').focusout(()=>{
         if(sidea == 1){
             $('.div-sidebar-p').stop(true, true).animate({'margin-left': "-300px"}, 250)
             $('.div-sidebar-a').stop(true, true).animate({'margin-left': "-300px"}, 250)
