@@ -147,14 +147,14 @@ $(document).ready(()=>{
         }
     })
 
-    $('[class^=div-sidebar-]').on('focusout', ()=>{
+    $('[class^=div-sidebar-]').focusout(function(){
         if(sidea == 1){
             $('.div-sidebar-p').stop(true, true).animate({'margin-left': "-300px"}, 250)
             $('.div-sidebar-a').stop(true, true).animate({'margin-left': "-300px"}, 250)
             sidep = 0
             sidea = 0
         }
-    })
+    })  
 
 
 
