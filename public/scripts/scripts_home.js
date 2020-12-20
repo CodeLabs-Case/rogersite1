@@ -11,9 +11,11 @@ $(document).ready(()=>{
 
 
 
-    
+
     var navbarHeight = parseInt($('.ul-navbar').offset().top)
-    window.scrollTo(navbarHeight)
+    window.scrollTo({ 
+        top: navbarHeight, behavior: 'smooth'
+    })
 
 
 
