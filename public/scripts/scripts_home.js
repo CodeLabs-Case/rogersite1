@@ -1,5 +1,6 @@
 $(document).ready(()=>{
-    $('.ul-navbar').scrollTop()
+    var navbarHeight = $('.ul-navbar').offset().top
+    alert(navbarHeight)
 
 
 
