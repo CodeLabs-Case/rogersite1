@@ -240,6 +240,7 @@ body {
 
     /* This lovely property here makes the element's width span the entire container */
     display: block;
+    position: relative;
 }
 .div-home-header {
     display: grid;
@@ -271,6 +272,7 @@ body {
     height: 50px;
     width: 100%;
     background-color: #d6eeee;
+    position: absolute;
 }
 
 
