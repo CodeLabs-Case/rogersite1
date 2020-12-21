@@ -252,17 +252,27 @@ body {
 
     z-index: 1;
 }
-.home-pic {
+.div-home-pic {
     grid-row: 1;
     grid-column: 1;
-
-    height: auto;
-    max-width: 100%;
 
     z-index: 2;
 
     justify-self: center;
     align-self: center;
+
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 200px;
+}
+.home-pic {
+    grid-row: 1;
+    grid-column: 1;
+
+    z-index: 2;
+
+    height: auto;
+    max-width: 100%;
 }
 
 
