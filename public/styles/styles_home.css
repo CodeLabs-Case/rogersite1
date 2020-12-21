@@ -780,6 +780,13 @@ body {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     /* Header */
+    .div-header {
+        height: 500px;
+    }
+    .div-navsection {
+        height: 500px;
+    }
+    
     /* Body */
     .div-body-h {
         width: 100%;
