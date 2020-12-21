@@ -10,7 +10,8 @@ $(document).ready(()=>{
     // Make the buffer so that the final element in the list can rise to the top
     $('.div-buffer').css('height', windowHeight)
     // Set height of header to be a fraction of he whole
-    $('.div-home-header').css('height', windowHeight/10)
+    $('.div-home-header').css('height', windowHeight/3)
+    $('.home-img-homecover').css('height', windowHeight/3)
     // Set the width of the home wrapper and update it when the width changes
     $('.div-wrapper-h').width(windowWidth)
     $(window).resize(()=>{
