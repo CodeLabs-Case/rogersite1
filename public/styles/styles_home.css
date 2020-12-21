@@ -717,6 +717,9 @@ body {
 
 
     /* Body */
+    .home-pic {
+        margin-top: 20px;
+    }
     .home-body {
         padding-top: 40px;
         padding-left: 10px;
