@@ -226,7 +226,7 @@ body {
 
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-bottom: 5px;
 
     background-color: #1c1c1c;
@@ -786,7 +786,7 @@ body {
     .div-navsection {
         height: 500px;
     }
-    
+
     /* Body */
     .div-body-h {
         width: 100%;
