@@ -780,36 +780,27 @@ body {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     /* Header */
-    /* Make the height of the header smaller here */
-    .div-header {
-        height: 250px;
-    }
-    .div-navsection {
-        height: 250px;
-    }
-
-
-
     /* Body */
+    .div-body-h {
+        width: 100%;
+        
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
     .div-body-p {
         width: 100%;
         
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 5fr 1fr;
     }
     .div-body-a {
         width: 100%;
         
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
-    }
-    .div-text-p {
-        padding: 40px;
-    }
-    .div-text-a {
-        padding: 40px;
+        grid-template-columns: 1fr 5fr 1fr;
     }
 }
 
@@ -842,38 +833,7 @@ body {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    /* Header */
-    .div-header {
-        height: 500px;
-    }
-    .div-navsection {
-        height: 500px;
-    }
-
-
-
-    /* Body */
-    .div-body-h {
-        width: 100%;
-        
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 5fr 1fr;
-    }
-    .div-body-p {
-        width: 100%;
-        
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 5fr 1fr;
-    }
-    .div-body-a {
-        width: 100%;
-        
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 5fr 1fr;
-    }
+    
 }
 
 
