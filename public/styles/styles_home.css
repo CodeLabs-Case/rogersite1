@@ -192,13 +192,6 @@ body {
 
 
 /* Home */
-.div-body-h {
-    width: 100%;
-    
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 10fr 1fr;
-}
 .div-body-left-h {
     /* background-color: var(--bg-lite); */
     background-color: #1c1c1c;
@@ -725,6 +718,13 @@ body {
     .home-body {
         margin-top: 40px;
         padding: 10px;
+    }
+    .div-body-h {
+        width: 100%;
+        
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
     }
     .div-body-p {
         width: 100%;
