@@ -717,9 +717,6 @@ body {
 
 
     /* Body */
-    .home-pic {
-        margin-top: 20px;
-    }
     .home-body {
         padding-top: 40px;
         padding-left: 10px;
@@ -846,7 +843,9 @@ body {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    
+    .home-pic {
+        margin-top: 20px;
+    }
 }
 
 
