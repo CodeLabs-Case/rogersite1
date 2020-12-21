@@ -710,8 +710,15 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
+    .div-title-a {
+        color: #fff;
+    }
     .div-text-a {
+        color: #fff;
         padding: 10px;
+    }
+    .div-date-a {
+        color: #fff;
     }
 }
 
@@ -775,8 +782,15 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
+    .div-title-a {
+        color: #fff;
+    }
     .div-text-a {
+        color: #fff;
         padding: 40px;
+    }
+    .div-date-a {
+        color: #fff;
     }
 }
 
@@ -840,6 +854,15 @@ body {
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 5fr 1fr;
+    }
+    .div-title-a {
+        color: #fff;
+    }
+    .div-text-a {
+        color: #fff;
+    }
+    .div-date-a {
+        color: #fff;
     }
 }
 
