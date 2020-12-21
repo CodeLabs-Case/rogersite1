@@ -239,8 +239,16 @@ body {
     background-color: #1c1c1c;
 
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr
+}
+.div-home-header {
+    grid-row: 1;
+    grid-column: 1;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
 .home-img-homecover {
     grid-row: 1;
