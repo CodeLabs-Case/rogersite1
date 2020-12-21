@@ -725,22 +725,12 @@ body {
     .div-text-p {
         padding: 10px;
     }
-    .div-body-a {
-        width: 100%;
-        
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
-    }
-    .div-title-a {
-        color: #fff;
-    }
     .div-text-a {
-        color: #fff;
         padding: 10px;
     }
-    .div-date-a {
-        color: #fff;
+    .home-pic {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -877,14 +867,9 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 5fr 1fr;
     }
-    .div-title-a {
-        color: #fff;
-    }
-    .div-text-a {
-        color: #fff;
-    }
-    .div-date-a {
-        color: #fff;
+    .home-pic {
+        width: 100%;
+        height: 100%;
     }
 }
 
