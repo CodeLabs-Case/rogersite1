@@ -729,8 +729,8 @@ body {
         padding: 10px;
     }
     .home-pic {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -787,22 +787,15 @@ body {
     .div-text-p {
         padding: 40px;
     }
+    .div-text-a {
+        padding: 40px;
+    }
     .div-body-a {
         width: 100%;
         
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
-    }
-    .div-title-a {
-        color: #fff;
-    }
-    .div-text-a {
-        color: #fff;
-        padding: 40px;
-    }
-    .div-date-a {
-        color: #fff;
     }
 }
 
