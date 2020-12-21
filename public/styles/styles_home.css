@@ -238,6 +238,7 @@ body {
 
     background-color: #1c1c1c;
     background: url('/static/images/home_cover.png');
+    background-size: contain;
 
     /* This lovely property here makes the element's width span the entire container */
     display: grid;
