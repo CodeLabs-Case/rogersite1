@@ -9,7 +9,14 @@ $(document).ready(()=>{
     $('[class^=div-sidebar-]').css('height', windowHeight)
     // Make the buffer so that the final element in the list can rise to the top
     $('.div-buffer').css('height', windowHeight)
+    
     $('.div-wrapper-h').width(windowWidth)
+    $(window).resize(()=>{
+        windowWidth = $(window).width()
+        $('.div-wrapper-h').width(windowWidth)
+    })
+
+
 
 
 
