@@ -266,6 +266,17 @@ body {
     height: 50px;
     width: 100%;
     position: absolute;
+
+    display: grid;
+    grid-template-rows: 32px;
+    grid-template-columns: 1fr;
+}
+.home-social div{
+    grid-row: 1;
+    grid-column: 1;
+
+    justify-self: center;
+    align-self: center;
 }
 
 
