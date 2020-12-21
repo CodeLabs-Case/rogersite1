@@ -1,12 +1,15 @@
 $(document).ready(()=>{
 
     var windowHeight = $(window).height()
+    var windowWidth = $(window).width()
+
     $('.div-body-h').css('height', windowHeight)
     $('.div-body-p').css('height', windowHeight)
     $('.div-body-a').css('height', windowHeight)
     $('[class^=div-sidebar-]').css('height', windowHeight)
     // Make the buffer so that the final element in the list can rise to the top
     $('.div-buffer').css('height', windowHeight)
+    $('.div-wrapper-h').width(windowWidth)
 
 
 
