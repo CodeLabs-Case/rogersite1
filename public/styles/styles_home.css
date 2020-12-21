@@ -253,6 +253,9 @@ body {
     z-index: 1;
 }
 .div-home-pic {
+    height: auto;
+    max-width: 100%;
+    
     grid-row: 1;
     grid-column: 1;
 
