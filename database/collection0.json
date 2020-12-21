@@ -1,33 +1,21 @@
 {   
     "podcasts": [
         {
-            "title": "Podcast Title 5",
-            "link": "https://www.rogcasts.com",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "date": "date1"
-        },
-        {
-            "title": "Podcast Title 4",
-            "link": "https://www.rogcasts.com",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "date": "date2"
-        },
-        {
-            "title": "Podcast Title 3",
-            "link": "https://www.rogcasts.com",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "title": "Ember",
+            "link": "https://anchor.fm/roger-edwards1",
+            "text": "Introducing amazing passion filled people to the world who are out to make a difference.",
             "date": "date3"
         },
         {
-            "title": "Podcast Title 2",
-            "link": "https://www.rogcasts.com",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "title": "The Generation Sports Gap",
+            "link": "https://anchor.fm/roger-edwards4",
+            "text": "A father and son try to bridge the sports world generational gap with hard discussions from both ends of the spectrum.",
             "date": "date4"
         },
         {
-            "title": "Podcast Title 1",
-            "link": "https://www.rogcasts.com",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "title": "Mazi",
+            "link": "https://anchor.fm/roger-edwards7",
+            "text": "A ministry of the Pointe Church in Belmont NC. Sharing amazing stories of everyday people just like you and me.",
             "date": "date5"
         }
     ]
