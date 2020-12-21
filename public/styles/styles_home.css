@@ -241,6 +241,9 @@ body {
     /* This lovely property here makes the element's width span the entire container */
     display: block;
 }
+.home-img-homecover {
+    width: 100%;
+}
 
 
 
@@ -700,9 +703,6 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
-    .div-text-p {
-        padding: 10px;
-    }
     .div-body-a {
         width: 100%;
         
@@ -710,15 +710,11 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
-    .div-title-a {
-        color: #fff;
-    }
-    .div-text-a {
-        color: #fff;
+    .div-text-p {
         padding: 10px;
     }
-    .div-date-a {
-        color: #fff;
+    .div-text-a {
+        padding: 10px;
     }
 }
 
@@ -772,9 +768,6 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
-    .div-text-p {
-        padding: 40px;
-    }
     .div-body-a {
         width: 100%;
         
@@ -782,15 +775,11 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
-    .div-title-a {
-        color: #fff;
-    }
-    .div-text-a {
-        color: #fff;
+    .div-text-p {
         padding: 40px;
     }
-    .div-date-a {
-        color: #fff;
+    .div-text-a {
+        padding: 40px;
     }
 }
 
@@ -854,15 +843,6 @@ body {
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 5fr 1fr;
-    }
-    .div-title-a {
-        color: #fff;
-    }
-    .div-text-a {
-        color: #fff;
-    }
-    .div-date-a {
-        color: #fff;
     }
 }
 
