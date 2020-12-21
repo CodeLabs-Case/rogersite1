@@ -278,6 +278,9 @@ body {
     justify-self: center;
     align-self: center;
 }
+a {
+    text-decoration: none;
+}
 
 
 
