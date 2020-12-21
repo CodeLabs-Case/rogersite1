@@ -262,12 +262,12 @@ body {
     align-self: center;
 
     display: grid;
-    grid-template-rows: 200px;
-    grid-template-columns: 200px;
+    grid-template-rows: 1fr 200px 1fr;
+    grid-template-columns: 1fr 200px 1fr;
 }
 .home-pic {
-    grid-row: 1;
-    grid-column: 1;
+    grid-row: 2;
+    grid-column: 2;
 
     z-index: 2;
 
