@@ -239,7 +239,7 @@ body {
     background-color: #1c1c1c;
 
     display: grid;
-    grid-template-rows: 1fr 2fr 0.1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr
 }
 .home-img-homecover {
