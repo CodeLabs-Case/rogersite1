@@ -247,7 +247,8 @@ body {
     grid-row: 1;
     grid-column: 1;
 
-    object-fit: contain;
+    height: auto;
+    max-width: 100%;
 }
 
 
