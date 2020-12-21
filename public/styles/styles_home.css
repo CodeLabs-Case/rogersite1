@@ -524,7 +524,9 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
 
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .div-text-a p{
     white-space: pre-line;
@@ -716,8 +718,9 @@ body {
 
     /* Body */
     .home-body {
-        margin-top: 40px;
-        padding: 10px;
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .div-body-h {
         width: 100%;
