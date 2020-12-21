@@ -388,8 +388,10 @@ body {
     grid-row: 1;
     grid-column: 1;
 }
-
-[class^='div-wrapper-a'] {
+.div-wrapper-a .li-title{
+    color: #fff;
+}
+.div-box-inner-wrapper-a [class^='div-'] {
     color: #fff;
 }
 [class^='div-'] p a{
