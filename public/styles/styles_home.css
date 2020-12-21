@@ -239,9 +239,13 @@ body {
     background-color: #1c1c1c;
 
     /* This lovely property here makes the element's width span the entire container */
-    display: block;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr
 }
 .img-headcover {
+    grid-row: 1;
+    grid-column: 1;
     width: 100%;
     height: 100%;
     object-fit: cover;
