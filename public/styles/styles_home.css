@@ -266,9 +266,11 @@ body {
     justify-content: center;
     text-align: center;
 }
-
-
-
+.home-social {
+    height: 50px;
+    width: 100%;
+    background-color: #d6eeee;
+}
 
 
 
