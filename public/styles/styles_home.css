@@ -260,6 +260,11 @@ body {
     justify-self: center;
     align-self: center;
 }
+.home-body {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
 
 
 
