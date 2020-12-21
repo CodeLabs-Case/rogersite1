@@ -243,7 +243,7 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr
 }
-.img-headcover {
+.img-homecover {
     grid-row: 1;
     grid-column: 1;
 
