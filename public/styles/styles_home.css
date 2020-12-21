@@ -388,6 +388,10 @@ body {
     grid-row: 1;
     grid-column: 1;
 }
+
+[class^='div-wrapper-a'] {
+    color: #fff;
+}
 [class^='div-'] p a{
     text-decoration: none;
 }
