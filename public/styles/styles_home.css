@@ -376,7 +376,7 @@ body {
 .img-link{
     width: 200px;
     height: 200px;
-    opacity: 0.5;
+    opacity: 1.0;
 }
 .div-text-p {
     font-size: 14px;
