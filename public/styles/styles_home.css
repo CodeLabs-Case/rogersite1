@@ -240,15 +240,17 @@ body {
 
     /* This lovely property here makes the element's width span the entire container */
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 500px 1fr;
     grid-template-columns: 1fr
 }
-.img-homecover {
+.home-img-homecover {
     grid-row: 1;
     grid-column: 1;
 
     height: auto;
     max-width: 100%;
+
+    z-index: 1;
 }
 
 
