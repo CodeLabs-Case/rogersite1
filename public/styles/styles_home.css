@@ -238,38 +238,8 @@ body {
 
     background-color: #1c1c1c;
 
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr
-}
-.div-home-header {
-    grid-row: 1;
-    grid-column: 1;
-
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-}
-.home-img-homecover {
-    grid-row: 1;
-    grid-column: 1;
-
-    height: auto;
-    width: 100%;
-
-    z-index: 1;
-}
-.home-pic {
-    grid-row: 1;
-    grid-column: 1;
-
-    height: auto;
-    max-width: 100%;
-
-    z-index: 2;
-
-    justify-self: center;
-    align-self: center;
+    /* This lovely property here makes the element's width span the entire container */
+    display: block;
 }
 
 
@@ -382,7 +352,7 @@ body {
 .img-link{
     width: 200px;
     height: 200px;
-    opacity: 1;
+    opacity: 0.5;
 }
 .div-text-p {
     font-size: 14px;
@@ -733,12 +703,22 @@ body {
     .div-text-p {
         padding: 10px;
     }
+    .div-body-a {
+        width: 100%;
+        
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .div-title-a {
+        color: #fff;
+    }
     .div-text-a {
+        color: #fff;
         padding: 10px;
     }
-    .home-pic {
-        width: 150px;
-        height: 150px;
+    .div-date-a {
+        color: #fff;
     }
 }
 
@@ -795,15 +775,22 @@ body {
     .div-text-p {
         padding: 40px;
     }
-    .div-text-a {
-        padding: 40px;
-    }
     .div-body-a {
         width: 100%;
         
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
+    }
+    .div-title-a {
+        color: #fff;
+    }
+    .div-text-a {
+        color: #fff;
+        padding: 40px;
+    }
+    .div-date-a {
+        color: #fff;
     }
 }
 
@@ -868,9 +855,14 @@ body {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 5fr 1fr;
     }
-    .home-pic {
-        width: 200px;
-        height: 200px;
+    .div-title-a {
+        color: #fff;
+    }
+    .div-text-a {
+        color: #fff;
+    }
+    .div-date-a {
+        color: #fff;
     }
 }
 
