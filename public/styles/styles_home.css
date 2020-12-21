@@ -380,7 +380,7 @@ body {
 /* For some reason padding is being added automatically, remove it */
 [class^='div-'] p {
     color: #d6eeee;
-    font-family: 'Roboto';
+    font-family: 'Dosis';
     text-align: center;
     align-self: center;
     margin: 0px;
@@ -388,18 +388,18 @@ body {
     grid-row: 1;
     grid-column: 1;
 }
-.div-wrapper-a .li-title{
-    color: #fff;
-}
-.div-box-inner-wrapper-a [class^='div-'] {
-    color: #fff;
-}
 [class^='div-'] p a{
     text-decoration: none;
 }
-
-
-
+.div-title-a {
+    color: #fff;
+}
+.div-text-a {
+    color: #fff;
+}
+.div-date-a {
+    color: #fff;
+}
 
 
 
@@ -520,7 +520,7 @@ body {
 /* For some reason padding is being added automatically, remove it */
 [class^='div-'] p {
     color: #d6eeee;
-    font-family: 'Roboto';
+    font-family: 'Dosis';
     text-align: center;
     align-self: center;
     margin: 0px;
