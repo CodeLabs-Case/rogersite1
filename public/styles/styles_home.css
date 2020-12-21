@@ -237,19 +237,20 @@ body {
     margin-bottom: 5px;
 
     background-color: #1c1c1c;
+    background: url('/static/images/home_cover.png');
 
     /* This lovely property here makes the element's width span the entire container */
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr
 }
-.img-homecover {
+/* .img-homecover {
     grid-row: 1;
     grid-column: 1;
 
     height: auto;
     max-width: 100%;
-}
+} */
 
 
 
@@ -361,7 +362,7 @@ body {
 .img-link{
     width: 200px;
     height: 200px;
-    opacity: 0.5;
+    opacity: 1;
 }
 .div-text-p {
     font-size: 14px;
