@@ -13,6 +13,15 @@ $(document).ready(()=>{
     $('.div-home-header').css('height', windowHeight/3)
     $('.home-img-homecover').css('height', windowHeight/3)
 
+    // Make the portrait the inital size depending on screen size
+    if(windowWidth < 584) {
+        $('.home-pic').css('height', 125)
+        $('.home-pic').css('width', 125)
+    } else {
+        $('.home-pic').css('height', 150)
+        $('.home-pic').css('width', 150)
+    }
+
     // Make the window jump down to the navbar when the page loads
     var navbarHeight = parseInt($('.ul-navbar').offset().top)
     window.scrollTo({ 
