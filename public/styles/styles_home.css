@@ -278,6 +278,9 @@ body {
     justify-self: center;
     align-self: center;
 }
+.home-social div a img:hover {
+    opacity: 0.5;
+}
 .social-label {
     color: #d6eeee;
     font-size: 18px;
