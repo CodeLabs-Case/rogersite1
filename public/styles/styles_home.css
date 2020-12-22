@@ -283,6 +283,9 @@ body {
     font-size: 18px;
     font-family: "Caveat";
 
+    grid-row: 1;
+    grid-column: 1;
+
     justify-self: center;
     align-self: center;
 }
