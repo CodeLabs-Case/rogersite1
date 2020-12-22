@@ -563,7 +563,8 @@ a {
     white-space: pre-line;
 }
 .div-date-a {
-    font-size: 14px;
+    font-size: 10px;
+    font-family: "Caveat";
 
     grid-row: 4;
     grid-column: 2;
