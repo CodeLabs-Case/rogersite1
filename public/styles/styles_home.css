@@ -288,6 +288,8 @@ body {
 
     justify-self: center;
     align-self: center;
+
+    margin-right: 100px;
 }
 a {
     text-decoration: none;
