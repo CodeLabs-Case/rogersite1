@@ -277,9 +277,9 @@ body {
 
     justify-self: center;
     align-self: center;
+    align-content: center;
 }
 .social-label {
-    height: 35px;
     color: #d6eeee;
     font-size: 18px;
     font-family: "Caveat";
