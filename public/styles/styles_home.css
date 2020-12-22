@@ -279,11 +279,10 @@ body {
     align-self: center;
 }
 .social-label {
+    height: 35px;
     color: #d6eeee;
     font-size: 18px;
     font-family: "Caveat";
-
-    padding-bottom: 12px;
 }
 a {
     text-decoration: none;
