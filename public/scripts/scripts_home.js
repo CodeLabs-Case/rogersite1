@@ -29,7 +29,7 @@ $(document).ready(()=>{
         navbarHeight = parseInt($('.ul-navbar').offset().top)
 
         // Make the portrait small if window is less than 600px
-        if(windowWidth < 600) {
+        if(windowWidth < 590) {
             $('.home-pic').css('height', 125)
             $('.home-pic').css('width', 125)
         } else {
