@@ -283,7 +283,7 @@ body {
     font-size: 18px;
     font-family: "Caveat";
 
-    align-self: center;
+    margin-bottom: 6px;
 }
 a {
     text-decoration: none;
