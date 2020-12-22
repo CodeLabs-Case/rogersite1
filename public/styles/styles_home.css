@@ -278,6 +278,10 @@ body {
     justify-self: center;
     align-self: center;
 }
+.social-label {
+    font-size: 14px;
+    font-family: "Caveat";
+}
 a {
     text-decoration: none;
 }
