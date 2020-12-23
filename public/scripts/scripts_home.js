@@ -134,10 +134,10 @@ $(document).ready(()=>{
 
     // Do the same for the social links
     $('.home-social div a img').on('mouseenter', function(){
-        $(this).stop(true, true).animate({ "opacity": "0.5" }, 500)
+        $(this).stop(true, true).animate({ "opacity": "0.5" }, 750)
     })
     $('.home-social div a img').on('mouseleave', function(){
-        $(this).stop(true, true).animate({ "opacity": "1.0" }, 500)
+        $(this).stop(true, true).animate({ "opacity": "1.0" }, 750)
     })
 
 
