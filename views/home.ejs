@@ -189,12 +189,12 @@
                         <ul class='ul-titles-a'>
                         <% var k = 0 %>
                         <% a.articles.forEach(function(article){ %>
-                        <li class='li-title'>
-                            <%if( k != 0) { %>
-                            <p><%= article.title %></p>
+                            <% if( k != 0) { %>
+                                <li class='li-title'>
+                                    <p><%= article.title %></p>
+                                </li>
                             <% } %>
-                        </li>
-                        <% k = k + 1 %>
+                            <% k = k + 1 %>
                         <% }) %>
                         </ul>
                     </div>
