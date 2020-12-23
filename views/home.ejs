@@ -201,12 +201,15 @@
                     <div class="div-body-a">
                         <div class='div-body-left-a'></div>
                         <ul class='ul-body-center-a'>
+                            <% var l = 0 %>
                             <% a.articles.forEach(function(article){ %>
                                 <li>
                                     <div class='div-box-a'>
                                         <div class='div-box-inner-wrapper-a'>
                                             <div class='div-img-a'>
+                                                <% if( l != 0 ) { %>
                                                 <img class="img-articles" src="/static/images/home_pic.png" alt="">
+                                                <% } %>
                                             </div>
                                             <div class='div-title-a'>
                                                 <p>
@@ -226,6 +229,7 @@
                                         </div>
                                     </div>
                                 </li>
+                            <% l = l + 1 %>
                             <% }) %>
                             <div class='div-buffer'>
                                 <img src="/static/images/dot.png" alt="">
