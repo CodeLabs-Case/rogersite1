@@ -94,6 +94,8 @@ $(document).ready(()=>{
         // ... and there is nothing inside expanding it by defualt
         if($(window).width() < 600){
             $('.div-box-a').css('width', windowWidth)
+        } else {
+            $('.div-box-a').css('width', auto)
         }
     })
 
