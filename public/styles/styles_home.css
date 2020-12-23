@@ -535,6 +535,10 @@ a {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
 }
+.img-articles {
+    width: 75px;
+    height: 75px;
+}
 .div-title-a {
     font-size: 22px;
 
