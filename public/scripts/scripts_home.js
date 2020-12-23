@@ -25,7 +25,8 @@ $(document).ready(()=>{
     // Make the window jump down to the navbar when the page loads
     var navbarHeight = parseInt($('.ul-navbar').offset().top)
     window.scrollTo({ 
-        top: navbarHeight, behavior: 'smooth'
+        top: navbarHeight,
+        behavior: 'smooth'
     })
 
     // Set the width of the home wrapper and update it when the width changes
