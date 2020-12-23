@@ -19,7 +19,7 @@ $(document).ready(()=>{
     if($(window).width() < 600){
         $('.div-box-a').css('width', windowWidth)
     } else {
-        $('.div-box-a').css('width', auto)
+        $('.div-box-a').css('width', 'auto')
     }
 
     // Make the portrait the inital size depending on screen size
@@ -97,7 +97,7 @@ $(document).ready(()=>{
         if($(window).width() < 600){
             $('.div-box-a').css('width', windowWidth)
         } else {
-            $('.div-box-a').css('width', auto)
+            $('.div-box-a').css('width', 'auto')
         }
     })
 
