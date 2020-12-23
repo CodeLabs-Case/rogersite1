@@ -14,6 +14,11 @@ $(document).ready(()=>{
     $('.home-img-homecover').css('height', windowHeight/3)
     // Set the width of the home wrapper and update it when the width changes
     $('.div-wrapper-h').width(windowWidth)
+    // Make the articles div container expand to be as wide as the screen when max-width is 600 ...
+    // ... and there is nothing inside expanding it by defualt
+    if(window.width() < 600){
+        $('.div-box-a').width(windowWidth)
+    }
 
     // Make the portrait the inital size depending on screen size
     // For width
@@ -83,6 +88,13 @@ $(document).ready(()=>{
         // Set height of home header to be a fraction of he whole
         $('.div-home-header').css('height', windowHeight/3)
         $('.home-img-homecover').css('height', windowHeight/3)
+
+
+        // Make the articles div container expand to be as wide as the screen when max-width is 600 ...
+        // ... and there is nothing inside expanding it by defualt
+        if(window.width() < 600){
+            $('.div-box-a').width(windowWidth)
+        }
     })
 
 
