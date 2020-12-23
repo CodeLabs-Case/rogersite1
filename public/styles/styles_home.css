@@ -521,6 +521,7 @@ a {
 
 
 .div-box-inner-wrapper-a {
+    width: 100%;
     display: grid;
     grid-template-rows: 40px auto 80px 20px;
     grid-template-columns: 1fr 10fr 1fr;
