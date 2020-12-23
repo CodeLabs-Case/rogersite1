@@ -295,8 +295,8 @@ body {
     margin-right: 120px;
 }
 .home-social div a img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 a {
     text-decoration: none;
@@ -796,6 +796,10 @@ a {
     }
     .div-text-a {
         padding: 10px;
+    }
+    .home-social div a img {
+        width: 30px;
+        height: 30px;
     }
 }
 
