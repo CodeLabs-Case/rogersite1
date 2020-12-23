@@ -17,7 +17,7 @@ $(document).ready(()=>{
     // Make the articles div container expand to be as wide as the screen when max-width is 600 ...
     // ... and there is nothing inside expanding it by defualt
     if($(window).width() < 584){
-        $('.div-box-a').css('width', windowWidth - 15)
+        $('.div-box-a').css('width', windowWidth - 10)
     } else {
         $('.div-box-a').css('width', 'auto')
     }
@@ -95,7 +95,7 @@ $(document).ready(()=>{
         // Make the articles div container expand to be as wide as the screen when max-width is 600 ...
         // ... and there is nothing inside expanding it by defualt
         if($(window).width() < 584){
-            $('.div-box-a').css('width', windowWidth - 5)
+            $('.div-box-a').css('width', windowWidth - 10)
         } else {
             $('.div-box-a').css('width', 'auto')
         }
