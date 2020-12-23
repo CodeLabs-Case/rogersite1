@@ -26,6 +26,9 @@ $(document).ready(()=>{
     if(windowHeight < 350){
         $('.home-pic').css('height', 100)
         $('.home-pic').css('width', 100)
+    } else if(windowHeight < 200) {
+        $('.home-pic').css('height', 50)
+        $('.home-pic').css('width', 50)
     } else {
         $('.home-pic').css('height', 150)
         $('.home-pic').css('width', 150)
@@ -65,6 +68,9 @@ $(document).ready(()=>{
         if(windowHeight < 350){
             $('.home-pic').css('height', 100)
             $('.home-pic').css('width', 100)
+        } else if(windowHeight < 200) {
+            $('.home-pic').css('height', 50)
+            $('.home-pic').css('width', 50)
         } else {
             $('.home-pic').css('height', 150)
             $('.home-pic').css('width', 150)
