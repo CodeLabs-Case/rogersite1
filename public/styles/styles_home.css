@@ -536,8 +536,10 @@ a {
     grid-template-columns: 1fr;
 }
 .img-articles {
-    width: 75px;
-    height: 75px;
+    width: 35px;
+    height: 35px;
+
+    opacity: 0.8;
 }
 .div-title-a {
     font-size: 22px;
