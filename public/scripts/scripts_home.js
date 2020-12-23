@@ -72,8 +72,16 @@ $(document).ready(()=>{
 
 
 
-        // Adjust the height of the sidebar when the window changes size
+        // Adjust the heights of the other elements dependent on them
+        $('.div-body-h').css('height', windowHeight)
+        $('.div-body-p').css('height', windowHeight)
+        $('.div-body-a').css('height', windowHeight)
         $('[class^=div-sidebar-]').css('height', windowHeight)
+        // Make the buffer so that the final element in the list can rise to the top
+        $('.div-buffer').css('height', windowHeight)
+        // Set height of home header to be a fraction of he whole
+        $('.div-home-header').css('height', windowHeight/3)
+        $('.home-img-homecover').css('height', windowHeight/3)
     })
 
 
