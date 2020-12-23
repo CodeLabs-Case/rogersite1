@@ -12,6 +12,8 @@ $(document).ready(()=>{
     // Set height of home header to be a fraction of he whole
     $('.div-home-header').css('height', windowHeight/3)
     $('.home-img-homecover').css('height', windowHeight/3)
+    // Set the width of the home wrapper and update it when the width changes
+    $('.div-wrapper-h').width(windowWidth)
 
     // Make the portrait the inital size depending on screen size
     // For width
@@ -34,15 +36,8 @@ $(document).ready(()=>{
         $('.home-pic').css('width', 150)
     }
 
-    // Make the window jump down to the navbar when the page loads
-    var navbarHeight = parseInt($('.ul-navbar').offset().top)
-    window.scrollTo({ 
-        top: navbarHeight,
-        behavior: 'smooth'
-    })
 
-    // Set the width of the home wrapper and update it when the width changes
-    $('.div-wrapper-h').width(windowWidth)
+
     $(window).resize(()=>{
         windowWidth = $(window).width()
         windowHeight = $(window).height()
@@ -90,6 +85,14 @@ $(document).ready(()=>{
         $('.home-img-homecover').css('height', windowHeight/3)
     })
 
+
+
+    // Make the window jump down to the navbar when the page loads
+    var navbarHeight = parseInt($('.ul-navbar').offset().top)
+    window.scrollTo({ 
+        top: navbarHeight,
+        behavior: 'smooth'
+    })
 
 
 
