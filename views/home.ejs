@@ -123,10 +123,14 @@
                             </p>
                         </div>
                         <ul class='ul-titles-p'>
+                        <% var i = 0 %>
                         <% p.podcasts.forEach(function(podcast){ %>
                             <li>
+                                <% if( i != 0 ){ %>
                                 <p><%= podcast.title %></p>
+                                <% } %>
                             </li>
+                        <% i++ %>
                         <% }) %>
                         </ul>
                     </div>
