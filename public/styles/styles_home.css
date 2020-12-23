@@ -294,6 +294,10 @@ body {
 
     margin-right: 120px;
 }
+.home-social div a img {
+    width: 30px;
+    height: 30px;
+}
 a {
     text-decoration: none;
 }
