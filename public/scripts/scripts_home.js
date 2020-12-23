@@ -14,9 +14,18 @@ $(document).ready(()=>{
     $('.home-img-homecover').css('height', windowHeight/3)
 
     // Make the portrait the inital size depending on screen size
+    // For width
     if(windowWidth < 584) {
         $('.home-pic').css('height', 125)
         $('.home-pic').css('width', 125)
+    } else {
+        $('.home-pic').css('height', 150)
+        $('.home-pic').css('width', 150)
+    }
+    // For height
+    if(windowHeight < 350){
+        $('.home-pic').css('height', 100)
+        $('.home-pic').css('width', 100)
     } else {
         $('.home-pic').css('height', 150)
         $('.home-pic').css('width', 150)
@@ -36,9 +45,13 @@ $(document).ready(()=>{
         windowHeight = $(window).height()
         $('.div-wrapper-h').width(windowWidth)
 
+        
+        
         // Update the height from the top of hte navbarHeight
         navbarHeight = parseInt($('.ul-navbar').offset().top)
 
+        
+        
         // Make the portrait small if window is less than 600px
         if(windowWidth < 584) {
             $('.home-pic').css('height', 125)
@@ -48,9 +61,6 @@ $(document).ready(()=>{
             $('.home-pic').css('width', 150)
         }
 
-        // Adjust the height of the sidebar when the window changes size
-        $('[class^=div-sidebar-]').css('height', windowHeight)
-
         // Adjust the height of the home page portrait when the height is really small
         if(windowHeight < 350){
             $('.home-pic').css('height', 100)
@@ -59,6 +69,11 @@ $(document).ready(()=>{
             $('.home-pic').css('height', 150)
             $('.home-pic').css('width', 150)
         }
+
+
+
+        // Adjust the height of the sidebar when the window changes size
+        $('[class^=div-sidebar-]').css('height', windowHeight)
     })
 
 
