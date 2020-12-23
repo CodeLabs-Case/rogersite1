@@ -33,6 +33,7 @@ $(document).ready(()=>{
     $('.div-wrapper-h').width(windowWidth)
     $(window).resize(()=>{
         windowWidth = $(window).width()
+        windowHeight = $(window).height()
         $('.div-wrapper-h').width(windowWidth)
 
         // Update the height from the top of hte navbarHeight
@@ -46,6 +47,9 @@ $(document).ready(()=>{
             $('.home-pic').css('height', 150)
             $('.home-pic').css('width', 150)
         }
+
+        // Adjust the height of the sidebar when the window changes size
+        $('[class^=div-sidebar-]').css('height', windowHeight)
     })
 
 
