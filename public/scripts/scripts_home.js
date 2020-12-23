@@ -132,8 +132,13 @@ $(document).ready(()=>{
         $(this).stop(true, true).animate({ "opacity": "1.0" }, 500)
     })
 
-
-
+    // Do the same for the social links
+    $('.home-social div a img').on('mouseenter', function(){
+        $(this).stop(true, true).animate({ "opacity": "0.5" }, 500)
+    })
+    $('.home-social div a img').on('mouseleave', function(){
+        $(this).stop(true, true).animate({ "opacity": "1.0" }, 500)
+    })
 
 
     // State information and animations for the sidebar
