@@ -4,7 +4,7 @@ const fs = require('fs')
 
 
 // GET
-router.get('/', checkAuthenticated, (req, res, err) => {
+router.get('/', (req, res, err) => {
     if(err){
         console.log(err)
     }
@@ -27,14 +27,14 @@ router.get('/', checkAuthenticated, (req, res, err) => {
     // Send the page
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
 })
-router.route('/podcast').get(checkAuthenticated, (req, res, err) => {
+router.route('/podcast').get((req, res, err) => {
     if(err){ 
         console.log(err)
     }
 
     res.render(path.join('/var/app/current/views/addpodcast.ejs'))
 })
-router.route('/article').get(checkAuthenticated, (req, res, err) => {
+router.route('/article').get((req, res, err) => {
     if(err){ 
         console.log(err)
     }
