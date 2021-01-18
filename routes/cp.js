@@ -176,10 +176,10 @@ router.route('/updatehome').post(checkAuthenticated, (req, res) => {
     var jsonArticles = JSON.parse(articles)
 
     var home2 = fs.readFileSync('/var/app/current/database/collection2.json') // Just testing
-    var jsonHome = JSON.parse(home2) // Just testing
+    var jsonHome2 = JSON.parse(home2) // Just testing
 
     // Send the page
-    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles, h: jsonHome})
+    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles, h: jsonHome2})
 })
 
 
