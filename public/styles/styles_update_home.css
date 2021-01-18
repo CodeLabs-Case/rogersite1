@@ -16,7 +16,7 @@ body {
     grid-row: 1;
     grid-column: 2;
 
-    width: 500px;
+    width: 100px;
 
     justify-self: center;
     align-self: center;
@@ -45,7 +45,7 @@ body {
     grid-template-rows: 50px 1fr 50px;
     grid-template-columns: 1fr;
 }
-.div-two {
+.div-one {
     grid-row: 2;
     
     justify-self: center;
