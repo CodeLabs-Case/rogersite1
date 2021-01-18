@@ -71,10 +71,10 @@ router.route('/addpodcast').post(checkAuthenticated, (req, res) => {
     var date = month + " - " + day + " - " + year
 
     var temp = {
-        title: title,
-        link: link,
-        text: text,
-        date: date
+        "title": title,
+        "link": link,
+        "text": text,
+        "date": date
     }
 
     jsonPodcasts.podcasts.unshift(temp)
@@ -155,7 +155,22 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
 
 // HOME
 router.route('/updatehome').post((req, res) => {
+    // Get the data from the route
+    var text = req.body.text
 
+    // Add the data into a JSON data structure
+    var jsonText = {
+        "text": text
+    }
+
+    // Serialize the JSON into a String
+    var jsonStringText = JSON.stringify(jsonText, null, 2)
+
+    // Write the String into the file
+    fs.writeFileSync('/var/app/current/database/collection2.json', home)
+
+    // Redirect the user to the control panel
+    res.render(path.join('/var/app/current/views/cp.ejs'))
 })
 
 

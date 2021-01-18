@@ -1,0 +1,89 @@
+body {
+    background-color: #303030;
+}
+.div-outter {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    background-color: #303030;
+
+    padding: 0;
+}
+.div-inner {
+    color: #fff;
+
+    grid-row: 1;
+    grid-column: 2;
+
+    width: 500px;
+
+    justify-self: center;
+    align-self: center;
+
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: 1fr;
+
+    background-color: #1c1c1c;
+
+    border: 3px solid #0e0e0e;
+
+    padding-bottom: 20px;
+}
+.div-inner h1 {
+    grid-row: 1;
+
+    justify-self: center;
+    align-self: center;
+}
+.form-input {
+    grid-row: 2;
+    
+
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-columns: 1fr;
+}
+.div-two {
+    grid-row: 2;
+    
+    justify-self: center;
+    align-self: center;
+}
+.button-submit {
+    width: 60px;
+
+    grid-row: 3;
+    grid-column: 1;
+
+    justify-self: start;
+    align-self: center;
+
+    margin-left: 180px;
+}
+.button-cancel {
+    grid-row: 3;
+    grid-column: 1;
+
+    justify-self: end;
+    align-self: center;
+
+    margin-right: 180px;
+}
+.button-cancel input{
+    width: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    
+}
