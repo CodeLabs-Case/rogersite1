@@ -153,7 +153,7 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
 
 
 
-// HOME
+// UPDATE
 router.route('/updatehome').post((req, res) => {
     // Get the data from the route
     var text = req.body.text
@@ -169,8 +169,16 @@ router.route('/updatehome').post((req, res) => {
     // Write the String into the file
     fs.writeFileSync('/var/app/current/database/collection2.json', jsonStringText)
 
-    // Redirect the user to the control panel
-    res.render(path.join('/var/app/current/views/cp.ejs'))
+    // Redirect the user to the control panel, remembering to retrieve the data again.
+    // Get the data for the page
+    var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
+    var jsonPodcasts = JSON.parse(podcasts)
+
+    var articles = fs.readFileSync('/var/app/current/database/collection1.json')
+    var jsonArticles = JSON.parse(articles)
+
+    // Send the page
+    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
 })
 
 
