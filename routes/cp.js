@@ -167,7 +167,7 @@ router.route('/updatehome').post((req, res) => {
     var jsonStringText = JSON.stringify(jsonText, null, 2)
 
     // Write the String into the file
-    fs.writeFileSync('/var/app/current/database/collection2.json', home)
+    fs.writeFileSync('/var/app/current/database/collection2.json', jsonStringText)
 
     // Redirect the user to the control panel
     res.render(path.join('/var/app/current/views/cp.ejs'))
