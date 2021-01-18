@@ -13,10 +13,6 @@ router.get('/', checkAuthenticated, (req, res, err) => {
     // Try two ways to get the data from the forms for testing purposes
     // const { email, password } = req.body
 
-    // Read in the database file
-    var content = fs.readFileSync('/var/app/current/database/signin.json')
-    var jsonContent = JSON.parse(content)
-
     // Get the data for the page
     var podcasts = fs.readFileSync('/var/app/current/database/collection0.json')
     var jsonPodcasts = JSON.parse(podcasts)
