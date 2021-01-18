@@ -159,16 +159,23 @@ router.route('/updatehome').post((req, res) => {
     // Get the data from the route
     var text = req.body.text
 
-    // Add the data into a JSON data structure
-    var jsonText = {
+    // Read in the text from the file
+    var home = fs.readFileSync('/var/app/current/database/collection2.json')
+    var jsonHome = JSON.parse(home)
+
+    // Create a new text JSON object
+    var temp = {
         "text": text
     }
 
-    // Serialize the JSON into a String
-    var jsonStringText = JSON.stringify(jsonText, null, 2)
+    // Replace the last object with the new one
+    jsonHome.home[0] = temp
+
+    // Convert the JSON to a String
+    var jsonStringHome = JSON.stringify(jsonHome, null, 2)
 
     // Write the String into the file
-    fs.writeFileSync('/var/app/current/database/collection2.json', jsonStringText)
+    fs.writeFileSync('/var/app/current/database/collection2.json', jsonStringHome)
 
     // Redirect the user to the control panel, remembering to retrieve the data again.
     // Get the data for the page
