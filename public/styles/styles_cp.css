@@ -371,11 +371,11 @@ body {
 .div-wrapper-h {
     grid-row: 1;
     grid-column: 1;
-}
-.div-wrapper-h form{
+
     justify-self: center;
     align-self: center;
 }
+
 .div-outter-wrapper {
     display: grid;
     grid-template-rows: 1fr;
