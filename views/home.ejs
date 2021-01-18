@@ -83,7 +83,11 @@
                                 </div>
                                 
                                 
-                                <p class="home-body"><%= h.text %></p>
+                                <p class="home-body">
+                                    <% p.home.forEach(function(home) { %>
+                                        <%= home.text %>
+                                    <% }) %>
+                                </p>
                                 
                                 <div class="home-social">
                                     <label class="social-label" for="">Socials</label>
