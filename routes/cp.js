@@ -86,11 +86,6 @@ router.route('/addpodcast').post(checkAuthenticated, (req, res) => {
 
 
 
-
-
-
-
-
     // Get the data for the page
     var podcasts2 = fs.readFileSync('/var/app/current/database/collection0.json')
     jsonPodcasts2 = JSON.parse(podcasts2)
@@ -120,7 +115,7 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
         "date": date
     }
 
-    // Get the from the file
+    // Get the data from the file
     var articles = fs.readFileSync('/var/app/current/database/collection1.json')
     var jsonArticles = JSON.parse(articles)
 
@@ -132,11 +127,6 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
 
     var jsonStringArticles = JSON.stringify(jsonArticles, null, 2)
     fs.writeFileSync('/var/app/current/database/collection1.json', jsonStringArticles)
-
-
-
-
-
 
 
 
@@ -155,7 +145,7 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
 
 
 // UPDATE
-router.route('/updatehome').post((req, res) => {
+router.route('/updatehome').post(checkAuthenticated, (req, res) => {
     // Get the data from the route
     var text = req.body.text
 
@@ -185,8 +175,11 @@ router.route('/updatehome').post((req, res) => {
     var articles = fs.readFileSync('/var/app/current/database/collection1.json')
     var jsonArticles = JSON.parse(articles)
 
+    var home = fs.readFileSync('/var/app/current/database/collection2.json') // Just testing
+    var jsonHome = JSON.parse(home) // Just testing
+
     // Send the page
-    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles, h: jsonHome})
 })
 
 
