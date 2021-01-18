@@ -43,6 +43,7 @@ router.route('/home').get(checkAuthenticated, (req, res, err) => {
         console.log(err)
     }
 
+    // This route needs data that will be modified, and here it is!
     var home = fs.readFileSync('/var/app/current/database/collection2.json')
     var jsonHome = JSON.parse(home)
 
