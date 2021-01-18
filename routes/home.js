@@ -16,8 +16,11 @@ router.route('/').get((req, res, err)=>{
     var articles = fs.readFileSync('/var/app/current/database/collection1.json')
     var jsonArticles = JSON.parse(articles)
 
+    var home = fs.readFileSync('/var/app/current/database/collection2.json')
+    var jsonHome = JSON.parse(home)
+
     // Send the page
-    res.render(path.join('/var/app/current/views/home.ejs'), {p: jsonPodcasts, a: jsonArticles})
+    res.render(path.join('/var/app/current/views/home.ejs'), {p: jsonPodcasts, a: jsonArticles, h: jsonHome})
 })
 
 

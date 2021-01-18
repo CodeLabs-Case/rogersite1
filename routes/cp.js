@@ -141,6 +141,16 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
 
 
 
+// HOME
+router.route('/modifyhome').get((req, res) => {
+
+})
+router.route('/submithome').post((req, res) => {
+
+})
+
+
+
 // DELETE
 router.route('/deletePodcast/:id').get(checkAuthenticated, (req, res)=>{
     var param = req.query.id

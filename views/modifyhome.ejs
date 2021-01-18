@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon"/>
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="/static/styles/styles_add_article.css">
+
+    <title>Add Article</title>
+</head>
+    <body>
+        <div class='div-outter'>
+            <div class='div-inner'>
+                <h1>Home Text</h1>
+                <form class='form-input' action="/controlpanel/submithome" method="POST">
+
+
+
+                    <div class='div-two'>
+                        <label for="">Body</label>
+                        <br>
+                        <textarea style="resize: none;" rows='10' cols='50' name='text'></textarea>
+                    </div>
+                    
+                    
+
+                    <input class='button-submit' type="submit" value='Update'>
+                    <a class='button-cancel' href="/controlpanel/">
+                        <input type="button" value="Cancel">
+                    </a>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
