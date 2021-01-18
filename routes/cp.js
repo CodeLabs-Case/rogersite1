@@ -23,6 +23,7 @@ router.get('/', checkAuthenticated, (req, res, err) => {
     // Send the page
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
 })
+// These routes are used as intermediaries to get the the pages where the routes actually perform a change to the database.
 router.route('/podcast').get(checkAuthenticated, (req, res, err) => {
     if(err){ 
         console.log(err)
@@ -37,6 +38,17 @@ router.route('/article').get(checkAuthenticated, (req, res, err) => {
 
     res.render(path.join('/var/app/current/views/addarticle.ejs'))
 })
+router.route('/home').get(checkAuthenticated, (req, res, err) => {
+    if(err){ 
+        console.log(err)
+    }
+
+    var home = fs.readFileSync('/var/app/current/database/collection2.json')
+    var jsonHome = JSON.parse(home)
+
+    res.render(path.join('/var/app/current/views/modifyhome.ejs'), {h: jsonHome})
+})
+
 
 
 
@@ -142,10 +154,7 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
 
 
 // HOME
-router.route('/modifyhome').get((req, res) => {
-
-})
-router.route('/submithome').post((req, res) => {
+router.route('/updatehome').post((req, res) => {
 
 })
 

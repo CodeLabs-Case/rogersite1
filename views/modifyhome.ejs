@@ -17,14 +17,18 @@
         <div class='div-outter'>
             <div class='div-inner'>
                 <h1>Home Text</h1>
-                <form class='form-input' action="/controlpanel/submithome" method="POST">
+                <form class='form-input' action="/controlpanel/updatehome" method="POST">
 
 
 
                     <div class='div-two'>
                         <label for="">Body</label>
                         <br>
-                        <textarea style="resize: none;" rows='10' cols='50' name='text'></textarea>
+                        <textarea style="resize: none;" rows='10' cols='50' name='text'>
+                            <p>
+                                <%= h.text %>
+                            </p>
+                        </textarea>
                     </div>
                     
                     
