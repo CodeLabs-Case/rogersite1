@@ -374,6 +374,8 @@ body {
 
     justify-self: center;
     align-self: center;
+
+    padding: 10px;
 }
 
 .div-outter-wrapper {
