@@ -47,7 +47,7 @@ router.route('/home').get(checkAuthenticated, (req, res, err) => {
     var home = fs.readFileSync('/var/app/current/database/collection2.json')
     var jsonHome = JSON.parse(home)
 
-    res.render(path.join('/var/app/current/views/modifyhome.ejs'), {h: jsonHome})
+    res.render(path.join('/var/app/current/views/updatehome.ejs'), {h: jsonHome})
 })
 
 
@@ -175,8 +175,8 @@ router.route('/updatehome').post(checkAuthenticated, (req, res) => {
     var articles = fs.readFileSync('/var/app/current/database/collection1.json')
     var jsonArticles = JSON.parse(articles)
 
-    var home = fs.readFileSync('/var/app/current/database/collection2.json') // Just testing
-    var jsonHome = JSON.parse(home) // Just testing
+    var home2 = fs.readFileSync('/var/app/current/database/collection2.json') // Just testing
+    var jsonHome = JSON.parse(home2) // Just testing
 
     // Send the page
     res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles, h: jsonHome})
