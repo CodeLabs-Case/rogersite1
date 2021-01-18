@@ -361,7 +361,17 @@ body {
 
 
 
+.div-home-wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 
+    background-color: #111111;
+}
+.div-wrapper-h {
+    grid-row: 1;
+    grid-column: 1;
+}
 .div-outter-wrapper {
     display: grid;
     grid-template-rows: 1fr;
