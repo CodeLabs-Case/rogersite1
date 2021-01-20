@@ -260,7 +260,9 @@ body {
 .home-body {
     font-size: 14px;
     margin: 40px;
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     justify-content: center;
     text-align: center;
 }
@@ -766,6 +768,7 @@ a {
 
     /* Body */
     .home-body {
+        font-size: 8px;
         padding-top: 40px;
         padding-left: 10px;
         padding-right: 10px;
