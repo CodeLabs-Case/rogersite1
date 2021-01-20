@@ -103,16 +103,23 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
     var text = req.body.text
 
     // Get the date for the article
-    var obj = new Date()
-    var year = (obj.getFullYear()).toString()
-    var month = (obj.getMonth() + 1).toString()
-    var day = (obj.getDate()).toString()
-    var date = month + " - " + day + " - " + year
+    var date = new Date()
+
+    let intlDateObj = new Intl.DateTimeFormat('en-US', { 
+        timeZone: "America/New_York" 
+    });
+
+    let usaTime = intlDateObj.format(date);
+
+    // var year = (usaTime.getFullYear()).toString()
+    // var month = (usaTime.getMonth() + 1).toString()
+    // var day = (usaTime.getDate()).toString()
+    // var formatedDate = month + " - " + day + " - " + year
 
     var temp = {
         "title": title,
         "text": text,
-        "date": date
+        "date": usaTime.toString()
     }
 
     // Get the data from the file
