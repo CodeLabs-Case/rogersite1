@@ -182,14 +182,15 @@
                             </p>
                         </div>
                         <ul class='ul-titles-a'>
-                        <% var k = 0 %>
-                        <% a.articles.forEach(function(article){ %>
-                            <% if( k != 0) { %>
-                                <li class='li-title'>
-                                    <p><%= article.title %></p>
-                                </li>
-                            <% } %>
-                            <% k = k + 1 %>
+                            <% var j = a.articles.length %>
+                            <% var k = 0 %>
+                            <% a.articles.forEach(function(article){ %>
+                                <% if(k != (j - 1)) { %>
+                                    <li class='li-title'>
+                                        <p><%= article.title %></p>
+                                    </li>
+                                <% } %>
+                            <% k = k + 1%>
                         <% }) %>
                         </ul>
                     </div>
