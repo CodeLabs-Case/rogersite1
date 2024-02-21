@@ -38,7 +38,7 @@ initializePassport(
 )
 
 app.use(flash())
-console.log('Session Secret:', process.env.SESSION_SECRET)
+//console.log('Session Secret:', process.env.SESSION_SECRET)
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
