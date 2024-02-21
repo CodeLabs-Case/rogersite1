@@ -21,7 +21,15 @@ router.get('/', checkAuthenticated, (req, res, err) => {
     var jsonArticles = JSON.parse(articles)
 
     // Send the page
-    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+    //res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+    const host = req.headers.host
+
+    if(host === 'localhost:3000') {
+        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/cp.ejs', {p: jsonPodcasts, a: jsonArticles})
+    }
+    else {
+        res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+    }
 })
 // These routes are used as intermediaries to get the the pages where the routes actually perform a change to the database.
 router.route('/podcast').get(checkAuthenticated, (req, res, err) => {
@@ -29,14 +37,30 @@ router.route('/podcast').get(checkAuthenticated, (req, res, err) => {
         console.log(err)
     }
 
-    res.render(path.join('/var/app/current/views/addpodcast.ejs'))
+    //res.render(path.join('/var/app/current/views/addpodcast.ejs'))
+    const host = req.headers.host
+
+    if(host === 'localhost:3000') {
+        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/addpodcast.ejs')
+    }
+    else {
+        res.render(path.join('/var/app/current/views/addpodcast.ejs'))
+    }
 })
 router.route('/article').get(checkAuthenticated, (req, res, err) => {
     if(err){ 
         console.log(err)
     }
 
-    res.render(path.join('/var/app/current/views/addarticle.ejs'))
+    //res.render(path.join('/var/app/current/views/addarticle.ejs'))
+    const host = req.headers.host
+
+    if(host === 'localhost:3000') {
+        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/addarticle.ejs')
+    }
+    else {
+        res.render(path.join('/var/app/current/views/addarticle.ejs'))
+    }
 })
 router.route('/home').get(checkAuthenticated, (req, res, err) => {
     if(err){ 
@@ -47,7 +71,15 @@ router.route('/home').get(checkAuthenticated, (req, res, err) => {
     var home = fs.readFileSync('/var/app/current/database/collection2.json')
     var jsonHome = JSON.parse(home)
 
-    res.render(path.join('/var/app/current/views/updatehome.ejs'), {h: jsonHome})
+    //res.render(path.join('/var/app/current/views/updatehome.ejs'), {h: jsonHome})
+    const host = req.headers.host
+
+    if(host === 'localhost:3000') {
+        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/updatehome.ejs', {h: jsonHome})
+    }
+    else {
+        res.render(path.join('/var/app/current/views/updatehome.ejs'), {h: jsonHome})
+    }
 })
 
 
@@ -94,7 +126,15 @@ router.route('/addpodcast').post(checkAuthenticated, (req, res) => {
     jsonArticles2 = JSON.parse(articles2)
 
     // Send the page
-    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts2, a: jsonArticles2})
+    //res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts2, a: jsonArticles2})
+    const host = req.headers.host
+
+    if(host === 'localhost:3000') {
+        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/updatehome.ejs', {p: jsonPodcasts2, a: jsonArticles2})
+    }
+    else {
+        res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts2, a: jsonArticles2})
+    }
 
 })
 router.route('/addarticle').post(checkAuthenticated, (req, res) => {
@@ -146,7 +186,15 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
 
     
     // Send the page
-    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts2, a: jsonArticles2})
+    //res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts2, a: jsonArticles2})
+    const host = req.headers.host
+
+    if(host === 'localhost:3000') {
+        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/cp.ejs', {p: jsonPodcasts2, a: jsonArticles2})
+    }
+    else {
+        res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts2, a: jsonArticles2})
+    }
 })
 
 
@@ -186,7 +234,15 @@ router.route('/updatehome').post(checkAuthenticated, (req, res) => {
     var jsonHome2 = JSON.parse(home2) // Just testing
 
     // Send the page
-    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles, h: jsonHome2})
+    //res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles, h: jsonHome2})
+    const host = req.headers.host
+
+    if(host === 'localhost:3000') {
+        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/cp.ejs', {p: jsonPodcasts, a: jsonArticles, h: jsonHome2})
+    }
+    else {
+        res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles, h: jsonHome2})
+    }
 })
 
 
@@ -213,7 +269,15 @@ router.route('/deletePodcast/:id').get(checkAuthenticated, (req, res)=>{
     var jsonArticles = JSON.parse(articles)
 
     // Send the page
-    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+    //res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+    const host = req.headers.host
+
+    if(host === 'localhost:3000') {
+        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/cp.ejs', {p: jsonPodcasts, a: jsonArticles})
+    }
+    else {
+        res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+    }
 })
 router.route('/deleteArticle/:id').get(checkAuthenticated, (req, res)=>{
     var param = req.query.id
@@ -236,7 +300,16 @@ router.route('/deleteArticle/:id').get(checkAuthenticated, (req, res)=>{
     var jsonArticles = JSON.parse(articles)
 
     // Send the page
-    res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+    //res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+    const host = req.headers.host
+
+    if(host === 'localhost:3000') {
+        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/cp.ejs', {p: jsonPodcasts, a: jsonArticles})
+    }
+    else {
+        res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
+    }
+    
 })
 router.delete('/logout', checkAuthenticated, (req, res)=>{
     req.logOut()

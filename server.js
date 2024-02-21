@@ -1,7 +1,7 @@
 // if(process.env.NODE_ENV !== 'production'){
 //     require('dotenv').config()
 // }
-
+require('dotenv').config()
 
 const express = require('express')
 const path = require('path')
@@ -38,6 +38,7 @@ initializePassport(
 )
 
 app.use(flash())
+console.log('Session Secret:', process.env.SESSION_SECRET)
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
@@ -75,7 +76,13 @@ app.listen(port, (err)=>{
 
 
 app.get('/admin', checkNotAuthenticated, (req, res) => {
-    res.render(path.join('/var/app/current/views/admin.ejs'))
+    const host = req.headers.host
+    if(host === 'localhost:3000') {
+        res.render(path.join('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/admin.ejs'))
+    } else {
+        res.render(path.join('/var/app/current/views/admin.ejs'))
+    }
+    
 })
   
 app.post('/admin', checkNotAuthenticated, passport.authenticate('local', {
