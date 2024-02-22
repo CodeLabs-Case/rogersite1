@@ -14,7 +14,7 @@ const methodOverride = require('method-override')
 
 const app = express()
 
-
+const basePath = process.env.BASE_PATH
 
 // var jsonParser = bodyParser.json()
 // var urlencodedParser = bodyParser.urlencoded({ extended: false })
@@ -63,8 +63,6 @@ const port = process.env.port || 3000
 
 
 
-
-
 app.listen(port, (err)=>{
     if(err){
         console.log(err)
@@ -78,7 +76,7 @@ app.listen(port, (err)=>{
 app.get('/admin', checkNotAuthenticated, (req, res) => {
     const host = req.headers.host
     if(host === 'localhost:3000') {
-        res.render(path.join('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/admin.ejs'))
+        res.render(path.join(basePath + 'rogersite1/views/admin.ejs'))
     } else {
         res.render(path.join('/var/app/current/views/admin.ejs'))
     }

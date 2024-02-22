@@ -1,7 +1,9 @@
 const router = require('express').Router()
 const path = require('path')
 const fs = require('fs')
+require('dotenv').config()
 
+const basePath = process.env.BASE_PATH
 
 // GET
 router.get('/', checkAuthenticated, (req, res, err) => {
@@ -25,7 +27,7 @@ router.get('/', checkAuthenticated, (req, res, err) => {
     const host = req.headers.host
 
     if(host === 'localhost:3000') {
-        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/cp.ejs', {p: jsonPodcasts, a: jsonArticles})
+        res.render(basePath + 'rogersite1/views/cp.ejs', {p: jsonPodcasts, a: jsonArticles})
     }
     else {
         res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
@@ -41,7 +43,7 @@ router.route('/podcast').get(checkAuthenticated, (req, res, err) => {
     const host = req.headers.host
 
     if(host === 'localhost:3000') {
-        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/addpodcast.ejs')
+        res.render(basePath + 'rogersite1/views/addpodcast.ejs')
     }
     else {
         res.render(path.join('/var/app/current/views/addpodcast.ejs'))
@@ -56,7 +58,7 @@ router.route('/article').get(checkAuthenticated, (req, res, err) => {
     const host = req.headers.host
 
     if(host === 'localhost:3000') {
-        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/addarticle.ejs')
+        res.render(basePath + 'rogersite1/views/addarticle.ejs')
     }
     else {
         res.render(path.join('/var/app/current/views/addarticle.ejs'))
@@ -75,7 +77,7 @@ router.route('/home').get(checkAuthenticated, (req, res, err) => {
     const host = req.headers.host
 
     if(host === 'localhost:3000') {
-        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/updatehome.ejs', {h: jsonHome})
+        res.render(basePath + 'rogersite1/views/updatehome.ejs', {h: jsonHome})
     }
     else {
         res.render(path.join('/var/app/current/views/updatehome.ejs'), {h: jsonHome})
@@ -130,7 +132,7 @@ router.route('/addpodcast').post(checkAuthenticated, (req, res) => {
     const host = req.headers.host
 
     if(host === 'localhost:3000') {
-        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/updatehome.ejs', {p: jsonPodcasts2, a: jsonArticles2})
+        res.render(basePath + 'rogersite1/views/updatehome.ejs', {p: jsonPodcasts2, a: jsonArticles2})
     }
     else {
         res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts2, a: jsonArticles2})
@@ -190,7 +192,7 @@ router.route('/addarticle').post(checkAuthenticated, (req, res) => {
     const host = req.headers.host
 
     if(host === 'localhost:3000') {
-        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/cp.ejs', {p: jsonPodcasts2, a: jsonArticles2})
+        res.render(basePath + 'rogersite1/views/cp.ejs', {p: jsonPodcasts2, a: jsonArticles2})
     }
     else {
         res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts2, a: jsonArticles2})
@@ -238,7 +240,7 @@ router.route('/updatehome').post(checkAuthenticated, (req, res) => {
     const host = req.headers.host
 
     if(host === 'localhost:3000') {
-        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/cp.ejs', {p: jsonPodcasts, a: jsonArticles, h: jsonHome2})
+        res.render(basePath + 'rogersite1/views/cp.ejs', {p: jsonPodcasts, a: jsonArticles, h: jsonHome2})
     }
     else {
         res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles, h: jsonHome2})
@@ -273,7 +275,7 @@ router.route('/deletePodcast/:id').get(checkAuthenticated, (req, res)=>{
     const host = req.headers.host
 
     if(host === 'localhost:3000') {
-        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/cp.ejs', {p: jsonPodcasts, a: jsonArticles})
+        res.render(basePath + 'rogersite1/views/cp.ejs', {p: jsonPodcasts, a: jsonArticles})
     }
     else {
         res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
@@ -304,7 +306,7 @@ router.route('/deleteArticle/:id').get(checkAuthenticated, (req, res)=>{
     const host = req.headers.host
 
     if(host === 'localhost:3000') {
-        res.render('C:/Users/davis/OneDrive/Documents/Development/Freelance/rogersite1/views/cp.ejs', {p: jsonPodcasts, a: jsonArticles})
+        res.render(basePath + 'rogersite1/views/cp.ejs', {p: jsonPodcasts, a: jsonArticles})
     }
     else {
         res.render(path.join('/var/app/current/views/cp.ejs'), {p: jsonPodcasts, a: jsonArticles})
