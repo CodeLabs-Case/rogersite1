@@ -19,8 +19,6 @@ const basePath = process.env.BASE_PATH
 // var jsonParser = bodyParser.json()
 // var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
-// You wouldn't usually store this here, but as it is just for one admin user and this ...
-// ... project is in a rush, it will have to do.
 const users = [
     {
         "id": 1,
