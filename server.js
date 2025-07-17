@@ -24,8 +24,8 @@ const basePath = process.env.BASE_PATH
 const users = [
     {
         "id": 1,
-        "email": "rogtarheel@gmail.com",
-        "password": "tarheels"
+        "email": process.env.ADMIN_EMAIL,
+        "password": process.env.ADMIN_PASSWORD
     }
 ]
 
